@@ -1,6 +1,6 @@
 import sys
 import numpy as np
-import pylab
+import pylab as py
 import matplotlib
 #I have simplified the original function. Henceforth, n is the same as N-nought, and k is the same as tau. N(t)=n(e^((-t*ln2)/k))=n(e^ln2)(e^-t/k)=2n(e^-t/k), where n and k are starting conditions specified in the command line.
 print """
@@ -14,8 +14,14 @@ a=k*(np.log(2*n)) # We don't want time to go to infinity - we need some limiting
 t=0
 N=n
 
-while t<int(a):
-    print t,int(N) #Since N represents the number of atoms, print the nearest integer - it doesn't make sense to have a fraction of an atom.
+while t<=a:
+    print t, int(N) #Since N represents the number of atoms, print the nearest integer - it doesn't make sense to have a fraction of an atom.
     t=t+k
     N=(2.*n)*(np.exp(-t/k))
-print 'At times greater than this, there is only one atom or less remaining.'
+print 'At times greater than this, there is less than one atom remaining. All values of N have been rounded to the nearest integer value.'
+
+N=(2.*n)*(np.exp(-t/k))
+#max t=a, min t=0
+
+py.plot (t,N)
+py.show()
