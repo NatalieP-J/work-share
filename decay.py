@@ -36,4 +36,4 @@ py.title('Decay on an element with "n" initial atoms and a half-life of "k" seco
 py.plot(t,N) #Create the plot.
 py.savefig("decay.png")#Save the file.
 py.show()
-py.legend(('k='k' seconds','n='n' atoms in the initial sample'), title='User input gave the following values for k and n')
+
