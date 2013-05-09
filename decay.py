@@ -1,7 +1,6 @@
 import sys
 import numpy as np
-import pylab as py
-import matplotlib
+import pylab as py 
 #I have simplified the original function. Henceforth, n is the same as N-nought, and k is the same as tau. N(t)=n(e^((-t*ln2)/k))=n(e^ln2)(e^-t/k)=2n(e^-t/k), where n and k are starting conditions specified in the command line.
 print """
 Radioactive decay.
@@ -20,8 +19,20 @@ while t<=a:
     N=(2.*n)*(np.exp(-t/k))
 print 'At times greater than this, there is less than one atom remaining. All values of N have been rounded to the nearest integer value.'
 
-N=(2.*n)*(np.exp(-t/k))
-#max t=a, min t=0
+#Now to make the plot
+#First, set the scale size on the x-axis (t in this case)
+min_t=0
+max_t=a
+step=0.1*k
+t=py.mgrid[min_t:(max_t+step):step] #Create the grid 
 
-py.plot (t,N)
+N=(2.*n)*(np.exp(-t/k))#Rewrite the function to avoid referencing the one in the while loop.
+
+#Label the axes:
+py.xlabel('time (seconds)')
+py.ylabel('Atoms in the sample')
+py.title('Decay on an element with "n" initial atoms and a half-life of "k" seconds')
+
+py.plot(t,N) #Create the plot.
+py.savefig("decay.png")#Save the file.
 py.show()
