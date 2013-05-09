@@ -14,7 +14,7 @@ t=0
 N=n
 
 while t<=a:
-    print t, int(N) #Since N represents the number of atoms, print the nearest integer - it doesn't make sense to have a fraction of an atom.
+    print t,"\t", int(N) #Since N represents the number of atoms, print the nearest integer - it doesn't make sense to have a fraction of an atom.
     t=t+k
     N=n*(2**(-t/k))
 print 'At times greater than this, there is less than one atom remaining. All values of N have been rounded to the nearest integer value.'
@@ -34,5 +34,5 @@ py.ylabel('Atoms in the sample')
 py.title('Decay on an element with "n" initial atoms and a half-life of "k" seconds')
 py.plot(t,N) #Create the plot.
 py.savefig("decay.png")#Save the file.
-
+py.show()
 
