@@ -32,7 +32,6 @@ N=(2.*n)*(np.exp(-t/k))#Rewrite the function to avoid referencing the one in the
 py.xlabel('time (seconds)')
 py.ylabel('Atoms in the sample')
 py.title('Decay on an element with "n" initial atoms and a half-life of "k" seconds')
-
 py.plot(t,N) #Create the plot.
 py.savefig("decay.png")#Save the file.
 py.show()
