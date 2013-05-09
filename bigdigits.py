@@ -83,12 +83,11 @@ Nine = ["  99999   ",
         "    9     ",
         "   9      "]
 
+digits=[Zero, One, Two, Three, Four, Five, Six, Seven, Eight, Nine]
 r=sys.argv[1]
 a=len(r)
-r=list(sys.argv[1])
 n=0
-while (n<a):
-    print r[n],
+while (n<=a):
+    print g=int(r[n]),
     n=n+1
-
 
