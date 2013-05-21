@@ -64,7 +64,7 @@ else:
                     x=(j+2)*np.cos(i*2*np.pi/n)
                     y=(j+2)*np.sin(i*2*np.pi/n)
                     ax.text(x,y, str(master[j-1][i]),ha='center', va='center')
-                    t=np.linspace((i*2*np.pi/n)+(np.pi/6*j),((i+1)*2*np.pi/n)-(np.pi/6*j),100)
+                    t=np.linspace((i*2*np.pi/n)+(np.pi/(6*j)),((i+1)*2*np.pi/n)-(np.pi/(6*j)),100)
                     x=(j+2)*np.cos(t)
                     y=(j+2)*np.sin(t)
                     plt.plot(x,y,'b')
