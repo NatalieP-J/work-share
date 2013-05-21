@@ -35,6 +35,17 @@ def differences(input):
         output.append(abs(input[i]-input[i-1]))
     return output
 
+def even_odd(input):
+    output=[]
+    for k in range (10):
+        if input%2==0:
+            k=1
+        else:
+            k=0
+        output.append(k)
+    return output
+    
+
 #number of integers to be used
 n=len(values)
 if n<3:
@@ -59,14 +70,18 @@ else:
             master.append(values)
             j=1
             while j<=len(master):
+                if j%2==0:
+                    k=1
+                else:
+                    k=0
                 i=0
                 while i<n:
-                    x=(j+2)*np.cos(i*2*np.pi/n)
-                    y=(j+2)*np.sin(i*2*np.pi/n)
+                    x=(j+1)*np.cos((i*2*np.pi/n)-(k*np.pi/n))
+                    y=(j+1)*np.sin((i*2*np.pi/n)-(k*np.pi/n))
                     ax.text(x,y, str(master[j-1][i]),ha='center', va='center')
-                    t=np.linspace((i*2*np.pi/n)+(np.pi/(6*j)),((i+1)*2*np.pi/n)-(np.pi/(6*j)),100)
-                    x=(j+2)*np.cos(t)
-                    y=(j+2)*np.sin(t)
+                    t=np.linspace((i*2*np.pi/n)+(np.pi/(6*j)-(k*np.pi/n)),((i+1)*2*np.pi/n)-(np.pi/(6*j)+(k*np.pi/n)),100)
+                    x=(j+1)*np.cos(t)
+                    y=(j+1)*np.sin(t)
                     plt.plot(x,y,'b')
                     i=i+1
                 j=j+1
