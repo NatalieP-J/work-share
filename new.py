@@ -36,17 +36,17 @@ t_0=args.t_0
 
 time=np.linspace(0,2*np.pi,n)
 
-#Apparent orbit
-#need apparent major and minor axes
-#inclination=inverse cosine(apparent minor/apparent major)
 
 maj=a
 mi=maj*np.cos(i)
 
+
 def apparent_orbit(input):
     output=[]
-    ra=maj*np.cos(input/T)*np.cos(l)
-    dec=mi*np.sin(input/T)*np.sin(l)
+    x=maj*np.cos(input/T)
+    y=mi*np.sin(input/T)
+    ra=-x*np.sin(l)+y*np.cos(l)
+    dec=x*np.cos(l)+y*np.sin(l)
     point=[ra,dec]
     output.append(point)
     return output
@@ -54,8 +54,7 @@ def apparent_orbit(input):
 points=np.array(apparent_orbit(time))
 ra=points[:,0]
 dec=points[:,1]
-max_ra=max(ra)
-min_ra=min(ra)
+
 plt.plot(ra,dec,'o',color='blue')
 plt.xlabel('right ascension relative to the centre of the orbit in arcseconds')
 plt.ylabel('declination relative to the centre of the orbit in arcseconds')
