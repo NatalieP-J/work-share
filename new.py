@@ -1,6 +1,3 @@
-import astropy
-import astropy.constants as c
-import astropy.units as u
 import scipy.optimize
 from scipy.optimize import leastsq
 import numpy as np
@@ -48,8 +45,8 @@ mi=maj*np.cos(i)
 
 def apparent_orbit(input):
     output=[]
-    ra=maj*np.cos(input/T)
-    dec=mi*np.sin(input/T)
+    ra=maj*np.cos(input/T)*np.cos(l)
+    dec=mi*np.sin(input/T)*np.sin(l)
     point=[ra,dec]
     output.append(point)
     return output
