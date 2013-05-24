@@ -100,12 +100,12 @@ print ran_dec
 
 
 #Question 3
-
-r=[0.707]
-
 def residual(y,p):
     mi=maj*np.cos(p[0])
     return (y-mi*np.sin((time-t_0)/P)
+
+
+r=[0.707]
 
 plsq=leastsq(residual,r,args=(ran_dec))
 
