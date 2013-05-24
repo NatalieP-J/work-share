@@ -49,10 +49,10 @@ if time==None:
 def apparent_orbit(t,ti,a,p,v,u,ang,rot):
     output=[]
     b=a*np.cos(ang)
-    x=a*np.cos((ti+t)/p)
-    y=b*np.sin((ti+t)/p)
-    mod_x=y*np.cos(rot)-x*np.sin(rot)+v*(ti+t)
-    mod_y=x*np.cos(rot)+y*np.sin(rot)+u*(ti+t)
+    x=a*np.cos((t-ti)/p)
+    y=b*np.sin((t-ti)/p)
+    mod_x=x*np.sin(rot)-y*np.cos(rot)+v*(t-ti)
+    mod_y=x*np.cos(rot)+y*np.sin(rot)+u*(t-ti)
     point=[mod_x,mod_y]
     output.append(point)
     return output
@@ -82,7 +82,7 @@ except TypeError:
 def Randomize(x,y):
     output=[]
     mod_x=np.random.normal(loc=x,scale=1e-10)
-    mod_y=np.random.normal(loc=y,scale=1e-4)
+    mod_y=np.random.normal(loc=y,scale=1e-5)
     point=[mod_x,mod_y]
     output.append(point)
     return output
@@ -91,25 +91,50 @@ values=np.array(Randomize(ra,dec))
 
 ran_ra=values[:,0]
 ran_ra=ran_ra[:,0]
-ran_ra=ran_ra[0]
+
 print ran_ra
+print len(ran_ra)
+
 ran_dec=values[:,1]
 ran_dec=ran_dec[:,0]
-ran_dec=ran_dec[0]
-print ran_dec
 
+print ran_dec
+print len(ran_dec)
+
+b=maj*np.cos(i)
+x=maj*np.cos((time-t_0)/P)
+y=b*np.sin((time-t_0)/P)
+mod_x=x*np.sin(l)-y*np.cos(l)+ra_pm*(time-t_0)
+mod_y=x*np.cos(l)+y*np.sin(l)+dec_pm*(time-t_0)
+print mod_x
+print len(mod_x)
+print mod_y
+print len(mod_y)
+
+print ran_ra-mod_x
 
 #Question 3
-def residual(y,p):
-    mi=maj*np.cos(p[0])
-    return (y-mi*np.sin((time-t_0)/P)
+class func:
+    def __init__(self,ang,rot):
+        self.ang=ang
+        self.rot=rot
+    def residual(self,x,y):
+        mi=maj*np.cos(self.ang)
+        el_x=maj*np.cos((time-t_0)/P)
+        el_y=mi*np.sin((time-t_0)/P)
+        mod_x=el_x*np.sin(self.rot)-el_y*np.cos(self.rot)+ra_pm*(time-t_0)
+        mod_y=el_x*np.cos(self.rot)+el_y*np.sin(self.rot)+dec_pm*(time-t_0)
+        mod_x=np.array(mod_x)
+        mod_y=np.array(mod_y)
+        res_y=y-mod_y
+        res_x=x-mod_x
+        return (np.sqrt((res_x)**2),np.sqrt((res_y)**2))
 
+f=func(1,1)
 
-r=[0.707]
+plsq=leastsq(f.residual,(1,1),args=(ran_ra,ran_dec))
 
-plsq=leastsq(residual,r,args=(ran_dec))
-
-print plsq[0]
+print plsq
 
 
 fig=plt.figure()
