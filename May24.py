@@ -37,9 +37,6 @@ orb=args.orb
 ra_pm=args.rapm
 dec_pm=args.decpm
 
-
-if time==None and n==None:
-    print 'Please choose a time or a number of measurements per orbit.'
 if time==None:
     time=np.linspace(0,orb*2*P*np.pi,n*orb)
 
@@ -51,7 +48,7 @@ def apparent_orbit(t,ti,a,p,v,u,ang,rot):
     b=a*np.cos(ang)
     x=a*np.cos((t-ti)/p)
     y=b*np.sin((t-ti)/p)
-    mod_x=x*np.sin(rot)-y*np.cos(rot)+v*(t-ti)
+    mod_x=-x*np.sin(rot)+y*np.cos(rot)+v*(t-ti)
     mod_y=x*np.cos(rot)+y*np.sin(rot)+u*(t-ti)
     point=[mod_x,mod_y]
     output.append(point)
@@ -78,6 +75,24 @@ except TypeError:
 
 #Question 2
 
+
+#Question 3
+
+def residuals(p,y,t):
+    ang,rot=p
+    mi=maj*np.cos(ang)
+    el_x=maj*np.cos((t-t_0)/P)
+    el_y=mi*np.sin((t-t_0)/P)
+    mod_x=-el_x*np.sin(rot)+el_y*np.cos(rot)+ra_pm*(t-t_0)
+    mod_y=el_x*np.cos(rot)+el_y*np.sin(rot)+dec_pm*(t-t_0)
+    err=y-mod_y
+    return err
+
+p0=[1,1]
+
+plsq=leastsq(residuals,p0[:],args=(ran_dec,time))
+print plsq[0]
+
 #Randomizing x and y
 def Randomize(x,y):
     output=[]
@@ -92,54 +107,40 @@ values=np.array(Randomize(ra,dec))
 ran_ra=values[:,0]
 ran_ra=ran_ra[:,0]
 
-print ran_ra
-print len(ran_ra)
 
 ran_dec=values[:,1]
 ran_dec=ran_dec[:,0]
-
-print ran_dec
-print len(ran_dec)
-
-b=maj*np.cos(i)
-x=maj*np.cos((time-t_0)/P)
-y=b*np.sin((time-t_0)/P)
-mod_x=x*np.sin(l)-y*np.cos(l)+ra_pm*(time-t_0)
-mod_y=x*np.cos(l)+y*np.sin(l)+dec_pm*(time-t_0)
-print mod_x
-print len(mod_x)
-print mod_y
-print len(mod_y)
-
-print ran_ra-mod_x
-
-#Question 3
-class func:
-    def __init__(self,ang,rot):
-        self.ang=ang
-        self.rot=rot
-    def residual(self,x,y):
-        mi=maj*np.cos(self.ang)
-        el_x=maj*np.cos((time-t_0)/P)
-        el_y=mi*np.sin((time-t_0)/P)
-        mod_x=el_x*np.sin(self.rot)-el_y*np.cos(self.rot)+ra_pm*(time-t_0)
-        mod_y=el_x*np.cos(self.rot)+el_y*np.sin(self.rot)+dec_pm*(time-t_0)
-        mod_x=np.array(mod_x)
-        mod_y=np.array(mod_y)
-        res_y=y-mod_y
-        res_x=x-mod_x
-        return (np.sqrt((res_x)**2),np.sqrt((res_y)**2))
-
-f=func(1,1)
-
-plsq=leastsq(f.residual,(1,1),args=(ran_ra,ran_dec))
-
-print plsq
 
 
 fig=plt.figure()
 ax=fig.add_subplot(111)
 ax.plot(ran_ra,ran_dec,'o',color='red')
 ax.plot(ra,dec,'o',color='blue')
-plt.show()
+#plt.show()
 
+
+#Question 3
+
+def residuals(p,y,t):
+    ang,rot=p
+    mi=maj*np.cos(ang)
+    el_x=maj*np.cos((t-t_0)/P)
+    el_y=mi*np.sin((t-t_0)/P)
+    mod_x=-el_x*np.sin(rot)+el_y*np.cos(rot)+ra_pm*(t-t_0)
+    mod_y=el_x*np.cos(rot)+el_y*np.sin(rot)+dec_pm*(t-t_0)
+    err=y-mod_y
+    return err
+
+x=np.linspace(0,10)
+y_true=3*x+1
+y_meas=np.random.normal(loc=y,scale=0.1)
+
+def residual(p,y,x):
+    m,b=p
+    err=y-(m*x+b)
+    return err
+
+p0=[3,1]
+
+plsq=leastsq(residual,p0,args=(y_meas,x))
+print plsq[0]
