@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+#this code will take positions in right ascension and declination and use them 
+#to model an orbit.
+
+import ephem
+import numpy as np
+import matplotlib as plt
+
+
+ra=[2.65123,2.52769,2.02193]
+dec=[-11.3902,-11.4058,-11.7345]
+
+plt.plot(ra,dec)
+plt.show()
