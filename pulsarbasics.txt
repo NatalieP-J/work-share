@@ -1,2 +1,27 @@
 http://www.astro.virginia.edu/~rsl4v/PSC/time.html
 http://www.cv.nrao.edu/course/astr534/PulsarTiming.html
+
+The effect is imposed on light over the course of its propagation from its origin to the Earth, through the interstellar medium. Here, the effect is caused by free electrons and can be characterized as a difference in the refractive index seen by the two circularly polarized propagation modes. Hence, in contrast to the Faraday effect in solids or liquids, interstellar Faraday rotation has a simple dependence on the wavelength of light (λ), namely:
+
+    \beta = \mathrm{RM} \lambda^2 \,
+
+where the overall strength of the effect is characterized by RM, the rotation measure. This in turn depends on the axial component of the interstellar magnetic field B||, and the number density of electrons ne, both of which vary along the propagation path. In Gaussian cgs units the rotation measure is given by:
+
+    \mathrm{RM} = \frac{e^3}{2\pi m^2c^4}\int_0^d n_e(s) B_{||}(s) \;\mathrm{d}s,
+
+or in SI units:
+
+    \mathrm{RM} = \frac{e^3}{8\pi^2 \varepsilon_0 m^2c^3} \int_0^d n_e(s) B_{||}(s) \;\mathrm{d}s \approx (2.62 \times 10^{-13} \, T^{-1} ) \, \int_0^d n_e(s) B_{||}(s) \;\mathrm{d}s,
+
+where
+
+    ne(s) is the density of electrons at each point s along the path
+    B||(s) is the component of the interstellar magnetic field in the direction of propagation at each point s along the path
+    e is the charge of an electron;
+    c is the speed of light in a vacuum;
+    m is the mass of an electron;
+    \epsilon_0' is the vacuum permittivity;
+
+The integral is taken over the entire path from the source to the observer.
+
+Faraday rotation is an important tool in astronomy for the measurement of magnetic fields, which can be estimated from rotation measures given a knowledge of the electron number density.[5] In the case of radio pulsars, the dispersion caused by these electrons results in a time delay between pulses received at different wavelengths, which can be measured in terms of the electron column density, or dispersion measure. A measurement of both the dispersion measure and the rotation measure therefore yields the weighted mean of the magnetic field along the line of sight. The same information can be obtained from objects other than pulsars, if the dispersion measure can be estimated based on reasonable guesses about the propagation path length and typical electron densities. In particular, Faraday rotation measurements of polarized radio signals from extragalactic radio sources occulted by the solar corona can be used to estimate both the electron density distribution and the direction and strength of the magnetic field in the coronal plasma.[6]
