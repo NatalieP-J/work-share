@@ -1,0 +1,234 @@
+import numpy as np
+from numpy.polynomial.polynomial import Polynomial
+from astropy.table import Table
+from astropy.time import Time
+from astropy.coordinates.angles import Angle
+from astropy.constants import c
+import astropy.units as u
+import de405
+import jplephem.ephem
+import observability
+
+#This package requires Python 2.7.5
+
+deg2rad = np.pi/180.
+
+class ELL1Ephemeris(dict):
+    """Empheris based on tempo .par file for PSR J0337"""
+
+    #self refers to parts of name - ie rows of the file
+    def __init__(self, name='psrj1959.par'):
+        d, e, f = par2dict(name)
+        # make dictionary
+        dict.__init__(self, d)
+        self.err = e
+        self.fix = f
+    
+    #TASC is line 16 in the par file
+    #PBDOT is line 15 in the par file
+    def evaluate(self, par, mjd, t0par='TASC', integrate=False):
+        parpol = Polynomial((self[par], self.get(par+'DOT', 0.)))
+        if integrate: 
+            parpol = parpol.integ()
+        dt = (mjd-self[t0par])*24.*3600.
+        return parpol(dt)
+
+    #mean anomaly=time/2*pi*period
+    #function takes a mjd, so presumably mean anomaly at specific time
+    def mean_anomaly(self, mjd):
+        return 2.*np.pi*self.evaluate('FB', mjd, integrate=True)
+
+    def orbital_delay(self, mjd):
+        """Delay in s.  Includes higher order terms and Shapiro delay."""
+        ma = self.mean_anomaly(mjd)#calculate mean anomaly
+        an = 2.*np.pi*self.evaluate('FB', mjd)
+        a1, e1, e2 = self['A1'], self['EPS1'], self['EPS2'] #call lines in file
+        dre = a1*(np.sin(ma)-0.5*(e1*np.cos(2*ma)-e2*np.sin(2*ma)))
+        drep = a1*np.cos(ma)
+        drepp = -a1*np.sin(ma)
+        d2bar = dre*(1-an*drep+(an*drep)**2+0.5*an**2*dre*drepp)
+        if 'M2' in self.keys():
+            brace = 1.-self['SINI']*np.sin(ma)
+            d2bar += -2.*self['M2']*np.log(brace)
+        return d2bar
+
+    def radial_velocity(self, mjd):
+        """Radial velocity in lt-s/s.  Higher-order terms ignored."""
+        ma = self.mean_anomaly(mjd)
+        kcirc = 2.*np.pi*self['A1']*self.evaluate('FB', mjd)
+        e1, e2 = self['EPS1'], self['EPS2']
+        vrad = kcirc*(np.cos(ma)+e1*np.sin(2*ma)+e2*np.cos(2*ma))
+        return vrad
+
+    def pos(self, mjd):
+        ra = self.evaluate('RAJ', mjd, 'POSEPOCH')*deg2rad
+        dec = self.evaluate('DECJ', mjd, 'POSEPOCH')*deg2rad
+        ca = np.cos(ra)
+	sa = np.sin(ra)
+	cd = np.cos(dec)
+	sd = np.sin(dec)
+        return np.array([ca*cd, sa*cd, sd])
+
+
+#par file to a dictionary with appropriately named calls
+def par2dict(name, substitutions={'F1': 'FDOT', 'F2': 'F2DOT',
+                                  'PMRA': 'RAJDOT', 'PMDEC': 'DECJDOT'}):
+    d = {}; e = {}; f = {}
+    with open(name, 'r') as parfile:
+        for lin in parfile:
+            parts = lin.split()
+            item = parts[0].upper()
+            item = substitutions.get(item, item)
+            assert 2 <= len(parts) <= 4
+            try:
+                value = float(parts[1].lower().replace('d', 'e'))
+                d[item] = value
+            except ValueError:
+                d[item] = parts[1]
+            if len(parts) == 4:
+                f[item] = int(parts[2])
+                e[item] = float(parts[3].lower().replace('d', 'e'))
+        # convert RA, DEC from strings (hh:mm:ss.sss, ddd:mm:ss.ss) to degrees
+        d['RAJ'] = Angle(d['RAJ'], u.hr).degrees
+        e['RAJ'] = e['RAJ']/15./3600.
+        d['DECJ'] = Angle(d['DECJ'], u.deg).degrees
+        e['DECJ'] = e['DECJ']/3600.
+        if 'RAJDOT' in d.keys() and 'DECJDOT' in d.keys():
+            # convert to degrees/s
+            conv = (1.*u.mas/u.yr).to(u.deg/u.s).value
+            cosdec = np.cos((d['DECJ']*u.deg).to(u.rad).value)
+            d['RAJDOT'] *= conv/cosdec
+            e['RAJDOT'] *= conv/cosdec
+            d['DECJDOT'] *= conv
+            e['DECJDOT'] *= conv
+
+        if 'FB' not in d.keys():
+            pb = d.pop('PB')
+            d['FB'] = 1./(pb*24.*3600.)
+            e['FB'] = e.pop('PB')/pb*d['FB']
+            f['FB'] = f.pop('PB')
+            if 'PBDOT' in d.keys():
+                d['FBDOT'] = d.pop('PBDOT')/pb*d['FB']
+                e['FBDOT'] = e.pop('PBDOT')/pb*d['FB']
+                f['FBDOT'] = f.pop('PBDOT')
+    return d, e, f
+
+class JPLEphemeris(jplephem.ephem.Ephemeris):
+    """JPLEphemeris, but including 'earth'"""
+    def position(self, name, tdb):
+        """Compute the position of `name` at time `tdb`.
+
+        Run the `names()` method on this ephemeris to learn the values
+        it will accept for the `name` parameter, such as ``'mars'`` and
+        ``'earthmoon'``.  The barycentric dynamical time `tdb` can be
+        either a normal number or a NumPy array of times, in which case
+        each of the three return values ``(x, y, z)`` will be an array.
+
+        """
+        if name == 'earth':
+            return self._interpolate_earth(tdb, False)
+        else:
+            return self._interpolate(name, tdb, False)
+
+    def compute(self, name, tdb):
+        """Compute the position and velocity of `name` at time `tdb`.
+
+        Run the `names()` method on this ephemeris to learn the values
+        it will accept for the `name` parameter, such as ``'mars'`` and
+        ``'earthmoon'``.  The barycentric dynamical time `tdb` can be
+        either a normal number or a NumPy array of times, in which case
+        each of the six return values ``(x, y, z, dx, dy, dz)`` will be
+        an array.
+        """
+        if name == 'earth':
+            return self._interpolate_earth(tdb, True)
+        else:
+            return self._interpolate(name, tdb, True)
+
+    def _interpolate_earth(self, tdb, differentiate):
+        earthmoon_ssb = self._interpolate('earthmoon', tdb, differentiate)
+        moon_earth = self._interpolate('moon', tdb, differentiate)
+        # earth relative to Moon-Earth barycentre
+        # earth_share=1/(1+EMRAT), EMRAT=Earth/Moon mass ratio
+        return -moon_earth*self.earth_share + earthmoon_ssb
+
+if __name__ == '__main__':
+    eph1957 = ELL1Ephemeris('psrj1959.par')
+    jpleph = JPLEphemeris(de405)
+    mjd = Time('2013-04-20', scale='utc').mjd+np.linspace(0.,1.,25)
+    mjd = Time(mjd, format='mjd', scale='utc', 
+               lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
+               lat=(19*u.deg+05*u.arcmin+47.46*u.arcsec).to(u.deg).value)
+
+    # orbital delay and velocity (lt-s and v/c)
+    d_orb = eph1957.orbital_delay(mjd.tdb.mjd)
+    v_orb = eph1957.radial_velocity(mjd.tdb.mjd)
+
+    # direction to target
+    dir_1957 = eph1957.pos(mjd.tdb.mjd)
+
+    # Delay from and velocity of centre of earth to SSB (lt-s and v/c)
+    posvel_earth = jpleph.compute('earth', mjd.tdb.jd)
+    pos_earth = posvel_earth[:3]/c.to(u.km/u.s).value
+    vel_earth = posvel_earth[3:]/c.to(u.km/u.day).value
+
+    d_earth = np.sum(pos_earth*dir_1957, axis=0)
+    v_earth = np.sum(vel_earth*dir_1957, axis=0)
+
+    #GMRT from tempo2-2013.3.1/T2runtime/observatory/observatories.dat
+    xyz_gmrt = (1656318.94, 5797865.99, 2073213.72)
+    # Rough delay from observatory to center of earth
+    # mean sidereal time (checked it is close to rf_ephem.utc_to_last)
+    lmst = (observability.time2gmst(mjd)/24. + mjd.lon/360.)*2.*np.pi
+    coslmst, sinlmst = np.cos(lmst), np.sin(lmst)
+    # rotate observatory vector
+    xy = np.sqrt(xyz_gmrt[0]**2+xyz_gmrt[1]**2)
+    pos_gmrt = np.array([xy*coslmst, xy*sinlmst,
+                         xyz_gmrt[2]*np.ones_like(lmst)])/c.si.value
+    vel_gmrt = np.array([-xy*sinlmst, xy*coslmst,
+                          np.zeros_like(lmst)]
+                        )*2.*np.pi*366.25/365.25/c.to(u.m/u.day).value
+    # take inner product with direction to pulsar
+    d_topo = np.sum(pos_gmrt*dir_1957, axis=0)
+    v_topo = np.sum(vel_gmrt*dir_1957, axis=0)
+    delay = d_topo + d_earth + d_orb
+    delay_diff=[]
+    i=0
+    while i < 24:
+        diff=delay[i+1]-delay[i]
+        delay_diff.append(diff)
+        i+=1
+    rv = v_topo + v_earth + v_orb
+
+    # if True:
+    #     # try SOFA routines (but without UTC -> UT1)
+    #     import sidereal
+    #     # SHOULD TRANSFER TO UT1!!
+    #     gmst = sidereal.gmst82(mjd.utc.jd1, mjd,utc.jd2)
+        
+
+    if False:
+        # check with Fisher's ephemeris
+        import rf_ephem
+        rf_ephem.set_ephemeris_dir('/data/mhvk/packages/jplephem', 'DEc421')
+        rf_ephem.set_observer_coordinates(*xyz_gmrt)
+        rf_delay = rf_ephem.pulse_delay(
+            eph1957.evaluate('RAJ',mjd.tdb.mjd[0])/15., 
+            eph1957.evaluate('DECJ',mjd.tdb.mjd[0]),
+            int(mjd.utc.mjd[0]), 
+            mjd.utc.mjd[0]-int(mjd.utc.mjd[0]), 
+            len(mjd),
+            (mjd.utc.mjd[1]-mjd.utc.mjd[0])*24.*3600.)['delay']
+        rf_rv = rf_ephem.doppler_fraction(
+            eph1957.evaluate('RAJ',mjd.tdb.mjd[0])/15., 
+            eph1957.evaluate('DECJ',mjd.tdb.mjd[0]),
+            int(mjd.utc.mjd[0]), 
+            mjd.utc.mjd[0]-int(mjd.utc.mjd[0]), 
+            len(mjd),
+            (mjd.utc.mjd[1]-mjd.utc.mjd[0])*24.*3600.)['frac']
+
+        import matplotlib.pylab as plt
+        plt.ion()
+        plt.plot(mjd.utc.mjd, delay-rf_delay-d_orb)
+        plt.plot(mjd.utc.mjd, (rv-rf_rv-v_orb)*c.to(u.km/u.s).value)
+        plt.draw()

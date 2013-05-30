@@ -1,0 +1,21 @@
+from distutils.core import setup, Extension
+
+PACKAGE_ROOT = os.path.relpath(os.path.dirname(__file__))
+
+setup(name='sidereal', ext_modules=get_extensions())
+
+
+def get_extensions():
+    sources = [os.path.join(PACKAGE_ROOT, "sofa_sidereal.pyx")]
+    include_dirs = ['numpy']
+    libraries = ['sofa_c']
+
+    return [Extension(
+            name="sofa_sidereal",
+            sources=sources,
+            include_dirs=include_dirs,
+            libraries=libraries,
+            language="c",)]
+
+def get_external_libraries():
+    return ['sofa']
