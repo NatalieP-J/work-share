@@ -143,6 +143,7 @@ class JPLEphemeris(jplephem.ephem.Ephemeris):
         either a normal number or a NumPy array of times, in which case
         each of the six return values ``(x, y, z, dx, dy, dz)`` will be
         an array.
+UNITS          TDB
         """
         if name == 'earth':
             return self._interpolate_earth(tdb, True)
@@ -159,10 +160,14 @@ class JPLEphemeris(jplephem.ephem.Ephemeris):
 if __name__ == '__main__':
     eph1957 = ELL1Ephemeris('psrj1959.par')
     jpleph = JPLEphemeris(de405)
-    mjd = Time('2013-04-20', scale='utc').mjd+np.linspace(0.,1.,25)
+    hour=1./24
+    pulse_1000=(1.667)/(60*60*24)
+    #Modified for our observing time
+    mjd = Time('2013-05-16 23:40:00', scale='utc').mjd+np.linspace(0.,hour,hour/pulse_1000)
     mjd = Time(mjd, format='mjd', scale='utc', 
                lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
                lat=(19*u.deg+05*u.arcmin+47.46*u.arcsec).to(u.deg).value)
+
 
     # orbital delay and velocity (lt-s and v/c)
     d_orb = eph1957.orbital_delay(mjd.tdb.mjd)
@@ -200,16 +205,41 @@ if __name__ == '__main__':
     
 
     #My additions
+    #Right now the speed is greater than the speed of light
     time=mjd.tdb.mjd
-    rvc=rv*c
-    m_delay=delay*3e8
-    time_delay=rvc/m_delay
-    mjd_delay=time_delay/(60*60*24)
+    #rvc=[]
+    #c=np.array(c)
+    #for i in range(len(rv)):
+        #rv_c=rv[i]*c
+        #mod_rv=rv_c+c
+        #rvc.append(mod_rv)
+    #m_delay=delay*c
+    #time_delay=rvc/m_delay
+    #mjd_delay=time_delay/(60*60*24)
+    #arrival=time+mjd_delay
+    #diff=[]
+    #for i in range(len(arrival)-1):
+        #change=arrival[i+1]-arrival[i]
+        #diff.append(change)
+    
+    #Natalie's additions
+    
+    seconds_delay=delay
+    mjd_delay=seconds_delay/(60*60*24)
     arrival=time+mjd_delay
     
-    t = Time(arrival,format='mjd',scale='utc')
+    ist=[]
+    for i in range(len(arrival)):
+        ist_fix=arrival[i]+(5.5/24)
+        ist.append(ist_fix) 
+    
+    t = Time(ist,format='mjd',scale='utc',precision=9)
+    time_ist=t.iso 
+    
+    with open("PhaseArrayArrival.txt","w") as text_file:
+        for i in range(len(time_ist)):
+            text_file.write("%s\n"%time_ist[i])
 
-    time=t.yday
 
     # if True:
     #     # try SOFA routines (but without UTC -> UT1)

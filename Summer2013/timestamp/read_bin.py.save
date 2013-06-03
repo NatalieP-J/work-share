@@ -1,0 +1,16 @@
+import io
+import struct
+import binhex
+
+filename = '/mnt/disk3/gsbuser/EoR/xaa'
+
+def main():
+	buffer_reader = io.open(filename,'br')
+	buffer = buffer_reader.read(4)
+	print(buffer)
+	print(int(buffer,2))	
+	
+	infile = struct.unpack_from('i2',buffer)	
+	print((infile[0]))
+
+main()

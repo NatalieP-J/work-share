@@ -198,6 +198,19 @@ if __name__ == '__main__':
     delay = d_topo + d_earth + d_orb
     rv = v_topo + v_earth + v_orb
 
+    time=mjd.tdb.mjd
+    seconds_delay=delay
+    mjd_delay=seconds_delay/(60*60*24)
+    arrival=time+mjd_delay
+    
+    ist=[]
+    for i in range(len(arrival)):
+        ist_fix=arrival[i]+(5.5/24)
+        ist.append(ist_fix) 
+
+    t = Time(ist,format='mjd',scale='utc',precision=9)
+    time_ist=t.iso
+
     # if True:
     #     # try SOFA routines (but without UTC -> UT1)
     #     import sidereal
