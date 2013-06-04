@@ -44,6 +44,15 @@ X=x
 Y=y*np.cos(L)-z*np.sin(L)
 Z=y*np.sin(L)+z*np.cos(L)
 
-u=X*np.sin(H)+Y*np.cos(H)
-v=-X*np.sin(d)*np.cos(H)+Y*np.sin(d)*np.sin(H)+Z*np.cos(d)
-w=X*np.cos(d)*np.cos(H)-Y*np.cos(d)*np.sin(H)+Z*np.sin(d)
+locations=[]
+i=0
+while i<63:
+    m=X[i]*np.sin(H)+Y[i]*np.cos(H)
+    n=-X[i]*np.sin(d)*np.cos(H)+Y[i]*np.sin(d)*np.sin(H)+Z[i]*np.cos(d)
+    o=X[i]*np.cos(d)*np.cos(H)-Y[i]*np.cos(d)*np.sin(H)+Z[i]*np.sin(d)
+    point=(m/c,n/c,o/c)
+    if point not in locations:
+        locations.append(point)
+    else:
+        pass
+    i+=1
