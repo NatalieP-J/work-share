@@ -75,8 +75,7 @@ class ELL1Ephemeris(dict):
 	sd = np.sin(dec)
         return np.array([ca*cd, sa*cd, sd])
 
-def par2dict(name, substitutions={'F1': 'FDOT', 'F2': 'F2DOT',
-                                  'PMRA': 'RAJDOT', 'PMDEC': 'DECJDOT'}):
+def par2dict(name, substitutions={'F0':'F','F1':'FDOT','F2':'FDOT2','PMRA':'RAJDOT','PMDEC':'DECJDOT'}):
     d = {}; e = {}; f = {}
     with open(name, 'r') as parfile:
         for lin in parfile:
@@ -159,10 +158,15 @@ class JPLEphemeris(jplephem.ephem.Ephemeris):
 if __name__ == '__main__':
     eph1957 = ELL1Ephemeris('psrj1959.par')
     jpleph = JPLEphemeris(de405)
-    mjd = Time('2013-04-20', scale='utc').mjd+np.linspace(0.,1.,25)
+    mjd = Time('2013-05-16 23:43:00', scale='utc').mjd+np.linspace(0.,1.,25)
     mjd = Time(mjd, format='mjd', scale='utc', 
                lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
                lat=(19*u.deg+05*u.arcmin+47.46*u.arcsec).to(u.deg).value)
+    
+    #Does this change over time? If not, can set it to a constant and use f_dp
+    #for time intervals
+    f_p=eph1957.evaluate('F',mjd.tdb.mjd,t0par='PEPOCH')
+    P_0=1./f_p[0]
 
     # orbital delay and velocity (lt-s and v/c)
     d_orb = eph1957.orbital_delay(mjd.tdb.mjd)
@@ -198,6 +202,13 @@ if __name__ == '__main__':
     delay = d_topo + d_earth + d_orb
     rv = v_topo + v_earth + v_orb
 
+    #Lorentz factor - Doppler shifting the frequency
+    L=(1/(1+rv))
+    f_dp=f_p*L
+    P_dp=1./f_dp
+
+    d_doppler=abs(P-P_dp)
+    
     time=mjd.tdb.mjd
     seconds_delay=delay
     mjd_delay=seconds_delay/(60*60*24)
