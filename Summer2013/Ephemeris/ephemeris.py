@@ -158,9 +158,13 @@ class JPLEphemeris(jplephem.ephem.Ephemeris):
 if __name__ == '__main__':
     eph1957 = ELL1Ephemeris('psrj1959.par')
     jpleph = JPLEphemeris(de405)
+<<<<<<< HEAD
    
     #Phased Array
     mjd = Time('2013-05-16 23:43:00', scale='utc').mjd+np.linspace(0.,1.,1.)
+=======
+    mjd = Time('2013-05-20 01:42:00', scale='utc').mjd+np.linspace(0.,1.,1)
+>>>>>>> New timing
     mjd = Time(mjd, format='mjd', scale='utc', 
                lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
                lat=(19*u.deg+05*u.arcmin+47.46*u.arcsec).to(u.deg).value)
@@ -171,6 +175,7 @@ if __name__ == '__main__':
     f_p=f_p[0]
     P_0=1./f_p
     P_1000=1000*P_0
+<<<<<<< HEAD
     end=(1+(3/60))/24
     period=P_1000/(60*60*24)
     
@@ -193,6 +198,14 @@ if __name__ == '__main__':
 
     d_earth = np.sum(pos_earth*dir_1957, axis=0)
     v_earth = np.sum(vel_earth*dir_1957, axis=0)
+=======
+    end=(37./60)/24
+    period=P_1000/(60*60*24)
+    mjd = Time('2013-05-16 01:42:00', scale='utc').mjd+np.linspace(0.,end, end/period)
+    mjd = Time(mjd, format='mjd', scale='utc', 
+               lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
+               lat=(19*u.deg+05*u.arcmin+47.46*u.arcsec).to(u.deg).value)
+>>>>>>> New timing
 
     #GMRT from tempo2-2013.3.1/T2runtime/observatory/observatories.dat
     xyz_gmrt = (1656318.94, 5797865.99, 2073213.72)
@@ -288,15 +301,27 @@ if __name__ == '__main__':
     # take inner product with direction to pulsar
     d_topo = np.sum(pos_gmrt*dir_1957, axis=0)
     v_topo = np.sum(vel_gmrt*dir_1957, axis=0)
+<<<<<<< HEAD
     delay = d_topo + d_earth + d_orb
     rv = -v_topo - v_earth + v_orb
 
 
     L=(1/(1+rv))
+=======
+    rv = v_topo + v_earth + v_orb
+
+    #Lorentz factor - Doppler shifting the frequency
+    L=(1/(1-rv))
+>>>>>>> New timing
     f_dp=f_p*L
     P_dp=1./f_dp
 
     d_doppler=P_dp-P_0
+<<<<<<< HEAD
+=======
+    
+    delay = d_topo + d_earth + d_orb + d_doppler
+>>>>>>> New timing
     
     time=mjd.tdb.mjd
     seconds_delay=delay
@@ -307,9 +332,21 @@ if __name__ == '__main__':
     for i in range(len(arrival)):
         ist_fix=arrival[i]+(5.5/24)
         ist.append(ist_fix) 
+    time_utc=[]
+    for i in range(len(time)):
+        ist_fix=time[i]+(5.5/24)
+        time_utc.append(ist_fix) 
 
     t = Time(ist,format='mjd',scale='utc',precision=9)
+    r = Time(time_utc,format='mjd',scale='utc',precision=9)
     time_ist=t.iso
+    time=r.iso
+
+    with open("RawVoltageArrival.dat","w") as data:
+        for i in range(len(time_ist)):
+            data.write("%s\n"%time_ist[i])
+    
+    
 
     with open("RawVoltageArrival.dat","w") as data:
         for i in range(len(time_ist)):
