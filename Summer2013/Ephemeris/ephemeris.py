@@ -214,7 +214,7 @@ if __name__ == '__main__':
     f_dp=f_p*L
     P_dp=1./f_dp
 
-    d_doppler=abs(P-P_dp)
+    d_doppler=P_dp-P_0
     
     time=mjd.tdb.mjd
     seconds_delay=delay
