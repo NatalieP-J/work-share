@@ -166,7 +166,16 @@ if __name__ == '__main__':
     #Does this change over time? If not, can set it to a constant and use f_dp
     #for time intervals
     f_p=eph1957.evaluate('F',mjd.tdb.mjd,t0par='PEPOCH')
-    P_0=1./f_p[0]
+    f_p=f_p[0]
+    P_0=1/f_p
+    P_1000=1000*P_0
+    end=1./24
+    period=P_1000/(60*60*24)
+    mjd = Time('2013-05-16 23:43:00', scale='utc').mjd+np.linspace(0.,end,end/period)
+    mjd = Time(mjd, format='mjd', scale='utc', 
+               lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
+               lat=(19*u.deg+05*u.arcmin+47.46*u.arcsec).to(u.deg).value)
+    
 
     # orbital delay and velocity (lt-s and v/c)
     d_orb = eph1957.orbital_delay(mjd.tdb.mjd)
@@ -200,9 +209,7 @@ if __name__ == '__main__':
     d_topo = np.sum(pos_gmrt*dir_1957, axis=0)
     v_topo = np.sum(vel_gmrt*dir_1957, axis=0)
     delay = d_topo + d_earth + d_orb
-    rv = v_topo + v_earth + v_orb
 
-    #Lorentz factor - Doppler shifting the frequency
     L=(1/(1+rv))
     f_dp=f_p*L
     P_dp=1./f_dp
@@ -221,6 +228,10 @@ if __name__ == '__main__':
 
     t = Time(ist,format='mjd',scale='utc',precision=9)
     time_ist=t.iso
+    
+    with open("Arrival.dat","w") as data:
+        for i in range(len(time_ist)):
+            data.write("%s\n"%time_ist[i])
 
     # if True:
     #     # try SOFA routines (but without UTC -> UT1)
