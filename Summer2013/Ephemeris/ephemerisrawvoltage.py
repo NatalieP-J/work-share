@@ -162,14 +162,12 @@ if __name__ == '__main__':
     mjd = Time(mjd, format='mjd', scale='utc', 
                lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
                lat=(19*u.deg+05*u.arcmin+47.46*u.arcsec).to(u.deg).value)
-    
-    #Does this change over time? If not, can set it to a constant and use f_dp
-    #for time intervals
+
     f_p=eph1957.evaluate('F',mjd.tdb.mjd,t0par='PEPOCH')
     f_p=f_p[0]
     P_0=1./f_p
     P_1000=1000*P_0
-    end=(37./60)/24
+    end=(22./60)/24
     period=P_1000/(60*60*24)
     
     mjd = Time('2013-05-16 01:42:00', scale='utc').mjd+np.linspace(0.,end,end/period)
@@ -209,7 +207,7 @@ if __name__ == '__main__':
     d_topo = np.sum(pos_gmrt*dir_1957, axis=0)
     v_topo = np.sum(vel_gmrt*dir_1957, axis=0)
     delay = d_topo + d_earth + d_orb
-    rv = v_topo + v_earth + v_orb
+    rv = -v_topo - v_earth + v_orb
 
     #Lorentz factor - Doppler shifting the frequency
     L=(1/(1+rv))
@@ -217,7 +215,8 @@ if __name__ == '__main__':
     P_dp=1./f_dp
 
     d_doppler=P_dp-P_0
-    
+    delay = delay + d_doppler
+
     time=mjd.tdb.mjd
     seconds_delay=delay
     mjd_delay=seconds_delay/(60*60*24)
