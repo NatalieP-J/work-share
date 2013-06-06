@@ -16,6 +16,20 @@ def IterativeFloatAppend(values,index):
         new_list.append(point)
     return new_list
 
+def IterativeIntAppend(values,index):
+    new_list=[]
+    for i in range((len(values))-1):
+        point=int(values[i][index])
+        new_list.append(point)
+    return new_list
+
+def IterativeStrAppend(values,index):
+    new_list=[]
+    for i in range((len(values))-1):
+        point=str(values[i][index])
+        new_list.append(point)
+    return new_list
+
 def Differences(values):
     new_list=[]
     for i in range((len(values))-1):
