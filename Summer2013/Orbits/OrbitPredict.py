@@ -40,8 +40,6 @@ ra_err=contents[:,1]
 dec=contents[:,2]
 dec_err=contents[:,3]
 
-
-
 time=np.linspace(t_0,(orb*2*P*np.pi)+t_0,len(ra))
 
 plt.errorbar(ra,dec,xerr=ra_err,yerr=dec_err,fmt='bo',linestyle='none', label='Measured Data')
