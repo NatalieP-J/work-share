@@ -21,10 +21,12 @@ data=data[0:65]
 glomp=man.IterativeStrAppend(data,4)
 antenna=man.IterativeIntAppend(data,1)
 
-frequency=156.*1e6
+frequency=156.*1e6 #per Greg's email
 speed=299792458.0 #from astropy
 wvlength=speed/frequency
 
+
+#NOTE THAT THIS VALUE MAY NEED TO BE NEGATIVE
 delay=[]
 for i in range(len(glomp)):
     point=float(glomp[i][:-9])*wvlength
