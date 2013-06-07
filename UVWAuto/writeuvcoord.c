@@ -25,9 +25,9 @@
 #define PNT_RA 5.2342977313717016 //PSR1957+20 May 16 2013
 #define PNT_DEC 0.36310074419714206
 
-#define NPOD 64
+#define NPOD 30
 #define EPOCH_START (0)
-#define NEPOCH (7)
+#define NEPOCH (4797)
 #define NEPOCH_READ (NEPOCH+EPOCH_START)
 #define DNEPOCH_CALIB (73)
 #define DFREQ_CALIB  (512/32)
@@ -100,12 +100,12 @@ int main(int argc, char *argv[]) {
   for(iepoch=(tstart+T_CUTOFF);iepoch<(NEPOCH_READ-T_CUTOFF);iepoch++) {
           ha=RA_pt[iepoch]-GST[iepoch]-TEL_LON;
           chi=atan2(cos(TEL_LAT)*sin(ha),sin(TEL_LAT)*cos(PNT_DEC)-cos(TEL_LAT)*sin(PNT_DEC)*cos(ha));
-//    printf("h=%f chi=%f\n",ha,chi);
+	  // printf("iepoch=%i h=%f chi=%f\n",iepoch,ha,chi);
 
     tsize = NCROSS*iepoch;
 
      /* loop over baselines */
-    for(bi=0;bi<NPOD;bi++)
+    for(bi=0;bi<1;bi++)
       for(bj=bi;bj<NPOD;bj++) {
 
 	get_uv(RA_pt[iepoch]-GST[iepoch], Dec_pt[iepoch], bi, bj,
