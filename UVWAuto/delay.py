@@ -1,10 +1,10 @@
 import manage as man
 import sys
 
-def WriteFileCols(values1,values2,values3,fname):
+def WriteFileCols(values1,values2,fname):
     with open(fname,"w") as data:
         for i in range(len(values1)):
-            data.write("{0}\t{1}\t{2}\n".format(values1[i],values2[i],values3[i]))
+            data.write("{0}\t{1}\n".format(values1[i],values2[i]))
 
 def LoadDataSpace(fname):
     f=open(fname,'r')
@@ -17,17 +17,18 @@ def LoadDataSpace(fname):
 fname=sys.argv[1]
 
 data=LoadDataSpace(fname)
-
+data=data[0:65]
 glomp=man.IterativeStrAppend(data,4)
 antenna=man.IterativeIntAppend(data,1)
 
-direc=[]
+frequency=156.*1e6
+speed=299792458.0 #from astropy
+wvlength=speed/frequency
+
 delay=[]
 for i in range(len(glomp)):
-    point=float(glomp[i][-9:])
-    direc.append(point)
-    point=float(glomp[i][:-9])
+    point=float(glomp[i][:-9])*wvlength
     delay.append(point)
 
 
-WriteFileCols(antenna,delay,direc,"delay_{0}".format(fname)))
+WriteFileCols(antenna,delay,"delay_{0}".format(fname))
