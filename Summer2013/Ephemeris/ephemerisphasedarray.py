@@ -111,7 +111,7 @@ def par2dict(name, substitutions={'F0':'F','F1':'FDOT','F2':'FDOT2','PMRA':'RAJD
             e['FB'] = e.pop('PB')/pb*d['FB']
             f['FB'] = f.pop('PB')
             if 'PBDOT' in d.keys():
-                d['FBDOT'] = d.pop('PBDOT')/pb*d['FB']
+                d['FBDOT'] = - d.pop('PBDOT')/pb*d['FB']
                 e['FBDOT'] = e.pop('PBDOT')/pb*d['FB']
                 f['FBDOT'] = f.pop('PBDOT')
     return d, e, f
@@ -159,77 +159,75 @@ if __name__ == '__main__':
     eph1957 = ELL1Ephemeris('psrj1959.par')
     jpleph = JPLEphemeris(de405)
     #adjust 3 min for delay
-    mjd = Time('2013-05-16 23:40:00', scale='utc').mjd+np.linspace(0.,1.,1.)
+    mjd = Time('2013-05-16 23:40:00', scale='utc').mjd
     mjd = Time(mjd, format='mjd', scale='utc', 
                lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
                lat=(19*u.deg+05*u.arcmin+47.46*u.arcsec).to(u.deg).value)
+
+    time=mjd.tdb.mjd
+    end=(22./60)/24
+    finish=time+end
+    delay=[]
+    doppler_period=[]
     
-    #Does this change over time? If not, can set it to a constant and use f_dp
-    #for time intervals
-    f_p=eph1957.evaluate('F',mjd.tdb.mjd,t0par='PEPOCH')
-    f_p=f_p[0]
-    P_0=1./f_p
-    P_1000=1000*P_0
-    end=(1+(3./60))/24
-    period=P_1000/(60*60*24)
-    
-    #adjust 3 min for delay
-    mjd = Time('2013-05-16 23:40:00', scale='utc').mjd+np.linspace(0.,end,end/period)
-    mjd = Time(mjd, format='mjd', scale='utc', 
-               lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
-               lat=(19*u.deg+05*u.arcmin+47.46*u.arcsec).to(u.deg).value)
+    while time<finish:
+        f_p=eph1957.evaluate('F',time,t0par='PEPOCH')
+        P_0=1./f_p
+        P_1000=1000*P_0
+        period=P_1000/(60*60*24)
     
     # orbital delay and velocity (lt-s and v/c)
-    d_orb = eph1957.orbital_delay(mjd.tdb.mjd)
-    v_orb = eph1957.radial_velocity(mjd.tdb.mjd)
+        d_orb = eph1957.orbital_delay(time)
+        v_orb = eph1957.radial_velocity(time)
 
     # direction to target
-    dir_1957 = eph1957.pos(mjd.tdb.mjd)
+        dir_1957 = eph1957.pos(mjd.tdb.mjd)
 
     # Delay from and velocity of centre of earth to SSB (lt-s and v/c)
-    posvel_earth = jpleph.compute('earth', mjd.tdb.jd)
-    pos_earth = posvel_earth[:3]/c.to(u.km/u.s).value
-    vel_earth = posvel_earth[3:]/c.to(u.km/u.day).value
+        posvel_earth = jpleph.compute('earth', mjd.tdb.jd)
+        pos_earth = posvel_earth[:3]/c.to(u.km/u.s).value
+        vel_earth = posvel_earth[3:]/c.to(u.km/u.day).value
 
-    d_earth = np.sum(pos_earth*dir_1957, axis=0)
-    v_earth = np.sum(vel_earth*dir_1957, axis=0)
+        d_earth = np.sum(pos_earth*dir_1957, axis=0)
+        v_earth = np.sum(vel_earth*dir_1957, axis=0)
 
     #GMRT from tempo2-2013.3.1/T2runtime/observatory/observatories.dat
-    xyz_gmrt = (1656318.94, 5797865.99, 2073213.72)
+        xyz_gmrt = (1656318.94, 5797865.99, 2073213.72)
     # Rough delay from observatory to center of earth
     # mean sidereal time (checked it is close to rf_ephem.utc_to_last)
-    lmst = (observability.time2gmst(mjd)/24. + mjd.lon/360.)*2.*np.pi
-    coslmst, sinlmst = np.cos(lmst), np.sin(lmst)
+        lmst = (observability.time2gmst(mjd)/24. + mjd.lon/360.)*2.*np.pi
+        coslmst, sinlmst = np.cos(lmst), np.sin(lmst)
     # rotate observatory vector
-    xy = np.sqrt(xyz_gmrt[0]**2+xyz_gmrt[1]**2)
-    pos_gmrt = np.array([xy*coslmst, xy*sinlmst,
+        xy = np.sqrt(xyz_gmrt[0]**2+xyz_gmrt[1]**2)
+        pos_gmrt = np.array([xy*coslmst, xy*sinlmst,
                          xyz_gmrt[2]*np.ones_like(lmst)])/c.si.value
-    vel_gmrt = np.array([-xy*sinlmst, xy*coslmst,
+        vel_gmrt = np.array([-xy*sinlmst, xy*coslmst,
                           np.zeros_like(lmst)]
                         )*2.*np.pi*366.25/365.25/c.to(u.m/u.day).value
     # take inner product with direction to pulsar
-    d_topo = np.sum(pos_gmrt*dir_1957, axis=0)
-    v_topo = np.sum(vel_gmrt*dir_1957, axis=0)
-    delay = d_topo + d_earth + d_orb
-    rv = - v_topo - v_earth + v_orb
+        d_topo = np.sum(pos_gmrt*dir_1957, axis=0)
+        v_topo = np.sum(vel_gmrt*dir_1957, axis=0)
+        
+        total_rv = -v_topo - v_earth + v_orb
 
-    L=(1/(1+rv))
-    f_dp=f_p*L
-    P_dp=1./f_dp
+        L=(1/(1+total_rv))
+        f_dp=f_p*L
+        P_dp=1./f_dp
+        doppler_period.append(P_dp)
+        d_doppler=P_dp-P_0
 
-    d_doppler=P_dp-P_0
+        total_delay = d_topo + d_earth + d_orb + d_doppler
+       
+        seconds_delay=total_delay
+        mjd_delay=seconds_delay/(60*60*24)
     
-    time=mjd.tdb.mjd
-    seconds_delay=delay
-    mjd_delay=seconds_delay/(60*60*24)
-    arrival=time+mjd_delay
-    
-    ist=[]
-    for i in range(len(arrival)):
-        ist_fix=arrival[i]+(5.5/24)
-        ist.append(ist_fix) 
+        arrival=time+mjd_delay
+        ist_fix=arrival+(5.5/24)
+        delay.append(ist_fix) 
+        print "Time left: {0}\n".format(finish-time)
+        time+=period
 
-    t = Time(ist,format='mjd',scale='utc',precision=9)
+    t = Time(delay,format='mjd',scale='utc',precision=9)
     time_ist=t.iso
 
     with open("PhasedArrayArrival.dat","w") as data:

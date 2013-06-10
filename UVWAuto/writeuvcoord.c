@@ -22,12 +22,15 @@
 //#define PNT_RA 5.450813061405754115 //b2045-16-Jun 21 2011
 //#define PNT_DEC -0.28337325723894701157
 
-#define PNT_RA 5.2342977313717016 //PSR1957+20 May 16 2013
-#define PNT_DEC 0.36310074419714206
+//#define PNT_RA 5.2342977313717016 //PSR B1957+20 May 16 2013
+//#define PNT_DEC 0.36310074419714206
+
+#define PNT_RA 5.0690771926813802 //PSR B191+21 May 16 2013
+#define PNT_DEC 0.38194712628591737
 
 #define NPOD 30 /*Number of baselines over which to iterate*/
 #define EPOCH_START (0)
-#define NEPOCH (4797) /*Number of lines in my timestamp file plus 1 - specifies the number of times we want antenna coordinates*/
+#define NEPOCH (1199) /*Number of lines in my timestamp file plus 1 - specifies the number of times we want antenna coordinates*/
 #define NEPOCH_READ (NEPOCH+EPOCH_START)
 #define DNEPOCH_CALIB (73)
 #define DFREQ_CALIB  (512/32)
@@ -79,7 +82,7 @@ int main(int argc, char *argv[]) {
   }
 
   get_tjd_gst(argv[1], NEPOCH_READ, TJD, GST);
-  get_antenna_coords("data/coords30.dat", coords, NPOD);
+  get_antenna_coords("data/coords60_2013.dat", coords, NPOD);
 
   int tsize,rsize,bindex;
   off_t offset;
@@ -94,7 +97,8 @@ int main(int argc, char *argv[]) {
     RA_pt[iepoch] = PNT_RA;
     Dec_pt[iepoch] = PNT_DEC;
   }
-
+  
+  printf("RAJ=%f radians DECJ=%f radians NEPOCH=%i iterations\n",PNT_RA,PNT_DEC,NEPOCH);
 
   /* first loop over time */
   for(iepoch=(tstart+T_CUTOFF);iepoch<(NEPOCH_READ-T_CUTOFF);iepoch++) {
@@ -119,9 +123,9 @@ int main(int argc, char *argv[]) {
 	dfbin=0;
 	float thisu, thisv, thisw, thisfreq;
 	  thisfreq=CORR_FREQ0;
-	  thisu=ul*thisfreq;
-	  thisv=vl*thisfreq;
-	  thisw=wl*thisfreq;
+	  thisu=ul*SPEED_OF_LIGHT;
+	  thisv=vl*SPEED_OF_LIGHT;
+	  thisw=wl*SPEED_OF_LIGHT;
 	  fprintf(fp,"%d  %d  %f  %f  %f %f\n", bi,bj,thisu,thisv,thisw,chi);
 	
       }

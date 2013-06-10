@@ -111,7 +111,7 @@ def par2dict(name, substitutions={'F0':'F','F1':'FDOT','F2':'FDOT2','PMRA':'RAJD
             e['FB'] = e.pop('PB')/pb*d['FB']
             f['FB'] = f.pop('PB')
             if 'PBDOT' in d.keys():
-                d['FBDOT'] = d.pop('PBDOT')/pb*d['FB']
+                d['FBDOT'] = - d.pop('PBDOT')/pb*d['FB']
                 e['FBDOT'] = e.pop('PBDOT')/pb*d['FB']
                 f['FBDOT'] = f.pop('PBDOT')
     return d, e, f
@@ -156,12 +156,12 @@ class JPLEphemeris(jplephem.ephem.Ephemeris):
         return -moon_earth*self.earth_share + earthmoon_ssb
 
 if __name__ == '__main__':
-    eph1957 = ELL1Ephemeris('psrj1959.par')
+    eph1957 = ELL1Ephemeris('ForMarten.par')
     jpleph = JPLEphemeris(de405)
     mjd = Time('2012-06-02 01:46:09', scale='utc').mjd+np.linspace(0.,1.,1.)
     mjd = Time(mjd, format='mjd', scale='utc', 
-               lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
-               lat=(19*u.deg+05*u.arcmin+47.46*u.arcsec).to(u.deg).value)
+               lon=(02*u.deg+18*u.arcmin+25.7*u.arcsec).to(u.deg).value,
+               lat=(53*u.deg+14*u.arcmin+10.5*u.arcsec).to(u.deg).value)
     
     #Does this change over time? If not, can set it to a constant and use f_dp
     #for time intervals
@@ -172,7 +172,7 @@ if __name__ == '__main__':
     end=(24./60)/24
     period=P_100/(60*60*24)
     
-    mjd = Time('2012-06-02 01:18:09', scale='utc').mjd+np.linspace(0.,end,8)
+    mjd = Time('2012-06-02 07:16:09.993960857', scale='utc').mjd+np.linspace(0.,end,8)
     mjd = Time(mjd, format='mjd', scale='utc', 
                lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
                lat=(19*u.deg+05*u.arcmin+47.46*u.arcsec).to(u.deg).value)
@@ -193,21 +193,21 @@ if __name__ == '__main__':
     v_earth = np.sum(vel_earth*dir_1957, axis=0)
 
     #GMRT from tempo2-2013.3.1/T2runtime/observatory/observatories.dat
-    xyz_gmrt = (1656318.94, 5797865.99, 2073213.72)
+    xyz_jodrell = (3822626.04, -154105.65, 5086486.04)
     # Rough delay from observatory to center of earth
     # mean sidereal time (checked it is close to rf_ephem.utc_to_last)
     lmst = (observability.time2gmst(mjd)/24. + mjd.lon/360.)*2.*np.pi
     coslmst, sinlmst = np.cos(lmst), np.sin(lmst)
     # rotate observatory vector
-    xy = np.sqrt(xyz_gmrt[0]**2+xyz_gmrt[1]**2)
-    pos_gmrt = np.array([xy*coslmst, xy*sinlmst,
-                         xyz_gmrt[2]*np.ones_like(lmst)])/c.si.value
-    vel_gmrt = np.array([-xy*sinlmst, xy*coslmst,
+    xy = np.sqrt(xyz_jodrell[0]**2+xyz_jodrell[1]**2)
+    pos_jodrell = np.array([xy*coslmst, xy*sinlmst,
+                         xyz_jodrell[2]*np.ones_like(lmst)])/c.si.value
+    vel_jodrell = np.array([-xy*sinlmst, xy*coslmst,
                           np.zeros_like(lmst)]
                         )*2.*np.pi*366.25/365.25/c.to(u.m/u.day).value
     # take inner product with direction to pulsar
-    d_topo = np.sum(pos_gmrt*dir_1957, axis=0)
-    v_topo = np.sum(vel_gmrt*dir_1957, axis=0)
+    d_topo = np.sum(pos_jodrell*dir_1957, axis=0)
+    v_topo = np.sum(vel_jodrell*dir_1957, axis=0)
     delay = d_topo + d_earth + d_orb
     rv = v_topo + v_earth + v_orb
 
@@ -217,18 +217,13 @@ if __name__ == '__main__':
     P_dp=1./f_dp
 
     d_doppler=P_dp-P_0
-    
+    delay += d_doppler
     time=mjd.tdb.mjd
     seconds_delay=delay
     mjd_delay=seconds_delay/(60*60*24)
     arrival=time+mjd_delay
-    
-    ist=[]
-    for i in range(len(arrival)):
-        ist_fix=arrival[i]+(5.5/24)
-        ist.append(ist_fix) 
 
-    t = Time(ist,format='mjd',scale='utc',precision=9)
+    t = Time(arrival,format='mjd',scale='utc',precision=9)
     time_ist=t.iso
 
     with open("02Jun2012.dat","w") as data:
