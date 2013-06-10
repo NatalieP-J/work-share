@@ -46,20 +46,19 @@ try:
         time.append(point)
 
 #create Modified Julian Date time object
-    t=Time(time, scale='utc')
+    t=Time(time, format='iso',scale='utc')
     mjd=t.mjd
 
     tjd=mjd-40000 #Convert modified Julian Date to truncated Julian Date
+    ist_fix=mjd-(5.5/24)
 
 #Create an astropy Time object that includes the coordinates of GMRT
-    mjd = Time(mjd, format='mjd', scale='utc', 
-               lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
-               lat=(19*u.deg+05*u.arcmin+47.46*u.arcsec).to(u.deg).value)
+    mjd = Time(ist_fix, format='mjd', scale='utc')
 
 
 #convert the mjd to Greenwich mean sidereal time
     gmst=observability.time2gmst(mjd)
-    rad_gmst=gmst*np.pi/12
+    rad_gmst=gmst*(np.pi/12)
 
     WriteFileCols(tjd,rad_gmst,name)
 

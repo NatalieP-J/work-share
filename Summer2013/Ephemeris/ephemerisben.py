@@ -158,7 +158,7 @@ class JPLEphemeris(jplephem.ephem.Ephemeris):
 if __name__ == '__main__':
     eph1957 = ELL1Ephemeris('ForMarten.par')
     jpleph = JPLEphemeris(de405)
-    mjd = Time('2012-06-02 01:46:09', scale='utc').mjd+np.linspace(0.,1.,1.)
+    mjd = Time('2012-06-02 07:16:09', scale='utc').mjd+np.linspace(0.,1.,1.)
     mjd = Time(mjd, format='mjd', scale='utc', 
                lon=(02*u.deg+18*u.arcmin+25.7*u.arcsec).to(u.deg).value,
                lat=(53*u.deg+14*u.arcmin+10.5*u.arcsec).to(u.deg).value)
@@ -172,7 +172,7 @@ if __name__ == '__main__':
     end=(24./60)/24
     period=P_100/(60*60*24)
     
-    mjd = Time('2012-06-02 07:16:09.993960857', scale='utc').mjd+np.linspace(0.,end,8)
+    mjd = Time('2012-06-02 07:12:00', scale='utc').mjd+np.linspace(0.,end,8)
     mjd = Time(mjd, format='mjd', scale='utc', 
                lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
                lat=(19*u.deg+05*u.arcmin+47.46*u.arcsec).to(u.deg).value)
@@ -224,11 +224,11 @@ if __name__ == '__main__':
     arrival=time+mjd_delay
 
     t = Time(arrival,format='mjd',scale='utc',precision=9)
-    time_ist=t.iso
+    time_arrival=t.iso
 
     with open("02Jun2012.dat","w") as data:
-        for i in range(len(time_ist)):
-            data.write("%s\n"%time_ist[i])
+        for i in range(len(time_arrival)):
+            data.write("%s\n"%time_arrival[i])
 
     # if True:
     #     # try SOFA routines (but without UTC -> UT1)
