@@ -1,0 +1,98 @@
+plugin_LTLIBRARIES+= general_@T2ARCH@_plug.la applet_@T2ARCH@_plug.la general2_@T2ARCH@_plug.la matrix_@T2ARCH@_plug.la designmatrix_@T2ARCH@_plug.la transform_@T2ARCH@_plug.la fake_@T2ARCH@_plug.la publish_@T2ARCH@_plug.la global_fitFunc_@T2ARCH@_plug.la globalDCM_fitFunc_@T2ARCH@_plug.la ppta_@T2ARCH@_splug.la simRedNoise_@T2ARCH@_plug.la dmmodel_fitFunc_@T2ARCH@_plug.la bary_@T2ARCH@_plug.la detectGWB_@T2ARCH@_plug.la autoSpectralFit_@T2ARCH@_plug.la cholSpectra_@T2ARCH@_plug.la analyticChol_@T2ARCH@_plug.la detectGWBnew_@T2ARCH@_plug.la
+PLUGINSTALLS+= general-install applet-install general2-install matrix-install designmatrix-install transform-install fake-install publish-install global_fitFunc-install globalDCM_fitFunc-install ppta-install simRedNoise-install dmmodel_fitFunc-install bary-install detectGWB-install autoSpectralFit-install cholSpectra-install analyticChol-install detectGWBnew-install
+PLUGINS+= general applet general2 matrix designmatrix transform fake publish global_fitFunc globalDCM_fitFunc ppta simRedNoise dmmodel_fitFunc bary detectGWB autoSpectralFit cholSpectra analyticChol detectGWBnew
+general_@T2ARCH@_plug_la_SOURCES=../tempo2.h general_plug.C
+general_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+general-install: general_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/general_@T2ARCH@_plug.t2 $(plugindir)
+general: general_@T2ARCH@_plug.la
+applet_@T2ARCH@_plug_la_SOURCES=../tempo2.h applet_plug.C
+applet_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+applet-install: applet_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/applet_@T2ARCH@_plug.t2 $(plugindir)
+applet: applet_@T2ARCH@_plug.la
+general2_@T2ARCH@_plug_la_SOURCES=../tempo2.h general2_plug.C
+general2_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+general2-install: general2_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/general2_@T2ARCH@_plug.t2 $(plugindir)
+general2: general2_@T2ARCH@_plug.la
+matrix_@T2ARCH@_plug_la_SOURCES=../tempo2.h matrix_plug.C
+matrix_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+matrix-install: matrix_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/matrix_@T2ARCH@_plug.t2 $(plugindir)
+matrix: matrix_@T2ARCH@_plug.la
+designmatrix_@T2ARCH@_plug_la_SOURCES=../tempo2.h designmatrix_plug.C
+designmatrix_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+designmatrix-install: designmatrix_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/designmatrix_@T2ARCH@_plug.t2 $(plugindir)
+designmatrix: designmatrix_@T2ARCH@_plug.la
+transform_@T2ARCH@_plug_la_SOURCES=../tempo2.h transform_plug.C
+transform_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+transform-install: transform_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/transform_@T2ARCH@_plug.t2 $(plugindir)
+transform: transform_@T2ARCH@_plug.la
+fake_@T2ARCH@_plug_la_SOURCES=../tempo2.h fake_plug.C
+fake_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+fake-install: fake_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/fake_@T2ARCH@_plug.t2 $(plugindir)
+fake: fake_@T2ARCH@_plug.la
+publish_@T2ARCH@_plug_la_SOURCES=../tempo2.h publish_plug.C
+publish_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+publish-install: publish_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/publish_@T2ARCH@_plug.t2 $(plugindir)
+publish: publish_@T2ARCH@_plug.la
+global_fitFunc_@T2ARCH@_plug_la_SOURCES=../tempo2.h global_fitFunc_plug.C
+global_fitFunc_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+global_fitFunc-install: global_fitFunc_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/global_fitFunc_@T2ARCH@_plug.t2 $(plugindir)
+global_fitFunc: global_fitFunc_@T2ARCH@_plug.la
+globalDCM_fitFunc_@T2ARCH@_plug_la_SOURCES=../tempo2.h globalDCM_fitFunc_plug.C
+globalDCM_fitFunc_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+globalDCM_fitFunc-install: globalDCM_fitFunc_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/globalDCM_fitFunc_@T2ARCH@_plug.t2 $(plugindir)
+globalDCM_fitFunc: globalDCM_fitFunc_@T2ARCH@_plug.la
+ppta_@T2ARCH@_splug_la_SOURCES=../tempo2.h ppta_splug.C
+ppta_@T2ARCH@_splug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+ppta-install: ppta_@T2ARCH@_splug.la plugdir
+	$(INSTALL) .libs/ppta_@T2ARCH@_splug.t2 $(plugindir)
+ppta: ppta_@T2ARCH@_splug.la
+simRedNoise_@T2ARCH@_plug_la_SOURCES=../tempo2.h simRedNoise_plug.C
+simRedNoise_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+simRedNoise-install: simRedNoise_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/simRedNoise_@T2ARCH@_plug.t2 $(plugindir)
+simRedNoise: simRedNoise_@T2ARCH@_plug.la
+dmmodel_fitFunc_@T2ARCH@_plug_la_SOURCES=../tempo2.h dmmodel_fitFunc_plug.C
+dmmodel_fitFunc_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+dmmodel_fitFunc-install: dmmodel_fitFunc_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/dmmodel_fitFunc_@T2ARCH@_plug.t2 $(plugindir)
+dmmodel_fitFunc: dmmodel_fitFunc_@T2ARCH@_plug.la
+bary_@T2ARCH@_plug_la_SOURCES=../tempo2.h bary_plug.C
+bary_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+bary-install: bary_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/bary_@T2ARCH@_plug.t2 $(plugindir)
+bary: bary_@T2ARCH@_plug.la
+detectGWB_@T2ARCH@_plug_la_SOURCES=../tempo2.h detectGWB_plug.C
+detectGWB_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+detectGWB-install: detectGWB_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/detectGWB_@T2ARCH@_plug.t2 $(plugindir)
+detectGWB: detectGWB_@T2ARCH@_plug.la
+autoSpectralFit_@T2ARCH@_plug_la_SOURCES=../tempo2.h autoSpectralFit_plug.C
+autoSpectralFit_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+autoSpectralFit-install: autoSpectralFit_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/autoSpectralFit_@T2ARCH@_plug.t2 $(plugindir)
+autoSpectralFit: autoSpectralFit_@T2ARCH@_plug.la
+cholSpectra_@T2ARCH@_plug_la_SOURCES=../tempo2.h cholSpectra_plug.C
+cholSpectra_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+cholSpectra-install: cholSpectra_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/cholSpectra_@T2ARCH@_plug.t2 $(plugindir)
+cholSpectra: cholSpectra_@T2ARCH@_plug.la
+analyticChol_@T2ARCH@_plug_la_SOURCES=../tempo2.h analyticChol_plug.C
+analyticChol_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+analyticChol-install: analyticChol_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/analyticChol_@T2ARCH@_plug.t2 $(plugindir)
+analyticChol: analyticChol_@T2ARCH@_plug.la
+detectGWBnew_@T2ARCH@_plug_la_SOURCES=../tempo2.h detectGWBnew_plug.C
+detectGWBnew_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la 
+detectGWBnew-install: detectGWBnew_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/detectGWBnew_@T2ARCH@_plug.t2 $(plugindir)
+detectGWBnew: detectGWBnew_@T2ARCH@_plug.la

@@ -1,0 +1,87 @@
+plugin_LTLIBRARIES+= plk_@T2ARCH@_plug.la splk_@T2ARCH@_plug.la plotMany_@T2ARCH@_plug.la grTemplate_@T2ARCH@_plug.la basic_@T2ARCH@_plug.la delays_@T2ARCH@_plug.la dm_@T2ARCH@_plug.la glitch_@T2ARCH@_plug.la spectrum_@T2ARCH@_plug.la simulDM_@T2ARCH@_plug.la fixData_@T2ARCH@_plug.la clock_@T2ARCH@_plug.la GWbkgrd_@T2ARCH@_plug.la spectralModel_@T2ARCH@_plug.la
+PLUGINSTALLS+= plk-install splk-install plotMany-install grTemplate-install basic-install delays-install dm-install glitch-install spectrum-install simulDM-install fixData-install clock-install GWbkgrd-install spectralModel-install
+PLUGINS+= plk splk plotMany grTemplate basic delays dm glitch spectrum simulDM fixData clock GWbkgrd spectralModel
+plk_@T2ARCH@_plug_la_SOURCES=../tempo2.h plk_plug.C
+plk_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@
+plk_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@
+plk-install: plk_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/plk_@T2ARCH@_plug.t2 $(plugindir)
+plk: plk_@T2ARCH@_plug.la
+splk_@T2ARCH@_plug_la_SOURCES=../tempo2.h splk_plug.C
+splk_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@
+splk_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@
+splk-install: splk_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/splk_@T2ARCH@_plug.t2 $(plugindir)
+splk: splk_@T2ARCH@_plug.la
+plotMany_@T2ARCH@_plug_la_SOURCES=../tempo2.h plotMany_plug.C
+plotMany_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@
+plotMany_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@
+plotMany-install: plotMany_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/plotMany_@T2ARCH@_plug.t2 $(plugindir)
+plotMany: plotMany_@T2ARCH@_plug.la
+grTemplate_@T2ARCH@_plug_la_SOURCES=../tempo2.h grTemplate_plug.C
+grTemplate_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@
+grTemplate_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@
+grTemplate-install: grTemplate_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/grTemplate_@T2ARCH@_plug.t2 $(plugindir)
+grTemplate: grTemplate_@T2ARCH@_plug.la
+basic_@T2ARCH@_plug_la_SOURCES=../tempo2.h basic_plug.C
+basic_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@
+basic_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@
+basic-install: basic_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/basic_@T2ARCH@_plug.t2 $(plugindir)
+basic: basic_@T2ARCH@_plug.la
+delays_@T2ARCH@_plug_la_SOURCES=../tempo2.h delays_plug.C
+delays_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@
+delays_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@
+delays-install: delays_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/delays_@T2ARCH@_plug.t2 $(plugindir)
+delays: delays_@T2ARCH@_plug.la
+dm_@T2ARCH@_plug_la_SOURCES=../tempo2.h dm_plug.C
+dm_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@
+dm_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@
+dm-install: dm_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/dm_@T2ARCH@_plug.t2 $(plugindir)
+dm: dm_@T2ARCH@_plug.la
+glitch_@T2ARCH@_plug_la_SOURCES=../tempo2.h glitch_plug.C
+glitch_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@
+glitch_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@
+glitch-install: glitch_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/glitch_@T2ARCH@_plug.t2 $(plugindir)
+glitch: glitch_@T2ARCH@_plug.la
+spectrum_@T2ARCH@_plug_la_SOURCES=../tempo2.h spectrum_plug.C
+spectrum_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@
+spectrum_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@
+spectrum-install: spectrum_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/spectrum_@T2ARCH@_plug.t2 $(plugindir)
+spectrum: spectrum_@T2ARCH@_plug.la
+simulDM_@T2ARCH@_plug_la_SOURCES=../tempo2.h simulDM_plug.C
+simulDM_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@
+simulDM_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@
+simulDM-install: simulDM_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/simulDM_@T2ARCH@_plug.t2 $(plugindir)
+simulDM: simulDM_@T2ARCH@_plug.la
+fixData_@T2ARCH@_plug_la_SOURCES=../tempo2.h fixData_plug.C
+fixData_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@
+fixData_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@
+fixData-install: fixData_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/fixData_@T2ARCH@_plug.t2 $(plugindir)
+fixData: fixData_@T2ARCH@_plug.la
+clock_@T2ARCH@_plug_la_SOURCES=../tempo2.h clock_plug.C
+clock_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@
+clock_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@
+clock-install: clock_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/clock_@T2ARCH@_plug.t2 $(plugindir)
+clock: clock_@T2ARCH@_plug.la
+GWbkgrd_@T2ARCH@_plug_la_SOURCES=../tempo2.h GWbkgrd_plug.C
+GWbkgrd_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@
+GWbkgrd_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@
+GWbkgrd-install: GWbkgrd_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/GWbkgrd_@T2ARCH@_plug.t2 $(plugindir)
+GWbkgrd: GWbkgrd_@T2ARCH@_plug.la
+spectralModel_@T2ARCH@_plug_la_SOURCES=../tempo2.h spectralModel_plug.C
+spectralModel_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@
+spectralModel_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@
+spectralModel-install: spectralModel_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/spectralModel_@T2ARCH@_plug.t2 $(plugindir)
+spectralModel: spectralModel_@T2ARCH@_plug.la

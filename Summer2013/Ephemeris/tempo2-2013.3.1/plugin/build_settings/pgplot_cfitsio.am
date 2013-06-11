@@ -1,0 +1,9 @@
+plugin_LTLIBRARIES+= fermi_@T2ARCH@_plug.la
+PLUGINSTALLS+= fermi-install
+PLUGINS+= fermi
+fermi_@T2ARCH@_plug_la_SOURCES=../tempo2.h fermi_plug.C
+fermi_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@ @CFITSIO_LIBS@
+fermi_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@ @CFITSIO_CFLAGS@
+fermi-install: fermi_@T2ARCH@_plug.la plugdir
+	$(INSTALL) .libs/fermi_@T2ARCH@_plug.t2 $(plugindir)
+fermi: fermi_@T2ARCH@_plug.la
