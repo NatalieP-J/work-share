@@ -50,17 +50,18 @@ try:
     mjd=t.mjd
 
     tjd=mjd-40000 #Convert modified Julian Date to truncated Julian Date
-    ist_fix=mjd-(5.5/24)
 
-#Create an astropy Time object that includes the coordinates of GMRT
-    mjd = Time(ist_fix, format='mjd', scale='utc')
-
-
-#convert the mjd to Greenwich mean sidereal time
-    gmst=observability.time2gmst(mjd)
-    rad_gmst=gmst*(np.pi/12)
-
-    WriteFileCols(tjd,rad_gmst,name)
+    IST=[]
+    for i in range(len(time)):
+        point=(float(hour[i])+(float(minute[i])/60)+(seconds[i]/3600))
+        IST.append(point)
+    
+    IST_rad=[]
+    for i in range(len(IST)):
+        point=IST[i]*(np.pi/12)
+        IST_rad.append(point)
+    
+    WriteFileCols(tjd,IST_rad,name)
 
 except IndexError:
     print "Usage: python converting.py <file to be converted> <output file>"
