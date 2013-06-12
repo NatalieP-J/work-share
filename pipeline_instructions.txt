@@ -1,0 +1,37 @@
+FRINGE STOPPING 
+#indicates line is explanation rather than command 
+
+ssh pen@wm.gmrt.ncra.tifr.in
+
+ssh gsbuser@gsbm2
+
+ssh node[111-118]
+
+df -h 
+#disk usage -h specifies human readable format
+
+#within node, looking at usage on /mnt/[a-d] or /mnt/disk[1-4] - avoid disks
+#that are full
+
+#put all fringe stop data in /mnt/software/gsbuser/EoR/Fringestop/[MMMDD_YYYY]
+#copy an old directory into the new one for a specific date to get the 
+#necessary programs. delete actual data
+cp -r [old date]/ [new date]/
+
+#to run fringe stop, execute pipeline_1a, BUT FIRST
+#edit pipeline_1a for input and output disks
+#output disk should have more than adequate space remaining
+#edit pipeline_1a for date, target pulsar and scan number(in the for loop)
+#find above info in the raw file names
+#EX: [pulsar name]_[observing day]_[scan number]
+#pipeline_1a takes .node[0-16] and creates .node[0-16].fs0
+
+./pipeline_1a
+
+#raw data located on /mnt/disk*/gsbuser/EoR/*
+#.node0 corresponds to node33 and contains time data, .node1 to node34 etc.
+
+#RAW FILE SEARCH EXAMPLE - all files for January 13 2013
+for((i=111;i<119;i++)); do ssh node$i "ls/mnt/disk*/EoR/*jan13_4* -lthr"; done
+#OPTIONS: -h = human readable, -l = long listing format, -r = reverse order, 
+#-t = sort by modification time
