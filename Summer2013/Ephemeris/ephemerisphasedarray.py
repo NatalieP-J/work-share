@@ -8,6 +8,7 @@ import astropy.units as u
 import de405
 import jplephem.ephem
 import observability
+import manage as man
 
 deg2rad = np.pi/180.
 
@@ -158,33 +159,41 @@ class JPLEphemeris(jplephem.ephem.Ephemeris):
 if __name__ == '__main__':
     eph1957 = ELL1Ephemeris('psrj1959.par')
     jpleph = JPLEphemeris(de405)
-    #adjust 3 min for delay
+#********adjust 3 min for delay********
     mjd = Time('2013-05-16 23:40:00', scale='utc').mjd
     mjd = Time(mjd, format='mjd', scale='utc', 
                lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
                lat=(19*u.deg+05*u.arcmin+47.46*u.arcsec).to(u.deg).value)
 
-    time=mjd.tdb.mjd
-    end=(22./60)/24
-    finish=time+end
-    delay=[]
-    doppler_period=[]
+    start=mjd.tdb.mjd #start time in mjd
+    time_jd=mjd.tdb.jd #start time in jd
+    end=(1+(3./60))/24 #length of observations (from timestamp files?)
+    finish=start+end #end time
+    delay=[] #empty array to hold delay times
+    original_delay=[] #empty array to hold delays
+    original_period=[] #empty array to hold the initial period for each time
+    doppler_period=[] #empty array to hold doppler shifted period
+    rv=[] #empty array to hold relative velocities of the system
+    time_elapsed=[]
+    time=start
     
     while time<finish:
-        f_p=eph1957.evaluate('F',time,t0par='PEPOCH')
-        P_0=1./f_p
-        P_1000=1000*P_0
-        period=P_1000/(60*60*24)
+        seconds=(time-start)*(3600*24)
+        time_elapsed.append(seconds)
+        f_p=eph1957.evaluate('F',time,t0par='PEPOCH')#pulse frequency
+        P_0=1./f_p #pulse period
+        original_period.append(P_0)
+        period=P_0/(60*60*24) #convert from seconds to days
     
     # orbital delay and velocity (lt-s and v/c)
         d_orb = eph1957.orbital_delay(time)
         v_orb = eph1957.radial_velocity(time)
 
     # direction to target
-        dir_1957 = eph1957.pos(mjd.tdb.mjd)
+        dir_1957 = eph1957.pos(time)
 
     # Delay from and velocity of centre of earth to SSB (lt-s and v/c)
-        posvel_earth = jpleph.compute('earth', mjd.tdb.jd)
+        posvel_earth = jpleph.compute('earth', time_jd)
         pos_earth = posvel_earth[:3]/c.to(u.km/u.s).value
         vel_earth = posvel_earth[3:]/c.to(u.km/u.day).value
 
@@ -207,32 +216,40 @@ if __name__ == '__main__':
     # take inner product with direction to pulsar
         d_topo = np.sum(pos_gmrt*dir_1957, axis=0)
         v_topo = np.sum(vel_gmrt*dir_1957, axis=0)
-        
-        total_rv = -v_topo - v_earth + v_orb
+    
+    #total relative velocity
+        total_rv = - v_topo - v_earth + v_orb
+        rv.append(total_rv)
 
-        L=(1/(1+total_rv))
-        f_dp=f_p*L
-        P_dp=1./f_dp
-        doppler_period.append(P_dp)
-        d_doppler=P_dp-P_0
+        L=(1/(1+total_rv))#multiplying factor to find doppler frequency
+        f_dp=f_p*L #doppler shifted frequency
+        P_dp=1./f_dp #doppler shifted period
+        doppler_period.append(P_dp) 
+        d_doppler=P_dp-P_0 #delay due to doppler shift
 
         total_delay = d_topo + d_earth + d_orb + d_doppler
-       
-        seconds_delay=total_delay
-        mjd_delay=seconds_delay/(60*60*24)
+        original_delay.append(total_delay)
+        
+        mjd_delay=total_delay/(60*60*24)#convert from seconds to days
     
-        arrival=time+mjd_delay
-        ist_fix=arrival+(5.5/24)
+        arrival=time+mjd_delay #arrival time
+        ist_fix=arrival+(5.5/24)#shifted to Indian Standard Time
         delay.append(ist_fix) 
-        print "Time left: {0}\n".format(finish-time)
+        print "Time left: {0}\n".format(finish-time) #progress statement showing
+        time_jd+=period                              #time left until finish    
         time+=period
 
     t = Time(delay,format='mjd',scale='utc',precision=9)
-    time_ist=t.iso
+    time_ist=t.iso #convert from mjd to iso
 
-    with open("PhasedArrayArrival.dat","w") as data:
+    #write the data to file
+    with open("PhasedArrayArrivalPeriod.dat","w") as data:
         for i in range(len(time_ist)):
-            data.write("%s\n"%time_ist[i])
+            data.write("{0}\n".format(time_ist[i]))
+
+    with open("DopplerPeriodPA.dat","w") as data:
+        for i in range(len(time_elapsed)):
+            data.write("{0}\t{1}\n".format(time_elapsed[i],doppler_period[i]))
 
     # if True:
     #     # try SOFA routines (but without UTC -> UT1)

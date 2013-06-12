@@ -158,77 +158,87 @@ class JPLEphemeris(jplephem.ephem.Ephemeris):
 if __name__ == '__main__':
     eph1957 = ELL1Ephemeris('ForMarten.par')
     jpleph = JPLEphemeris(de405)
-    mjd = Time('2012-06-02 07:16:09', scale='utc').mjd+np.linspace(0.,1.,1.)
+    mjd = Time('2012-06-02 07:16:09', scale='utc').mjd
     mjd = Time(mjd, format='mjd', scale='utc', 
                lon=(02*u.deg+18*u.arcmin+25.7*u.arcsec).to(u.deg).value,
                lat=(53*u.deg+14*u.arcmin+10.5*u.arcsec).to(u.deg).value)
     
-    #Does this change over time? If not, can set it to a constant and use f_dp
-    #for time intervals
-    f_p=eph1957.evaluate('F',mjd.tdb.mjd,t0par='PEPOCH')
-    f_p=f_p[0]
-    P_0=1./f_p
-    P_100=100*P_0
-    end=(24./60)/24
-    period=P_100/(60*60*24)
-    
-    mjd = Time('2012-06-02 07:12:00', scale='utc').mjd+np.linspace(0.,end,8)
-    mjd = Time(mjd, format='mjd', scale='utc', 
-               lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
-               lat=(19*u.deg+05*u.arcmin+47.46*u.arcsec).to(u.deg).value)
+    time=mjd.tdb.mjd #start time in mjd
+    time_jd=mjd.tdb.jd #start time in jd
+    end=(0.001488626000000437/3600)/24 #length of observations
+    finish=time+end #end time
+    delay=[] #empty array to hold delay times
+    original_delay=[] #empty array to hold delays
+    original_period=[] #empty array to hold the initial period for each time
+    doppler_period=[] #empty array to hold doppler shifted period
+    rv=[] #empty array to hold relative velocities of the system
+
+    while time<finish:
+        f_p=eph1957.evaluate('F',time,t0par='PEPOCH')#pulse frequency
+        P_0=1./f_p #pulse period
+        original_period.append(P_0)
+        period=P_0/(60*60*24) #convert from seconds to days
     
     # orbital delay and velocity (lt-s and v/c)
-    d_orb = eph1957.orbital_delay(mjd.tdb.mjd)
-    v_orb = eph1957.radial_velocity(mjd.tdb.mjd)
+        d_orb = eph1957.orbital_delay(time)
+        v_orb = eph1957.radial_velocity(time)
 
     # direction to target
-    dir_1957 = eph1957.pos(mjd.tdb.mjd)
+        dir_1957 = eph1957.pos(time)
 
     # Delay from and velocity of centre of earth to SSB (lt-s and v/c)
-    posvel_earth = jpleph.compute('earth', mjd.tdb.jd)
-    pos_earth = posvel_earth[:3]/c.to(u.km/u.s).value
-    vel_earth = posvel_earth[3:]/c.to(u.km/u.day).value
+        posvel_earth = jpleph.compute('earth', time_jd)
+        pos_earth = posvel_earth[:3]/c.to(u.km/u.s).value
+        vel_earth = posvel_earth[3:]/c.to(u.km/u.day).value
 
-    d_earth = np.sum(pos_earth*dir_1957, axis=0)
-    v_earth = np.sum(vel_earth*dir_1957, axis=0)
+        d_earth = np.sum(pos_earth*dir_1957, axis=0)
+        v_earth = np.sum(vel_earth*dir_1957, axis=0)
 
-    #GMRT from tempo2-2013.3.1/T2runtime/observatory/observatories.dat
-    xyz_jodrell = (3822626.04, -154105.65, 5086486.04)
+    #Jodrell from tempo2-2013.3.1/T2runtime/observatory/observatories.dat
+        xyz_jodrell = (3822626.04, -154105.65, 5086486.04)
     # Rough delay from observatory to center of earth
     # mean sidereal time (checked it is close to rf_ephem.utc_to_last)
-    lmst = (observability.time2gmst(mjd)/24. + mjd.lon/360.)*2.*np.pi
-    coslmst, sinlmst = np.cos(lmst), np.sin(lmst)
+        lmst = (observability.time2gmst(mjd)/24. + mjd.lon/360.)*2.*np.pi
+        coslmst, sinlmst = np.cos(lmst), np.sin(lmst)
     # rotate observatory vector
-    xy = np.sqrt(xyz_jodrell[0]**2+xyz_jodrell[1]**2)
-    pos_jodrell = np.array([xy*coslmst, xy*sinlmst,
+        xy = np.sqrt(xyz_jodrell[0]**2+xyz_jodrell[1]**2)
+        pos_jodrell = np.array([xy*coslmst, xy*sinlmst,
                          xyz_jodrell[2]*np.ones_like(lmst)])/c.si.value
-    vel_jodrell = np.array([-xy*sinlmst, xy*coslmst,
+        vel_jodrell = np.array([-xy*sinlmst, xy*coslmst,
                           np.zeros_like(lmst)]
                         )*2.*np.pi*366.25/365.25/c.to(u.m/u.day).value
     # take inner product with direction to pulsar
-    d_topo = np.sum(pos_jodrell*dir_1957, axis=0)
-    v_topo = np.sum(vel_jodrell*dir_1957, axis=0)
-    delay = d_topo + d_earth + d_orb
-    rv = v_topo + v_earth + v_orb
+        d_topo = np.sum(pos_jodrell*dir_1957, axis=0)
+        v_topo = np.sum(vel_jodrell*dir_1957, axis=0)
+    
+    #total relative velocity
+        total_rv = - v_topo - v_earth + v_orb
+        rv.append(total_rv)
 
-    #Lorentz factor - Doppler shifting the frequency
-    L=(1/(1+rv))
-    f_dp=f_p*L
-    P_dp=1./f_dp
+        L=(1/(1+total_rv))#multiplying factor to find doppler frequency
+        f_dp=f_p*L #doppler shifted frequency
+        P_dp=1./f_dp #doppler shifted period
+        doppler_period.append(P_dp) 
+        d_doppler=P_dp-P_0 #delay due to doppler shift
 
-    d_doppler=P_dp-P_0
-    delay += d_doppler
-    time=mjd.tdb.mjd
-    seconds_delay=delay
-    mjd_delay=seconds_delay/(60*60*24)
-    arrival=time+mjd_delay
-
+        total_delay = d_topo + d_earth + d_orb + d_doppler
+        original_delay.append(total_delay)
+        
+        mjd_delay=total_delay/(60*60*24)#convert from seconds to days
+    
+        arrival=time+mjd_delay #arrival time
+        ist_fix=arrival+(5.5/24)#shifted to Indian Standard Time
+        delay.append(ist_fix) 
+        print "Time left: {0} seconds\n".format(24*3600*(finish-time)) 
+        time_jd+=period                             
+        time+=period
+ 
     t = Time(arrival,format='mjd',scale='utc',precision=9)
     time_arrival=t.iso
 
-    with open("02Jun2012.dat","w") as data:
+    with open("Gen02Jun2012.dat","w") as data:
         for i in range(len(time_arrival)):
-            data.write("%s\n"%time_arrival[i])
+            data.write("{0}\n".format(time_arrival[i]))
 
     # if True:
     #     # try SOFA routines (but without UTC -> UT1)
