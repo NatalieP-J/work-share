@@ -50,19 +50,29 @@ try:
     mjd=t.mjd
 
     tjd=mjd-40000 #Convert modified Julian Date to truncated Julian Date
-
-    IST=[]
-    for i in range(len(time)):
-        point=(float(hour[i])+(float(minute[i])/60)+(seconds[i]/3600))
-        IST.append(point)
     
-    IST_rad=[]
-    for i in range(len(IST)):
-        point=IST[i]*(np.pi/12)
-        IST_rad.append(point)
+    tjd_utc=tjd-(5.5/24)
     
-    WriteFileCols(tjd,IST_rad,name)
-
+    #IST=[]
+    #for i in range(len(time)):
+        #point=(float(hour[i])+(float(minute[i])/60)+(seconds[i]/3600))
+        #IST.append(point)
+    
+    #IST_rad=[]
+    #for i in range(len(IST)):
+        #point=IST[i]*(np.pi/12)
+        #IST_rad.append(point)
+    
+    man.WriteFile(tjd_utc,name)
+    
+    elapsed=[]
+    for i in range(len(mjd)):
+        mod=mjd[i]-(Time(time[0],format='iso',scale='utc').mjd)
+        mod=mod*24*60*60
+        elapsed.append(mod)
+        
+    man.WriteFile(elapsed,'ElapsedTime1957.py')
+    
 except IndexError:
     print "Usage: python converting.py <file to be converted> <output file>"
 

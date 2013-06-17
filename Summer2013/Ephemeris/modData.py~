@@ -1,0 +1,19 @@
+from manage import *
+
+data=LoadData('ForMartenCleaned')
+del data[0]
+del data[0]
+data=IterativeStrAppend(data,3)
+int_mjd=[]
+dec_mjd=[]
+for i in range(len(data)):
+    result=data.partition(".")
+    mjd_int=result[i][0]
+    int_mjd.append(int(mjd_int))
+    mjd_dec=result[i][2]
+    dec_mjd.append(float(mjd_dec))
+
+t=Time(int_mjd,dec_mjd,format='mjd',scale='tt')
+output=t.iso
+
+WriteFile(output,'Neat02Jun2012.dat')

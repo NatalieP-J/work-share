@@ -1,0 +1,24 @@
+import numpy as np
+from astropy.time import Time
+from astropy.coordinates.angles import Angle
+from astropy.constants import c
+import astropy.units as u
+import de405
+import observability
+import pulsar
+from pulsar import ELL1Ephemeris
+import barycentre
+from barycentre import JPLEphemeris
+from manage import *
+
+eph1957 = ELL1Ephemeris('ForMarten.par')
+
+data=LoadData('ForMartenCleaned')
+del data[0]
+del data[0]
+MJD_TDB=IterativeFloatAppend(data,3)
+mjd = Time(MJD_TDB,scale='tt').jd
+mjd = Time(mjd, format='mjd', scale='tt', 
+           lon=(02*u.deg+18*u.arcmin+25.7*u.arcsec).to(u.deg).value,
+           lat=(53*u.deg+14*u.arcmin+10.5*u.arcsec).to(u.deg).value)
+
