@@ -29,19 +29,14 @@ original_delay=[] #empty array to hold delays
 original_period=[] #empty array to hold the initial period for each time
 doppler_period=[] #empty array to hold doppler shifted period
 rv=[] #empty array to hold relative velocities of the system
-time=start
-while time<finish:
+time_orig=start
+while time_orig<finish:
+    time=time_orig
+    print "Time left: {0}\n".format(finish-time) 
     f_p=eph1957.evaluate('F',time,t0par='PEPOCH')#pulse frequency
     P_0=1./f_p #pulse period
-    
-    # orbital delay and velocity (lt-s and v/c)
-    d_orb = eph1957.orbital_delay(time)
-    v_orb = eph1957.radial_velocity(time)
 
-    time+=d_orb/(3600*24)
-    time_jd+=d_orb/(3600*24)
-
-    # direction to target
+     # direction to target
     dir_1957 = eph1957.pos(time)
 
     # Delay from and velocity of centre of earth to SSB (lt-s and v/c)
@@ -51,8 +46,9 @@ while time<finish:
 
     d_earth = np.sum(pos_earth*dir_1957, axis=0)
     v_earth = np.sum(vel_earth*dir_1957, axis=0)
-
+    
     time+=d_earth/(3600*24)
+    time_jd+=d_earth/(3600*24)
 
     mjd = Time(time, format='mjd', scale='utc',
            lon=(74*u.deg+02*u.arcmin+59.07*u.arcsec).to(u.deg).value,
@@ -77,6 +73,11 @@ while time<finish:
     
     time+=d_topo/(3600*24)
     
+    # orbital delay and velocity (lt-s and v/c)
+    d_orb = eph1957.orbital_delay(time)
+    v_orb = eph1957.radial_velocity(time)
+    
+   
     #total relative velocity
     total_rv = - v_topo - v_earth + v_orb
     rv.append(total_rv)
@@ -87,18 +88,15 @@ while time<finish:
     doppler_period.append(P_dp)
     d_doppler=P_dp-P_0 #delay due to doppler shift
 
-    total_delay = d_topo + d_earth + d_orb
-    original_delay.append(total_delay)
+    total_delay = -d_topo - d_earth + d_orb
         
     mjd_delay=total_delay/(60*60*24)#convert from seconds to days
     
-    arrival=time+mjd_delay #arrival time
+    arrival=time_orig+mjd_delay #arrival time
     ist_fix=arrival+(5.5/24)#shifted to Indian Standard Time
     delay.append(ist_fix)
-    print "Time left: {0}\n".format(finish-time) #progress statement showing
-    period=P_dp*(1000./(60*60*24))
-    time_jd+=period #time left until finish
-    time+=period
+    period=P_dp*(1000./(60*60*24)) 
+    time_orig+=period
  
 
 t = Time(delay,format='mjd',scale='utc',precision=9)
@@ -107,4 +105,11 @@ time_ist=t.iso #convert from mjd to iso
     #write the data to file
 with open("RawVoltageArrival.dat","w") as data:
     for i in range(len(time_ist)):
-        data.write("{0}\n".format(time_ist[i]))
+        data.write("{0} \t {1}\n".format(time_ist[i],doppler_period[i]))
+
+freq=[]
+for i in range(len(doppler_period)):
+    point=1./doppler_period[i]
+    freq.append(point)
+
+fdot=(freq[len(freq)-1]-freq[0])/(end*60*60*24)
