@@ -1,8 +1,7 @@
 from manage import *
 
-data=LoadData('ForMartenCleaned')
-del data[0]
-del data[0]
+data=LoadData('ForMartenCleaned350Trim')
+del data[:15]
 mjd=IterativeFloatAppend(data,3)
 int_mjd=[]
 dec_mjd=[]
@@ -16,4 +15,4 @@ dec_mjd=[]
 t=Time(mjd,format='mjd',scale='tt',precision=9)
 output=t.iso
 
-WriteFile(output,'Neat02Jun2012.dat')
+WriteFile(output,'350Trim.dat')
