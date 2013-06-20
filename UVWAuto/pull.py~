@@ -1,0 +1,8 @@
+from manage import *
+import sys
+
+data1=LoadData(sys.argv[1]) #file containing tjd
+data2=LoadData(sys.argv[2]) #file containing gst
+
+
+

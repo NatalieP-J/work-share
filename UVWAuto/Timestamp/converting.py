@@ -64,14 +64,15 @@ try:
         #IST_rad.append(point)
     
     man.WriteFile(tjd_utc,name)
+    man.WriteFile(tjd,"FIX{0}".format(name))
     
-    elapsed=[]
-    for i in range(len(mjd)):
-        mod=mjd[i]-(Time(time[0],format='iso',scale='utc').mjd)
-        mod=mod*24*60*60
-        elapsed.append(mod)
+    #elapsed=[]
+    #for i in range(len(mjd)):
+        #mod=mjd[i]-(Time(time[0],format='iso',scale='utc').mjd)
+        #mod=mod*24*60*60
+        #elapsed.append(mod)
         
-    man.WriteFile(elapsed,'ElapsedTime1957.py')
+    #man.WriteFile(elapsed,'ElapsedTime1957.py')
     
 except IndexError:
     print "Usage: python converting.py <file to be converted> <output file>"
