@@ -22,18 +22,18 @@
 //#define PNT_RA 5.450813061405754115 //b2045-16-Jun 21 2011
 //#define PNT_DEC -0.28337325723894701157
 
-#define PNT_RA  5.2368626022705502 //PSR B1957+20 May 16 2013
-#define PNT_DEC 0.36375085679967373
+//#define PNT_RA  5.2368626022705502 //PSR B1957+20 May 16 2013
+//#define PNT_DEC 0.36375085679967373
 
-//#define PNT_RA 5.0715791948861657 //PSR B1919+21 May 16 2013
-//#define PNT_DEC 0.38240013618954616
+#define PNT_RA 5.0715791948861657 //PSR B1919+21 May 16 2013
+#define PNT_DEC 0.38240013618954616
 
 //#define PNT_RA 5.1377213557725776 // PSR B1937+21 June 11 2013
 //#define PNT_DEC 0.37467055774614433
 
 #define NPOD 30 /*Number of baselines over which to iterate*/
 #define EPOCH_START (0)
-#define NEPOCH (4797) /*Number of lines in my timestamp file plus 1 - specifies the number of times we want antenna coordinates 4797 for 1957, 1197 for 1919, 6702 for 1937*/
+#define NEPOCH (1197) /*Number of lines in my timestamp file plus 1 - specifies the number of times we want antenna coordinates 4797 for 1957, 1197 for 1919, 6702 for 1937*/
 #define NEPOCH_READ (NEPOCH+EPOCH_START)
 #define DNEPOCH_CALIB (73)
 #define DFREQ_CALIB  (512/32)
