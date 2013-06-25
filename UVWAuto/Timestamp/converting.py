@@ -54,6 +54,7 @@ try:
     tjd_utc=tjd-(5.5/24)
     tjd_5min=tjd-(5.5/24)-(5./(60*24))
     tjd_6min=tjd-(5.5/24)-(6./(60*24))
+    tjd_4min=tjd-(5.5/24)-(4./(60*24))
     #IST=[]
     #for i in range(len(time)):
         #point=(float(hour[i])+(float(minute[i])/60)+(seconds[i]/3600))
@@ -64,8 +65,7 @@ try:
         #point=IST[i]*(np.pi/12)
         #IST_rad.append(point)
     
-    man.WriteFile(tjd_utc,name)
-    man.WriteFile(tjd_5min,"DST{0}".format(name))
+    man.WriteFile(tjd_4min,"4min{0}".format(name))
     
     #elapsed=[]
     #for i in range(len(mjd)):
