@@ -16,7 +16,7 @@ int main(void) {
   while (scanf("%lg", &TJD)!=EOF) {
     earthtilt(TJD, &mobl, &tobl, &eq, &dpsi, &deps);
     sidereal_time(2440000.0, TJD+0.5, eq, &gst);
-    printf("%14.8lf %10.8lf\n", TJD, (gst/12.0)*M_PI);
+    printf("%14.8lf %10.8lf\n", TJD, (gst/(24+(56./60)+(4.091/3600))*2*M_PI);
   }
 
   return(0);
