@@ -84,14 +84,14 @@ def HourAngle(GMST,longitude,RA):
 
 hour=HourAngle(GST,lon,ra)
 
-def HourAngleTest(GMST,longitude,RA):
+def HourAngleTest(GMST,RA):
     newlist=[]
     for i in range(len(GMST)):
-        hour=GST[i]-longitude-RA
+        hour=GST[i]-RA
         newlist.append(hour)
     return newlist
 
-hour_test=HourAngleTest(GST,lon_test,ra)
+hour_test=HourAngleTest(GST,ra)
             
 #this function takes a list of coordinate sets, a list of hour angles at given
 #longitudes over time and declination, and outputs u v w coordinates for each 
@@ -145,46 +145,46 @@ WriteFile(uvw_test,'AntennaCoordinates.dat')
 
 
 #########TROUBLESHOOTING#########
-def Diff(values1,values2):
-    newlist=[]
-    for i in range(len(values1)):
-        point=values1[i]-values2[i]
-        newlist.append(point)
-    return newlist
+#def Diff(values1,values2):
+    #newlist=[]
+    #for i in range(len(values1)):
+        #point=values1[i]-values2[i]
+        #newlist.append(point)
+    #return newlist
 
-correct=man.LoadData('4minMay16first1919UVW.dat')
-writeuv=man.IterativeFloatAppend(correct,8)
-writeuv=writeuv[:-30]
+#correct=man.LoadData('4minMay16first1919UVW.dat')
+#writeuv=man.IterativeFloatAppend(correct,8)
+#writeuv=writeuv[:-30]
 
-def Format(values,index):
-    newlist=[]
-    for i in range(len(values)):
-        for j in range(len(values[i])):
-            point=values[i][j][index]
-            newlist.append(point)
-    return newlist
+#def Format(values,index):
+    #newlist=[]
+    #for i in range(len(values)):
+        #for j in range(len(values[i])):
+            #point=values[i][j][index]
+            #newlist.append(point)
+    #return newlist
 
-delay=Format(uvw_test,2)
+#delay=Format(uvw_test,2)
 
-diff=Diff(writeuv,delay) 
+#diff=Diff(writeuv,delay) 
 
-def WriteFileCols(values1,values2,values3,fname):
-    with open(fname,"w") as data:
-        for i in range(len(values1)):
-            data.write('{0}\t{1}\t{2}\n'.format(values1[i],values2[i],values3[i]))
+#def WriteFileCols(values1,values2,values3,fname):
+    #with open(fname,"w") as data:
+        #for i in range(len(values1)):
+            #data.write('{0}\t{1}\t{2}\n'.format(values1[i],values2[i],values3[i]))
 
-WriteFileCols(delay,writeuv,diff,'AntennaComparisonTest.dat')
+#WriteFileCols(delay,writeuv,diff,'AntennaComparisonTest.dat')
 
-def TrimList(values,iteration):
-    i=0
-    totlist=[]
-    while i < (len(values)-1):
-        newlist=[]
-        if i+iteration < len(values):
-            newlist.append(values[i])
-            i+=iteration
-        else:
-            totlist.append(newlist)
+#def TrimList(values,iteration):
+    #i=0
+    #totlist=[]
+    #while i < (len(values)-1):
+        #newlist=[]
+        #if i+iteration < len(values):
+            #newlist.append(values[i])
+            #i+=iteration
+        #else:
+            #totlist.append(newlist)
 
-change_diff=TrimList(diff,30)
+#change_diff=TrimList(diff,30)
 ################################################
