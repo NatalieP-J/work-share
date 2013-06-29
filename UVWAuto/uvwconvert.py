@@ -1,15 +1,18 @@
 import numpy as np
 import manage as man
-from astropy import time
+from astropy.time import Time
+import sys
 
+#import from command line the file containing the GST's and an output file
+fname=sys.argv[1]
+name=sys.argv[2]
 
 ####CHANGE THIS FOR SOURCE: INPUT IN RADIANS####
 #May 16 2013: b1919+21
 ra=5.0715791948861657 
 dec=0.38240013618954616
-TJD_GMST=man.LoadData('tjd2gst/4minMay16first1919GST.dat')
 ################################################
-
+TJD_GMST=man.LoadData('fname')
 sin=np.sin
 cos=np.cos
 GST=man.IterativeFloatAppend(TJD_GMST,1)
@@ -143,16 +146,16 @@ uvw_test=UVWTest(baseline_test,hour_test,dec)
 def WriteFileCols(values1,values2,fname):
     with open(fname,"w") as data:
         for i in range(len(values1)):
-            data.write("{0}".format(values2[i]))
-            data.write("u coordinate\t v coordinate\t w coordinate\n")
+            data.write("{0}\n".format(values2[i]))
+            data.write("antenna\t u coordinate\t v coordinate\t w coordinate\n")
             for j in range(len(values1[i])):
-                data.write("{0}\t{1}\t{2}\n".format(values1[i][j][0],values1[i][j][1],values1[i][j][2]))
+                data.write("{0}\t{1}\t{2}\t{3}\n".format(j,values1[i][j][0],values1[i][j][1],values1[i][j][2]))
 def WriteFile(values1,values2,fname):
     with open(fname,"w") as data:
         for i in range(len(values1)):
-            data.write("{0}".format(values2[i])
+            data.write("{0}".format(values2[i]))
 
-WriteFileCols(uvw_test,time,'AntennaCoordinates.dat')
-WriteFile(uvw, 'VLBIDelays')
+WriteFileCols(uvw_test,time,'GMRT_{0}'.format(name))
+WriteFile(uvw,time,'VLBI_{0}'.format(name))
 
 

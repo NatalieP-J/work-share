@@ -25,6 +25,7 @@ def LoadData(fname):
 
 fname=sys.argv[1]
 data=LoadDataSpace(fname)
+c=299792458.0
 #data=data[:30]
 glomp=man.IterativeStrAppend(data,4)
 antenna=man.IterativeIntAppend(data,1)
@@ -37,7 +38,7 @@ antenna=man.IterativeIntAppend(data,1)
 #NOTE THAT THIS VALUE MAY NEED TO BE NEGATIVE
 delay=[]
 for i in range(len(glomp)):
-    point=float(glomp[i][:-9])
+    point=((float(glomp[i][:-9])/c)*10**6
     delay.append(point)
 
 #timedat=sys.argv[2]
