@@ -65,7 +65,7 @@ try:
         #point=IST[i]*(np.pi/12)
         #IST_rad.append(point)
     
-    man.WriteFile(tjd_4min,"4min{0}".format(name))
+    man.WriteFile(tjd_utc,name)
     
     #elapsed=[]
     #for i in range(len(mjd)):
