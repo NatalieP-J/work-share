@@ -1,0 +1,10 @@
+cd ~njones/work-share/UVWAuto/Timestamp
+python converting.py [timestamp file] [tjd output file]
+cd ../tjd2gst
+./tjd2gst.x [tjd output file] [tjd and gst output file]
+cd ..
+**modify writeuvcoord.c for appropriate pulsar coordinates and NEPOCH value
+make writeuvcoord.x
+./writeuvcoord.x [tjd and gst output file] [uvw output file]
+python delay.py [uvw output file]
+**results are in delay_[uvw output file]

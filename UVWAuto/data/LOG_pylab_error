@@ -1,0 +1,15 @@
+ERROR: ImportError: dlopen(/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/_path.so, 2): no suitable image found.  Did find:
+	/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/_path.so: no matching architecture in universal wrapper [unknown]
+Traceback (most recent call last):
+  File "plotantenna.py", line 3, in <module>
+    import matplotlib.pylab as plt
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/pylab.py", line 222, in <module>
+    from matplotlib import mpl  # pulls in most modules
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/mpl.py", line 1, in <module>
+    from matplotlib import artist
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/artist.py", line 7, in <module>
+    from transforms import Bbox, IdentityTransform, TransformedBbox, \
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/transforms.py", line 35, in <module>
+    from matplotlib._path import (affine_transform, count_bboxes_overlapping_bbox,
+ImportError: dlopen(/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/_path.so, 2): no suitable image found.  Did find:
+	/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/_path.so: no matching architecture in universal wrapper
