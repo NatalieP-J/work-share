@@ -36,7 +36,7 @@
 
 #define NPOD 30 /*Number of baselines over which to iterate*/
 #define EPOCH_START (0)
-#define NEPOCH (1081) /*Number of lines in my timestamp file plus 1 - specifies the number of times we want antenna coordinates 4797 for 1957, 1197 for 1919, 6702 for 1937,1081 for 0329*/
+#define NEPOCH (4306) /*Number of lines in my timestamp file plus 1 - specifies the number of times we want antenna coordinates 4797 for 1957, 1197 for 1919, 6702 for 1937,4306 for 0329*/
 #define NEPOCH_READ (NEPOCH+EPOCH_START)
 #define DNEPOCH_CALIB (73)
 #define DFREQ_CALIB  (512/32)
@@ -88,7 +88,7 @@ int main(int argc, char *argv[]) {
   }
 
   get_tjd_gst(argv[1], NEPOCH_READ, TJD, GST);
-  get_antenna_coords("data/coords30_2013_gmrt.dat", coords, NPOD);
+  get_antenna_coords("data/coords60_2013.dat", coords, NPOD);
 
   int tsize,rsize,bindex;
   off_t offset;
