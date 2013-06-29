@@ -88,7 +88,7 @@ int main(int argc, char *argv[]) {
   }
 
   get_tjd_gst(argv[1], NEPOCH_READ, TJD, GST);
-  get_antenna_coords("data/coords60_2013.dat", coords, NPOD);
+  get_antenna_coords("data/coords30_2013_gmrt.dat", coords, NPOD);
 
   int tsize,rsize,bindex;
   off_t offset;
