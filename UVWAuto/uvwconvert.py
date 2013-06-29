@@ -1,7 +1,7 @@
 import numpy as np
 import manage as man
+from astropy import time
 
-# ************* TEST AGAINST WRITEUVCOORD DID NOT WORK *********************
 
 ####CHANGE THIS FOR SOURCE: INPUT IN RADIANS####
 #May 16 2013: b1919+21
@@ -13,7 +13,14 @@ TJD_GMST=man.LoadData('tjd2gst/4minMay16first1919GST.dat')
 sin=np.sin
 cos=np.cos
 GST=man.IterativeFloatAppend(TJD_GMST,1)
+TJD=man.IterativeFloatAppend(TJD_GMST,0)
+MJD=[]
+for i in range(len(TJD)):
+    mjd=TJD[i]+40000
+    MJD.append(mjd)
 
+t=Time(MJD,format='mjd',scale='utc')
+time=t.iso
 #this program takes a set of X Y Z coordinates for various antennas or 
 #observatories, calculates their baselines with respect to a given observatory
 #for now, this reference point will be ARO because that it the location of 
@@ -133,58 +140,19 @@ uvw_test=UVWTest(baseline_test,hour_test,dec)
 
 #this function writes the results to file for future examination 
 #it is the WriteFile function in manage.py modified for a list of lists
-def WriteFile(values1,fname):
+def WriteFileCols(values1,values2,fname):
     with open(fname,"w") as data:
         for i in range(len(values1)):
+            data.write("{0}".format(values2[i]))
             data.write("u coordinate\t v coordinate\t w coordinate\n")
             for j in range(len(values1[i])):
                 data.write("{0}\t{1}\t{2}\n".format(values1[i][j][0],values1[i][j][1],values1[i][j][2]))
+def WriteFile(values1,values2,fname):
+    with open(fname,"w") as data:
+        for i in range(len(values1)):
+            data.write("{0}".format(values2[i])
 
-WriteFile(uvw_test,'AntennaCoordinates.dat')
+WriteFileCols(uvw_test,time,'AntennaCoordinates.dat')
+WriteFile(uvw, 'VLBIDelays')
 
 
-
-#########TROUBLESHOOTING#########
-#def Diff(values1,values2):
-    #newlist=[]
-    #for i in range(len(values1)):
-        #point=values1[i]-values2[i]
-        #newlist.append(point)
-    #return newlist
-
-#correct=man.LoadData('4minMay16first1919UVW.dat')
-#writeuv=man.IterativeFloatAppend(correct,8)
-#writeuv=writeuv[:-30]
-
-#def Format(values,index):
-    #newlist=[]
-    #for i in range(len(values)):
-        #for j in range(len(values[i])):
-            #point=values[i][j][index]
-            #newlist.append(point)
-    #return newlist
-
-#delay=Format(uvw_test,2)
-
-#diff=Diff(writeuv,delay) 
-
-#def WriteFileCols(values1,values2,values3,fname):
-    #with open(fname,"w") as data:
-        #for i in range(len(values1)):
-            #data.write('{0}\t{1}\t{2}\n'.format(values1[i],values2[i],values3[i]))
-
-#WriteFileCols(delay,writeuv,diff,'AntennaComparisonTest.dat')
-
-#def TrimList(values,iteration):
-    #i=0
-    #totlist=[]
-    #while i < (len(values)-1):
-        #newlist=[]
-        #if i+iteration < len(values):
-            #newlist.append(values[i])
-            #i+=iteration
-        #else:
-            #totlist.append(newlist)
-
-#change_diff=TrimList(diff,30)
-################################################
