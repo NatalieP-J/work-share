@@ -1,0 +1,49 @@
+THIS IS A README FOR GENERATING SEQUENCE FILES FROM TIMESTAMPS
+
+files are listed in the order in which they should be excecuted
+files presume that each node (33-48) has its own directory containing its four
+timestamp files and one sequence file
+
+
+
+sequenceSpeed.py - produces a masterfile of timestamps in chronological order, 
+		 accounting for observations that may take place between the 
+		 transition from one day to another
+	     	 - writes timestamp file to screen as it is processed, and
+		 anounces when it has finished created a masterfile for a node
+	      	 - also identifies when timestamps are missing
+		 - outputs a file called SequencedTimeStamp in each node
+		 directory containing a list of time identifiers and the disks 
+		 from which they came
+
+
+
+
+sequence_sort.py - sorts the sequence files in each node directory so that the
+		 time stamp identifiers are in ascending order
+     	   	 - double checks the sort by taking the difference between 
+		 consecutive timestamp identifiers
+     	   	 - outputs a file called sequence.sorted that has two columns:
+		 time identifiers and disk identifiers
+
+
+
+     
+timestamp_order.py - checks that each timestamp occurs at the appropriate 
+		   interval (~0.251 seconds), and makes a note of skips in the 
+		   file
+	 	   - assigns to each timestamp a number (starting at 2) that 
+		   when put in ascending order, correspond to choronologically 
+		   ordered timestamps
+     	    	   - writes to screen the number of intervals skipped
+		   - writes a file called generated_sequence containing the 
+		   sequence generated from the timestamps 
+
+
+
+
+sequence_compare.py - compares the actual and generated sequence and identifes 
+		    points that do not match
+		    - writes a file containing the line by line difference 
+		    between the timestamp identifiers in the actual and 
+		    generated sequence

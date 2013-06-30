@@ -23,7 +23,7 @@ while n<49:
 
             time=[]
             for j in range(len(times)):
-                point=(hour[j]*3600)+(minute[j]*60)+(seconds[j])+(frac[j])
+                point=(day[j]*3600*24)+(hour[j]*3600)+(minute[j]*60)+(seconds[j])+(frac[j])
                 time.append(point)
             for j in range(len(time)):
                 point=[time[j],i-1]
