@@ -22,7 +22,7 @@ while n<49:
             point=np.around(point,decimals=0)
             j+=point
             if point > 1:
-                k+=(point-1)
+                k+=point
         else:
             j+=1
         i+=1

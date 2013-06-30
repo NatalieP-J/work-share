@@ -17,8 +17,8 @@ while n<49:
     while i < (len(time)-2):
         stamp_number.append(int(j))
         interval=time[i+1]-time[i]
-        if interval*(60*60*24) > rate:
-            point=(interval*(60*60*24))/rate
+        if interval > rate:
+            point=interval/rate
             point=np.around(point,decimals=0)
             j+=point
             if point > 1:
