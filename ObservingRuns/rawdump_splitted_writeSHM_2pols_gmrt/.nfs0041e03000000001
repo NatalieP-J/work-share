@@ -1,0 +1,31 @@
+#!/bin/csh -x
+#make
+setenv DEBUG_PC 0
+date
+
+if($#argv<1) then
+    echo " "
+    echo "Usage: run.csh operation-mode sampler-bit sample-clock dump-bit buffer-count"
+    echo "Exiting..... "
+    exit
+endif
+
+set op_mode = $argv[1]  #few raw voltage samples dump mode (0) or continuous running (1)
+echo $op_mode
+
+set home_dir = $cwd
+echo $home_dir
+
+set acq_bit = 8     # sampling bit resolution
+set clk =  33   # samping clock (MSPS)
+set dump_bit = 4 # raw voltage data resolution written into the disk
+set buffer_count = 0 # Duration of observation in secs
+#set nint_visibility = 9
+#set buffer_w_recal = 1
+#set fstop = 0
+
+#/opt/openmpi-1.2.2/bin/mpirun --mca btl_tcp_if_include eth0,eth1 -nolocal -n 32 -hostfile test_nodes_dual mpi_dual $op_mode $acq_bit $clk $dump_bit $buffer_count
+/opt/openmpi/1.2.2-intel-9.1/bin/mpirun -n 2 -nolocal -hostfile test_nodes_dual mpi_dual $op_mode $acq_bit $clk $dump_bit $buffer_count
+
+date
+

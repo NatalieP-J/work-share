@@ -1,0 +1,71 @@
+top 4 empty disks: node111 /mnt/b (183G) node112 /mnt/c (184G) node114 /mnt/b (122G) /mnt/c (112G)
+node111
+/dev/sdc2             466G  403G   64G  87% /mnt/disk2
+/dev/sdd2             466G  381G   85G  82% /mnt/disk3
+/dev/sde2             466G  417G   50G  90% /mnt/disk4
+/dev/sdb1             466G  466G   20K 100% /mnt/a
+/dev/sdc1             466G  283G  183G  61% /mnt/b
+/dev/sdd1             466G  466G   20K 100% /mnt/c
+/dev/sde1             466G  466G   56K 100% /mnt/d
+node112
+/dev/sdb1             466G  378G   89G  82% /mnt/a
+/dev/sdc1             466G  381G   85G  82% /mnt/b
+/dev/sdd1             466G  282G  184G  61% /mnt/c
+/dev/sde1             466G  365G  101G  79% /mnt/d
+/dev/sdb2             466G  376G   91G  81% /mnt/disk1
+/dev/sdc2             466G  324G  143G  70% /mnt/disk2
+/dev/sdd2             466G  361G  106G  78% /mnt/disk3
+/dev/sde2             466G  466G   20K 100% /mnt/disk4
+node113
+/dev/sdb1             466G  452G   15G  97% /mnt/a
+/dev/sdc1             466G  370G   96G  80% /mnt/b
+/dev/sdd1             466G  461G  5.3G  99% /mnt/c
+/dev/sde1             466G  460G  6.3G  99% /mnt/d
+/dev/sdb2             466G  396G   71G  85% /mnt/disk1
+/dev/sdc2             466G  399G   68G  86% /mnt/disk2
+/dev/sdd2             466G  408G   59G  88% /mnt/disk3
+/dev/sde2             466G  396G   71G  85% /mnt/disk4
+node114
+/dev/sdb1             466G  466G   20K 100% /mnt/a
+/dev/sdc1             466G  344G  122G  74% /mnt/b
+/dev/sdd1             466G  354G  112G  76% /mnt/c
+/dev/sde1             466G  460G  6.3G  99% /mnt/d
+/dev/sdb2             466G  443G   23G  96% /mnt/disk1
+/dev/sdc2             466G  440G   26G  95% /mnt/disk2
+/dev/sdd2             466G  446G   21G  96% /mnt/disk3
+/dev/sde2             466G  453G   14G  98% /mnt/disk4
+node115
+/dev/sdb1             466G  443G   24G  95% /mnt/a
+/dev/sdc1             466G  426G   41G  92% /mnt/b
+/dev/sdd1             466G  446G   20G  96% /mnt/c
+/dev/sde1             466G  460G  6.3G  99% /mnt/d
+/dev/sdb2             466G  428G   38G  92% /mnt/disk1
+/dev/sdc2             466G  399G   68G  86% /mnt/disk2
+/dev/sdd2             466G  414G   53G  89% /mnt/disk3
+/dev/sde2             466G  421G   45G  91% /mnt/disk4
+node116
+/dev/sdb1             468G  468G   20K 100% /mnt/a
+/dev/sdc1             466G  444G   22G  96% /mnt/b
+/dev/sdd1             466G  446G   20G  96% /mnt/c
+/dev/sde1             466G  418G   49G  90% /mnt/d
+/dev/sdb2             468G  393G   75G  85% /mnt/disk1
+/dev/sdc2             466G  381G   86G  82% /mnt/disk2
+/dev/sdd2             466G  396G   71G  85% /mnt/disk3
+/dev/sde2             466G  345G  121G  75% /mnt/disk4
+node117
+/dev/sdb1             466G  381G   85G  82% /mnt/b
+/dev/sdd1             466G  458G  8.4G  99% /mnt/c
+/dev/sde1             466G  411G   56G  89% /mnt/d
+/dev/sdb2             466G  466G   20K 100% /mnt/disk1
+/dev/sdb2             466G  466G   20K 100% /mnt/disk2
+/dev/sdd2             466G  406G   60G  88% /mnt/disk3
+/dev/sde2             466G  394G   73G  85% /mnt/disk4
+node118
+/dev/sdb1             466G  462G  3.8G 100% /mnt/a
+/dev/sdc1             466G  466G   20K 100% /mnt/b
+/dev/sdd1             466G  445G   22G  96% /mnt/c
+/dev/sde1             466G  457G  9.4G  98% /mnt/d
+/dev/sdb2             466G  388G   79G  84% /mnt/disk1
+/dev/sdc2             466G  457G  9.3G  99% /mnt/disk2
+/dev/sdd2             466G  421G   45G  91% /mnt/disk3
+/dev/sde2             466G  423G   43G  91% /mnt/disk4

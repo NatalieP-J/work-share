@@ -1,6 +1,4 @@
-import numpy as np
-from astropy.time import Time
-
+#Loads a list of the rows in the file f, splitting on the spaces
 def LoadData(fname):
     f=open(fname,'r')
     data=[]
@@ -8,64 +6,62 @@ def LoadData(fname):
         data.append(line.replace('\n','').split(' '))
     f.close()
     return data
-
+#Loads a list of the rows in the file f, splitting on the double spaces
+def LoadDataSpaces(fname):
+    f=open(fname,'r')
+    data=[]
+    for line in f.readlines():
+        data.append(line.replace('\n','').split('  '))
+    f.close()
+    return data
+#Loads a list of the rows in the file f, splitting on the tabs
+def LoadDataSpaces(fname):
+    f=open(fname,'r')
+    data=[]
+    for line in f.readlines():
+        data.append(line.replace('\n','').split('\t'))
+    f.close()
+    return data
+#Used in conjunction with LoadData to pull out a column of a file as a list
+#of floats
 def IterativeFloatAppend(values,index):
     new_list=[]
-    for i in range((len(values))-1):
+    for i in range(len(values)):
         point=float(values[i][index])
         new_list.append(point)
     return new_list
-
+#Used in conjunction with LoadData to pull out a column of a file as a list
+#of integers
 def IterativeIntAppend(values,index):
     new_list=[]
-    for i in range((len(values))-1):
+    for i in range(len(values)):
         point=int(values[i][index])
         new_list.append(point)
     return new_list
-
+#Used in conjunction with LoadData to pull out a column of a file as a list
+#of strings
 def IterativeStrAppend(values,index):
     new_list=[]
-    for i in range((len(values))-1):
+    for i in range(len(values)):
         point=str(values[i][index])
         new_list.append(point)
     return new_list
-
+#Find the differences in consecutive values of a list
 def Differences(values):
     new_list=[]
     for i in range((len(values))-1):
         point=values[i+1]-values[i]
         new_list.append(point)
     return new_list
-
-def MjdToIso(values):
-    ist=[]
-    for i in range(len(values)):
-        ist_fix=values[i]+(5.5/24)
-        ist.append(ist_fix)
-    T=Time(ist,format='mjd',scale='utc',precision=9)
-    new_list=T.iso
-    return new_list
-
+#Remove repeats from a list of values
 def RemoveRepeats(values):
     new_list=[]
     for i in range(len(values)):
         if values[i] not in new_list:
             new_list.append(values[i])
     return new_list
-
+#Write a list to file as a column
 def WriteFile(values,fname):
     with open(fname,"w") as data:
         for i in range(len(values)):
-            data.write("%s\n"%values[i])
-
-#EXAMPLE - ACCESSING JUNE 2 DATA
-
-#Data=LoadData('/cita/h/home-2/njones/work-share/Summer2013/Ephemeris/ForMartenCleaned')
-
-
-#start=2
-#stop=106
-#June2012=Data[start:stop]
-#Dates=IterativeFloatAppend(June2012,3)
-#Times=MjdToIso(Dates)
-#WriteFile(Times,"02Jun2012real.dat")
+            data.write("{0}\n"%values[i])

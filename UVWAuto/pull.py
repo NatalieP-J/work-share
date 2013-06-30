@@ -1,6 +1,7 @@
 from manage import *
 import sys
-
+#Lists TJD in IST and GST in two columns - no longer needed for this particular
+#project, as writeuvcoord takes TJD in UT and GST
 def WriteFileCols(values1,values2,fname):
     with open(fname,"w") as data:
         for i in range(len(values1)):

@@ -8,9 +8,18 @@ fname=sys.argv[1]
 name=sys.argv[2]
 
 ####CHANGE THIS FOR SOURCE: INPUT IN RADIANS####
-#May 16 2013: b1919+21
+#May 17 2013: b1919+21
 ra=5.0715791948861657 
 dec=0.38240013618954616
+#May 17 2013: b1957+20
+#ra=5.2368626022705502
+#dec=0.36375085679967373
+#June 11 2013: b1937+21
+#ra=5.149701586646474
+#dec=0.37724768183081842
+#June 29 2013: b0329+54
+#ra=0.9338347801769575
+#dec=0.953358324077975
 ################################################
 TJD_GMST=man.LoadData('fname')
 sin=np.sin
@@ -59,17 +68,17 @@ baseline=Baseline(observatories)
 antenna=man.LoadData('data/pycoords60_2013.dat')
 for i in range(len(antenna)):
     antenna[i].pop(3)
-baseline_test=[]    
+baseline_gmrt=[]    
 for i in range(len(antenna)):
     points=[]
     for j in range(len(antenna[i])):
         point=float(antenna[i][j])
         points.append(point)
-    baseline_test.append(points)
+    baseline_gmrt.append(points)
 
-baseline_test=Baseline(baseline_test)
+baseline_gmrt=Baseline(baseline_gmrt)
 
-lon_test=gmrt_lon
+lon_gmrt=gmrt_lon
 
 #now that we have baselines, we want to convert X Y Z system to u v w system and
 #extract the w value
@@ -94,14 +103,14 @@ def HourAngle(GMST,longitude,RA):
 
 hour=HourAngle(GST,lon,ra)
 
-def HourAngleTest(GMST,RA):
+def HourAngleGMRT(GMST,RA):
     newlist=[]
     for i in range(len(GMST)):
         hour=GST[i]-RA
         newlist.append(hour)
     return newlist
 
-hour_test=HourAngleTest(GST,ra)
+hour_gmrt=HourAngleGMRT(GST,ra)
             
 #this function takes a list of coordinate sets, a list of hour angles at given
 #longitudes over time and declination, and outputs u v w coordinates for each 
@@ -124,7 +133,7 @@ def UVW(BL,h,d):
 
 uvw=UVW(baseline,hour,dec)
 
-def UVWTest(BL,h,d):
+def UVWGMRT(BL,h,d):
     newlist=[]
     for j in range(len(h)):
         timeset=[]
@@ -139,7 +148,7 @@ def UVWTest(BL,h,d):
             timeset.append(uvw)
         newlist.append(timeset)
     return newlist
-uvw_test=UVWTest(baseline_test,hour_test,dec)           
+uvw_gmrt=UVWGMRT(baseline_gmrt,hour_gmrt,dec)           
 
 #this function writes the results to file for future examination 
 #it is the WriteFile function in manage.py modified for a list of lists
@@ -155,7 +164,7 @@ def WriteFile(values1,values2,fname):
         for i in range(len(values1)):
             data.write("{0}".format(values2[i]))
 
-WriteFileCols(uvw_test,time,'GMRT_{0}'.format(name))
+WriteFileCols(uvw_gmrt,time,'GMRT_{0}'.format(name))
 WriteFile(uvw,time,'VLBI_{0}'.format(name))
 
 
