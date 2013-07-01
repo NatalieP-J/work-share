@@ -9,6 +9,7 @@ while n < 49:
         fname='node{0}/sequence.sorted.dat'.format(n)
         sequence=man.LoadData(fname)
         k=0
+        m=0
         stamp=man.IterativeIntAppend(sequence,0)
         if len(gen_stamp)!=len(stamp): 
             diff=len(stamp)-len(gen_stamp)
@@ -21,10 +22,12 @@ while n < 49:
                 difference.append(point)
                 if i>0:
                     if point!=0:
+                        m+=1
                         if point != difference[i-1]:
                             k+=1
                 i+=1
-            print '\t{0} mismatched timestamps'.format(k)
+            print '\t{0} mismatched timestamps'.format(m)
+            print '\t{0} offset'.format(k)
         else:
             print 'Generated time stamp longer than actual file for node{0}'.format(n)
         name='node{0}/sequence_difference.dat'.format(n)
