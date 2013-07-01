@@ -69,3 +69,7 @@ def WriteFileCols(values1,values2,fname):
     with open(fname,"w") as data:
         for i in range(len(values1)):
             data.write("{0} {1}\n".format(values1[i],values2[i]))
+def WriteFile3Cols(values1,values2,values3,fname):
+    with open(fname,"w") as data:
+        for i in range(len(values1)):
+            data.write("{0} {1} {2}\n".format(values1[i],values2[i],values3[i]))
