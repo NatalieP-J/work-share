@@ -1,3 +1,4 @@
+from node118 - June 26
 scp -pr -c blowfish /mnt/disk2/gsbuser/B1508+55_jan16_2.node7 192.168.17.112:/mnt/a/gsbuser/ **check that jan16_2 fringestop is finished before moving this file**
 scp -pr -c blowfish /mnt/disk3/gsbuser/cal_jan13_8.node7 192.168.16.112:/mnt/b/gsbuser
 scp -pr -c blowfish /mnt/disk2/gsbuser/cal_b1508+55_jan15_5.node7 192.168.16.112:/mnt/a/gsbuser/
@@ -10,3 +11,7 @@ scp -pr -c blowfish /mnt/disk2/gsbuser/B3029+54_jan13_5.node15 192.168.16.112:/m
 scp -pr -c blowfish /mnt/disk2/gsbuser/cal_jan13_1.node7 192.168.16.112:/mnt/c/gsbuser
 scp -pr -c blowfish /mnt/disk3/gsbuser/B3029+54_jan13_7.node15 192.168.16.112:/mnt/c/gsbuser/
 scp -pr -c blowfish /mnt/disk3/gsbuser/cal_jan13_1.node15 192.168.16.112:/mnt/c/gsbuser
+from node118 - July 1
+cp B0329+54_jan15_1.node15 /mnt/c/gsbuser/
+scp -pr -c blowfish cal_B1508+55_jan16_1.node15 192.168.17.112:/mnt/c/gsbuser
+scp -pr -c blowfish cal_B1508+55_jan16_1.node7 192.168.17.112:/mnt/c/gsbuser

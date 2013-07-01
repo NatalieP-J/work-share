@@ -1,10 +1,16 @@
 import manage as man
 from astropy.time import Time
 import numpy as np
-##STILL NEEDS TO MARK DUPLICATES
 
-#a function that takes the differences between consecutive values at the same 
-#position in a list of lists
+def WriteFileCols(values,fname):
+    with open(fname,"w") as data:
+        for i in range(len(values)):
+            data.write("{0} {1}\n".format(values[i][0],values[i][1]))
+def WriteFile3Cols(values,fname):
+    with open(fname,"w") as data:
+        for i in range(len(values)):
+            data.write("{0} {1} {2}\n".format(values[i][0],values[i][1],values[i][2]))
+
 def Differences(values,index):
     new_list=[]
     i=0
@@ -71,6 +77,7 @@ while n<49:
                 print "Missing node{0}/timestamp_voltage.all.0329_june29.{1}.dat".format(n,i)
                 i+=1
                 pass
+
 #sort the file within the node to be in chronological order                
             mastertime.sort() 
 #check that the sort worked by making sure that there are no negative values in
@@ -132,6 +139,7 @@ while n<49:
                 print "Missing node{0}/timestamp_voltage.all.0329_june29.{1}.dat".format(n,i)
                 i+=1
                 pass
+
 #sort the file within the node to be in chronological order                
             mastertime.sort() 
 #check that the sort worked by making sure that there are no negative values in
@@ -191,6 +199,7 @@ for i in range(len(masterlist)-1):
         n+=1
 
 #print out diagnostic information
+
 print '''Diagnostics:
 \t Length of masterlist: {0}
 \t Length of stamp_number: {1}
@@ -234,5 +243,6 @@ for i in range(len(masterlist)):
     point=[masterlist[i][3],masterlist[i][1],(masterlist[i][2]+33),masterlist[i][4]]
     master.append(point)
 WriteFile4Cols(master,name)
+
 
             
