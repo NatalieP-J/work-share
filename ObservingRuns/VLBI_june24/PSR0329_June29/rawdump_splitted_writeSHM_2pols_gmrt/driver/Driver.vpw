@@ -1,0 +1,129 @@
+[CurrentProject]
+curproj=Driver.vpj
+[ProjectDates]
+Driver.vpj=20041229121848000
+[ProjectFiles]
+Driver.vpj
+[TreeExpansion]
+Driver.vpj 1 1 1 0 0 1
+[State]
+SCREEN: 1600 1200 25 0 1133 835 0 0 N 0 0 0 0 867 581
+CWD: /home/mwyrick/ALLinux/Apps/4108_Dual
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/vmem.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=21 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/timers.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.669 CL=1 LE=0 CX=1 CY=25 WI=5 BI=23 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/proc.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=24 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/isr.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.1624 CL=15 LE=0 CX=15 CY=30 WI=5 BI=25 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/dma.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.2575 CL=1 LE=0 CX=1 CY=30 WI=5 BI=26 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/aldriver.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.7998 CL=8 LE=0 CX=8 CY=25 WI=5 BI=27 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/types.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.1610 CL=16 LE=0 CX=16 CY=26 WI=5 BI=28 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/dma.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=29 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/headers.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=30 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/isr.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=31 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/plx9054.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.1703 CL=1 LE=0 CX=1 CY=1 WI=5 BI=32 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/altls.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=33 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/aldriver.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.7721 CL=28 LE=0 CX=28 CY=30 WI=5 BI=34 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/al8100.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=35 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/al4108.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=36 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/al212.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=37 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/al1g.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=38 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/fops.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0
+VIEW: LN=.5036 CL=12 LE=0 CX=12 CY=28 WI=5 BI=39 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 567 461 0 0 N  WF=0 WT=3 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/vmem.c"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=122 BI=21 HT=0 HN=0 HF=0 HC=4
+WINDOW: 25 25 567 461 0 0 N  WF=0 WT=4 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/timers.c"
+VIEW: LN=.669 CL=1 LE=0 CX=1 CY=25 WI=123 BI=23 HT=0 HN=0 HF=0 HC=4
+WINDOW: 50 50 567 461 0 0 N  WF=0 WT=5 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/proc.c"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=124 BI=24 HT=0 HN=0 HF=0 HC=4
+WINDOW: 75 75 567 461 0 0 N  WF=0 WT=6 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/isr.c"
+VIEW: LN=.1624 CL=15 LE=0 CX=15 CY=30 WI=125 BI=25 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 567 462 0 0 N  WF=0 WT=2 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/dma.c"
+VIEW: LN=.2575 CL=1 LE=0 CX=1 CY=30 WI=126 BI=26 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 567 400 0 0 N  WF=0 WT=13 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/aldriver.h"
+VIEW: LN=.7998 CL=8 LE=0 CX=8 CY=25 WI=127 BI=27 HT=0 HN=0 HF=0 HC=4
+WINDOW: 75 75 567 400 0 0 N  WF=0 WT=16 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/types.h"
+VIEW: LN=.1610 CL=16 LE=0 CX=16 CY=26 WI=128 BI=28 HT=0 HN=0 HF=0 HC=4
+WINDOW: 50 50 567 400 0 0 N  WF=0 WT=15 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/dma.h"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=129 BI=29 HT=0 HN=0 HF=0 HC=4
+WINDOW: 25 25 567 400 0 0 N  WF=0 WT=14 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/headers.h"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=130 BI=30 HT=0 HN=0 HF=0 HC=4
+WINDOW: 100 100 567 400 0 0 N  WF=0 WT=17 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/isr.h"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=131 BI=31 HT=0 HN=0 HF=0 HC=4
+WINDOW: 125 125 567 400 0 0 N  WF=0 WT=18 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/plx9054.h"
+VIEW: LN=.1703 CL=1 LE=0 CX=1 CY=1 WI=132 BI=32 HT=0 HN=0 HF=0 HC=4
+WINDOW: 100 100 567 461 0 0 N  WF=0 WT=7 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/altls.c"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=133 BI=33 HT=0 HN=0 HF=0 HC=4
+WINDOW: 125 125 567 461 0 0 N  WF=0 WT=8 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/aldriver.c"
+VIEW: LN=.7721 CL=28 LE=0 CX=28 CY=30 WI=134 BI=34 HT=0 HN=0 HF=0 HC=4
+WINDOW: 150 150 567 461 0 0 N  WF=0 WT=9 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/al8100.c"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=135 BI=35 HT=0 HN=0 HF=0 HC=4
+WINDOW: 175 175 567 461 0 0 N  WF=0 WT=10 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/al4108.c"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=136 BI=36 HT=0 HN=0 HF=0 HC=4
+WINDOW: 200 200 567 461 0 0 N  WF=0 WT=11 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/al212.c"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=137 BI=37 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 567 461 0 0 N  WF=0 WT=12 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/al1g.c"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=138 BI=38 HT=0 HN=0 HF=0 HC=4
+WINDOW: 25 25 567 461 0 0 M  WF=0 WT=1 "OEM Fixed Font,10,0,1"
+BUFFER: BN="/home/mwyrick/ALLinux/Driver/fops.c"
+VIEW: LN=.5036 CL=12 LE=0 CX=12 CY=28 WI=139 BI=39 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+/home/mwyrick/ALLinux/Driver/isr.h
+/home/mwyrick/ALLinux/Driver/plx9054.h
+/home/mwyrick/ALLinux/Driver/dma.c
+/home/mwyrick/ALLinux/Driver/timers.c
+/home/mwyrick/ALLinux/Driver/aldriver.h
+/home/mwyrick/ALLinux/Driver/types.h
+/home/mwyrick/ALLinux/Driver/aldriver.c
+/home/mwyrick/ALLinux/Driver/isr.c
+/home/mwyrick/ALLinux/Driver/fops.c
