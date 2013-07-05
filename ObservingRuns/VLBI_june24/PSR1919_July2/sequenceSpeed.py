@@ -2,6 +2,8 @@ import manage as man
 from astropy.time import Time
 import numpy as np
 
+#NODE34 is still 14 min early
+
 def WriteFileCols(values,fname):
     with open(fname,"w") as data:
         for i in range(len(values)):
@@ -32,55 +34,107 @@ disk_type=['EoR','a_d']
 for d in range(len(disk_type)):
     n=33
     while n<41:
-        mastertime_1919=[]
-        mastertime_1957=[]
-        mastertime_2016=[]
+        if n == 34:
+            mastertime_1919=[]
+            mastertime_1957=[]
+            mastertime_2016=[]
 #within node, extract the times from every timestamp file
-        i=1
-        while i<5:
+            i=1
+            while i<5:
 #identifies the name of each timestamp file within a given node's 
 #directory
-            fname='node{0}_july2/{1}/timestamp_voltage.all.1919_2_july2.{2}.dat'.format(n,disk_type[d],i)
+                fname='node{0}_july2/{1}/timestamp_voltage.all.1919_2_july2.{2}.dat'.format(n,disk_type[d],i)
 #if fname points to a real file, extract the times
-            try:
-                times=man.LoadData(fname)
+                try:
+                    times=man.LoadData(fname)
                 #year=man.IterativeIntAppend(times,0) irrelevant for our purpose
                 #month=man.IterativeIntAppend(times,1)
 #include day to account for possibility of observations spanning a transition 
 #between days 
-                hour=man.IterativeIntAppend(times,3)
-                minute=man.IterativeIntAppend(times,4)
-                seconds=man.IterativeIntAppend(times,5)
-                frac=man.IterativeFloatAppend(times,6) #fraction of second
+                    hour=man.IterativeIntAppend(times,3)
+                    minute=man.IterativeIntAppend(times,4)
+                    seconds=man.IterativeIntAppend(times,5)
+                    frac=man.IterativeFloatAppend(times,6) #fraction of second
 
-                time=[] #create empty list for times from each timestamp file
-                for j in range(len(times)):
+                    time=[] #create empty list for times from each timestamp file
+                    for j in range(len(times)):
 #point is in seconds, and has no real meaning as a time measurment - it is only
 #the difference that concerns us in this instance
-                    point=(hour[j]*3600)+(minute[j]*60)+(seconds[j])+(frac[j])
-                    time.append(point)
-                for j in range(len(time)):
+                        point=(hour[j]*3600)+(minute[j]*60)+(seconds[j])+(frac[j])
+                        time.append(point)
+                    for j in range(len(time)):
 #add the time and the disk to which it was written (timestamp number minus 1) 
 #to the masterlist within the node
-                    point=[time[j],i-1,d]
-                    pt=[time[j],i-1,n-33,d]
-                    if 12120 <= time[j] <= 18600:
-                        mastertime_1919.append(point)
-                        masterlist_1919.append(pt)
-                    if 18660 <= time[j] <= 25560:
-                        mastertime_1957.append(point)
-                        masterlist_1957.append(pt)
-                    if 25680 <= time[j] <= 26400:
-                        mastertime_2016.append(point)
-                        masterlist_2016.append(pt)
+                        point=[time[j],i-1,d]
+                        pt=[time[j],i-1,n-33,d]
+                        if 12120 <= time[j] <= 18600:
+                            mastertime_1919.append(point)
+                            masterlist_1919.append(pt)
+                        if 18660 <= time[j] <= 25560:
+                            mastertime_1957.append(point)
+                            masterlist_1957.append(pt)
+                        if 25680 <= time[j] <= 26400:
+                            mastertime_2016.append(point)
+                            masterlist_2016.append(pt)
 #print a status update to screen and go to the next timestamp
-                print "Done node{0}_july2/timestamp_voltage.all.1919_2_july2.{1}.dat".format(n,i)
-                i+=1 
+                    print "Done node{0}_july2/timestamp_voltage.all.1919_2_july2.{1}.dat".format(n,i)
+                    i+=1 
 #if a timestamp file is missing, report it and go to the next one
-            except IOError:
-                print "Missing node{0}_july2/timestamp_voltage.all.1919_2_july2.{1}.dat".format(n,i)
-                i+=1
-                pass
+                except IOError:
+                    print "Missing node{0}_july2/timestamp_voltage.all.1919_2_july2.{1}.dat".format(n,i)
+                    i+=1
+                    pass
+        
+        else:
+            mastertime_1919=[]
+            mastertime_1957=[]
+            mastertime_2016=[]
+#within node, extract the times from every timestamp file
+            i=1
+            while i<5:
+#identifies the name of each timestamp file within a given node's 
+#directory
+                fname='node{0}_july2/{1}/timestamp_voltage.all.1919_2_july2.{2}.dat'.format(n,disk_type[d],i)
+#if fname points to a real file, extract the times
+                try:
+                    times=man.LoadData(fname)
+                #year=man.IterativeIntAppend(times,0) irrelevant for our purpose
+                #month=man.IterativeIntAppend(times,1)
+#include day to account for possibility of observations spanning a transition 
+#between days 
+                    hour=man.IterativeIntAppend(times,3)
+                    minute=man.IterativeIntAppend(times,4)
+                    seconds=man.IterativeIntAppend(times,5)
+                    frac=man.IterativeFloatAppend(times,6) #fraction of second
+
+                    time=[] #create empty list for times from each timestamp file
+                    for j in range(len(times)):
+#point is in seconds, and has no real meaning as a time measurment - it is only
+#the difference that concerns us in this instance
+                        point=(hour[j]*3600)+(minute[j]*60)+(seconds[j])+(frac[j])
+                        time.append(point)
+                    for j in range(len(time)):
+#add the time and the disk to which it was written (timestamp number minus 1) 
+#to the masterlist within the node
+                        point=[time[j],i-1,d]
+                        pt=[time[j],i-1,n-33,d]
+                        if 12120 <= time[j] <= 18600:
+                            mastertime_1919.append(point)
+                            masterlist_1919.append(pt)
+                        if 18660 <= time[j] <= 25560:
+                            mastertime_1957.append(point)
+                            masterlist_1957.append(pt)
+                        if 25680 <= time[j] <= 26400:
+                            mastertime_2016.append(point)
+                            masterlist_2016.append(pt)
+#print a status update to screen and go to the next timestamp
+                    print "Done node{0}_july2/timestamp_voltage.all.1919_2_july2.{1}.dat".format(n,i)
+                    i+=1 
+#if a timestamp file is missing, report it and go to the next one
+                except IOError:
+                    print "Missing node{0}_july2/timestamp_voltage.all.1919_2_july2.{1}.dat".format(n,i)
+                    i+=1
+                    pass
 
 #sort the file within the node to be in chronological order                
             mastertime_1919.sort()

@@ -25,20 +25,23 @@ try:
     day=man.IterativeStrAppend(times,2)
     hour=man.IterativeStrAppend(times,3)
     minute=man.IterativeStrAppend(times,4)
+    a=man.IterativeFloatAppend(times,5)
+    b=man.IterativeFloatAppend(times,6)
 
 #put the seconds back together
     seconds=[]
     for i in range(len(times)):
-        a=man.IterativeFloatAppend(times,5)
-        b=man.IterativeFloatAppend(times,6)
         point=a[i]+b[i]
         seconds.append(point)
-
+        print 'Seconds {0} percent done'.format((float(i)/len(times))*100)
+        
+    print 'Done reading in times'
 #formatting for astropy
     time=[]
     for i in range(len(times)):
         point="{0}-{1}-{2} {3}:{4}:{5}".format(year[i],month[i],day[i],hour[i],minute[i],seconds[i])
         time.append(point)
+        print 'Formatting {0} percent done'.format((float(i)/len(times))*100)
 
 #create Modified Julian Date time object
     t=Time(time, format='iso',scale='utc')
