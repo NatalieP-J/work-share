@@ -5,11 +5,6 @@ import observability
 import numpy as np
 import sys
 
-def WriteFileCols(values1,values2,fname):
-    with open(fname,"w") as data:
-        for i in range(len(values1)):
-            data.write("{0}\t{1}\n".format(values1[i],values2[i]))
-
 try:
 #file path
     fname=sys.argv[1]
@@ -33,15 +28,15 @@ try:
 
 #put the seconds back together
     seconds=[]
-    for i in range(len(times)-2):
-        a=man.IterativeIntAppend(times,5)
+    for i in range(len(times)):
+        a=man.IterativeFloatAppend(times,5)
         b=man.IterativeFloatAppend(times,6)
         point=a[i]+b[i]
         seconds.append(point)
 
 #formatting for astropy
     time=[]
-    for i in range(len(times)-2):
+    for i in range(len(times)):
         point="{0}-{1}-{2} {3}:{4}:{5}".format(year[i],month[i],day[i],hour[i],minute[i],seconds[i])
         time.append(point)
 
@@ -52,27 +47,7 @@ try:
     tjd=mjd-40000 #Convert modified Julian Date to truncated Julian Date
     
     tjd_utc=tjd-(5.5/24)
-    tjd_5min=tjd-(5.5/24)-(5./(60*24))
-    tjd_6min=tjd-(5.5/24)-(6./(60*24))
-    tjd_4min=tjd-(5.5/24)-(4./(60*24))
-    #IST=[]
-    #for i in range(len(time)):
-        #point=(float(hour[i])+(float(minute[i])/60)+(seconds[i]/3600))
-        #IST.append(point)
-    
-    #IST_rad=[]
-    #for i in range(len(IST)):
-        #point=IST[i]*(np.pi/12)
-        #IST_rad.append(point)
     
     man.WriteFile(tjd_utc,name)
-    
-    #elapsed=[]
-    #for i in range(len(mjd)):
-        #mod=mjd[i]-(Time(time[0],format='iso',scale='utc').mjd)
-        #mod=mod*24*60*60
-        #elapsed.append(mod)
-        #man.WriteFile(elapsed,'ElapsedTime1957.py')
-    
-
-
+except IOError:
+    print "Please enter a file to be converted and the name of the output file"
