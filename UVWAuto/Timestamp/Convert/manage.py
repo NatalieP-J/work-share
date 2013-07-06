@@ -1,3 +1,4 @@
+
 #Loads a list of the rows in the file f, splitting on the spaces
 def LoadData(fname):
     f=open(fname,'r')
@@ -64,4 +65,4 @@ def RemoveRepeats(values):
 def WriteFile(values,fname):
     with open(fname,"w") as data:
         for i in range(len(values)):
-            data.write("{0}\n"%values[i])
+            data.write('{0}\n'.format(values[i]))
