@@ -1,0 +1,1320 @@
+111
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/d/gsbuser/cal_jan13_1.node0.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/b/gsbuser/cal_jan13_1.node8.norm
+-rw----r-- 1 gsbuser gsbuser 3.9G Jan 13 17:21 /mnt/d/gsbuser/cal_jan13_1.node0
+-rw----r-- 1 gsbuser gsbuser 3.9G Jan 13 17:21 /mnt/b/gsbuser/cal_jan13_1.node8
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/disk2/gsbuser/B3029+54_jan13_5.node0.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/b/gsbuser/B3029+54_jan13_5.node8.norm
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/b/gsbuser/B3029+54_jan13_5.node8
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/disk2/gsbuser/B3029+54_jan13_5.node0
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/disk3/gsbuser/B3029+54_jan13_7.node0.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/b/gsbuser/B3029+54_jan13_7.node8.norm
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/disk3/gsbuser/B3029+54_jan13_7.node0
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/b/gsbuser/B3029+54_jan13_7.node8
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/disk4/gsbuser/cal_jan13_8.node8.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/d/gsbuser/cal_jan13_8.node0.norm
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/disk4/gsbuser/cal_jan13_8.node8
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/d/gsbuser/cal_jan13_8.node0
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/d/gsbuser/B0329+54_jan15_1.node0.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/b/gsbuser/B0329+54_jan15_1.node8.norm
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:07 /mnt/b/gsbuser/B0329+54_jan15_1.node8
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/disk4/gsbuser/B0329+54_jan15_2.node8.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/b/gsbuser/B0329+54_jan15_2.node8.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/disk4/gsbuser/cal_b1508+55_jan15_4.node8.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/disk1/gsbuser/cal_b1508+55_jan15_4.node0.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/d/gsbuser/cal_b1508+55_jan15_4.node0.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node0.norm
+-rw----r-- 1 gsbuser gsbuser 4.3G Jan 15 06:50 /mnt/disk4/gsbuser/cal_b1508+55_jan15_4.node8
+-rw----r-- 1 gsbuser gsbuser 2.1G Jan 15 06:50 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node0
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/disk4/gsbuser/cal_b1508+55_jan15_5.node8.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/d/gsbuser/cal_b1508+55_jan15_5.node0.norm
+-rw----r-- 1 gsbuser gsbuser 7.5G Jan 15 07:07 /mnt/d/gsbuser/cal_b1508+55_jan15_5.node0
+-rw----r-- 1 gsbuser gsbuser 7.5G Jan 15 07:07 /mnt/disk4/gsbuser/cal_b1508+55_jan15_5.node8
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/disk4/gsbuser/cal_B1508+55_jan16_1.node8.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/disk1/gsbuser/cal_B1508+55_jan16_1.node0.norm
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/disk4/gsbuser/cal_B1508+55_jan16_1.node8
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/disk1/gsbuser/cal_B1508+55_jan16_1.node0
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/disk4/gsbuser/B1508+55_jan16_2.node8.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/disk1/gsbuser/B1508+55_jan16_2.node0.norm
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/disk4/gsbuser/B1508+55_jan16_2.node8
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/d/gsbuser/B1508+55_jan16_2.node0
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/disk4/gsbuser/B1508+55_jan16_4.node8.norm
+-rw----r-- 1 gsbuser gsbuser  81G Jan 16 09:57 /mnt/disk4/gsbuser/B1508+55_jan16_4.node8
+-rw----r-- 1 gsbuser gsbuser  67G Jun 19 22:45 /mnt/d/gsbuser/B1508+55_jan16_4.node0
+-rw----r-- 1 gsbuser gsbuser    0 Jun 19 22:50 /mnt/d/gsbuser/B1508+55_jan16_4.node0.norm
+-rw----r-- 1 gsbuser gsbuser 2.1G Jun 19 23:12 /mnt/d/gsbuser/cal_b1508+55_jan15_4.node0
+-rw----r-- 1 gsbuser gsbuser    0 Jun 19 23:20 /mnt/d/gsbuser/B1508+55_jan16_2.node0.norm
+-rw----r-- 1 gsbuser gsbuser 2.5G Jun 20 16:49 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node8
+-rw----r-- 1 gsbuser gsbuser    0 Jun 20 16:50 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node8.norm
+lrwxrwxrwx 1 gsbuser gsbuser   50 Jun 21 20:03 /mnt/disk3/gsbuser/B1508+55_jan16_3.node8.norm -> /mnt/disk4/gsbuser/EoR/B1508+55_jan16_3.node8.norm
+lrwxrwxrwx 1 gsbuser gsbuser   50 Jun 21 20:04 /mnt/disk3/gsbuser/B1508+55_jan16_3.node9.norm -> /mnt/disk4/gsbuser/EoR/B1508+55_jan16_3.node9.norm
+lrwxrwxrwx 1 gsbuser gsbuser   51 Jun 21 20:05 /mnt/disk3/gsbuser/B1508+55_jan16_3.node10.norm -> /mnt/disk4/gsbuser/EoR/B1508+55_jan16_3.node10.norm
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 25 22:46 /mnt/b/gsbuser/B3029+54_jan13_5.node0 -> /mnt/disk2/gsbuser/B3029+54_jan13_5.node0
+lrwxrwxrwx 1 gsbuser gsbuser   32 Jun 26 01:24 /mnt/disk4/gsbuser/cal_jan13_8.node0 -> /mnt/d/gsbuser/cal_jan13_8.node0
+lrwxrwxrwx 1 gsbuser gsbuser   32 Jun 26 07:37 /mnt/d/gsbuser/cal_jan13_1.node8 -> /mnt/b/gsbuser/cal_jan13_1.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node9
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node8
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node16
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node9
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node8
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node16
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 27 03:14 /mnt/disk4/gsbuser/B3029+54_jan13_7.node8 -> /mnt/b/gsbuser/B3029+54_jan13_7.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 03:15 /mnt/disk4/gsbuser/B3029+54_jan13_7.node0 -> /mnt/disk3/gsbuser/B3029+54_jan13_7.node0
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 03:38 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node8 -> /mnt/disk4/gsbuser/cal_B1508+55_jan16_1.node8
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 03:56 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node0 -> /mnt/disk1/gsbuser/cal_B1508+55_jan16_1.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 03:57 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node1 -> /mnt/c/gsbuser/cal_B1508+55_jan16_1.node1
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 03:57 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node2 -> /mnt/disk2/gsbuser/cal_B1508+55_jan16_1.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 03:57 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node9 -> /mnt/d/gsbuser/cal_B1508+55_jan16_1.node9
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 03:57 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node3 -> /mnt/disk4/gsbuser/cal_B1508+55_jan16_1.node3
+lrwxrwxrwx 1 gsbuser gsbuser   46 Jun 27 03:58 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node11 -> /mnt/disk2/gsbuser/cal_B1508+55_jan16_1.node11
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 03:58 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node4 -> /mnt/disk1/gsbuser/cal_B1508+55_jan16_1.node4
+lrwxrwxrwx 1 gsbuser gsbuser   46 Jun 27 03:58 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node12 -> /mnt/disk3/gsbuser/cal_B1508+55_jan16_1.node12
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 03:58 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node5 -> /mnt/d/gsbuser/cal_B1508+55_jan16_1.node5
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 03:58 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node6 -> /mnt/disk4/gsbuser/cal_B1508+55_jan16_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 03:59 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node14 -> /mnt/c/gsbuser/cal_B1508+55_jan16_1.node14
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 03:59 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node7 -> /mnt/disk2/gsbuser/cal_B1508+55_jan16_1.node7
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 27 08:07 /mnt/b/gsbuser/B0329+54_jan15_1.node0 -> /mnt/d/gsbuser/B0329+54_jan15_1.node0
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 27 09:31 /mnt/b/gsbuser/B0329+54_jan_1.node0 -> /mnt/d/gsbuser/B0329+54_jan15_1.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 20:45 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node0 -> /mnt/d/gsbuser/cal_b1508+55_jan15_5.node0
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 20:45 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node8 -> /mnt/disk4/gsbuser/cal_b1508+55_jan15_5.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 22:09 /mnt/d/gsbuser/B1508+55_jan16_2.node8 -> /mnt/disk4/gsbuser/B1508+55_jan16_2.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 29 00:25 /mnt/d/gsbuser/B1508+55_jan16_4.node8 -> /mnt/disk4/gsbuser/B1508+55_jan16_4.node8
+112
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/d/gsbuser/cal_jan13_1.node9.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/c/gsbuser/cal_jan13_1.node1.norm
+-rw----r-- 1 gsbuser gsbuser 3.8G Jan 13 17:21 /mnt/d/gsbuser/cal_jan13_1.node9
+-rw----r-- 1 gsbuser gsbuser 3.9G Jan 13 17:21 /mnt/c/gsbuser/cal_jan13_1.node15
+-rw----r-- 1 gsbuser gsbuser 3.9G Jan 13 17:21 /mnt/c/gsbuser/cal_jan13_1.node1
+-rw----r-- 1 gsbuser gsbuser 3.8G Jan 13 17:21 /mnt/c/gsbuser/cal_jan13_1.node7
+-rw----r-- 1 gsbuser gsbuser 3.8G Jan 13 17:21 /mnt/b/gsbuser/cal_jan13_1.node7
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/d/gsbuser/B3029+54_jan13_5.node9.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/c/gsbuser/B3029+54_jan13_5.node1.norm
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 20:44 /mnt/c/gsbuser/B3029+54_jan13_5.node15
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/d/gsbuser/B3029+54_jan13_5.node9
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/c/gsbuser/B3029+54_jan13_5.node1
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/b/gsbuser/B3029+54_jan13_5.node7
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/d/gsbuser/B3029+54_jan13_7.node9.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/c/gsbuser/B3029+54_jan13_7.node1.norm
+-rw----r-- 1 gsbuser gsbuser 2.5G Jan 13 22:07 /mnt/c/gsbuser/B3029+54_jan13_7.node15
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/d/gsbuser/B3029+54_jan13_7.node9
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/c/gsbuser/B3029+54_jan13_7.node1
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/b/gsbuser/B3029+54_jan13_7.node7
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/d/gsbuser/cal_jan13_8.node9.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/c/gsbuser/cal_jan13_8.node1.norm
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/d/gsbuser/cal_jan13_8.node9
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/c/gsbuser/cal_jan13_8.node1
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/b/gsbuser/cal_jan13_8.node7
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/d/gsbuser/B0329+54_jan15_1.node9.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/c/gsbuser/B0329+54_jan15_1.node1.norm
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:07 /mnt/d/gsbuser/B0329+54_jan15_1.node9
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:07 /mnt/c/gsbuser/B0329+54_jan15_1.node1
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:08 /mnt/a/gsbuser/B0329+54_jan15_1.node7
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/d/gsbuser/B0329+54_jan15_2.node9.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/c/gsbuser/B0329+54_jan15_2.node1.norm
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/d/gsbuser/B0329+54_jan15_2.node9
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/c/gsbuser/B0329+54_jan15_2.node1
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/b/gsbuser/B0329+54_jan15_2.node7
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/c/gsbuser/cal_b1508+55_jan15_4.node1.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/d/gsbuser/cal_b1508+55_jan15_4.node9.norm
+-rw----r-- 1 gsbuser gsbuser 4.3G Jan 15 06:50 /mnt/d/gsbuser/cal_b1508+55_jan15_4.node9
+-rw----r-- 1 gsbuser gsbuser 4.3G Jan 15 06:50 /mnt/c/gsbuser/cal_b1508+55_jan15_4.node7
+-rw----r-- 1 gsbuser gsbuser 4.3G Jan 15 06:50 /mnt/c/gsbuser/cal_b1508+55_jan15_4.node1
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/d/gsbuser/cal_b1508+55_jan15_5.node9.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/c/gsbuser/cal_b1508+55_jan15_5.node1.norm
+-rw----r-- 1 gsbuser gsbuser 7.5G Jan 15 07:07 /mnt/d/gsbuser/cal_b1508+55_jan15_5.node9
+-rw----r-- 1 gsbuser gsbuser 7.5G Jan 15 07:07 /mnt/c/gsbuser/cal_b1508+55_jan15_5.node1
+-rw----r-- 1 gsbuser gsbuser 7.4G Jan 15 07:07 /mnt/a/gsbuser/cal_b1508+55_jan15_5.node7
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/c/gsbuser/cal_B1508+55_jan16_1.node1.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/d/gsbuser/cal_B1508+55_jan16_1.node9.norm
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/c/gsbuser/cal_B1508+55_jan16_1.node7
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/c/gsbuser/cal_B1508+55_jan16_1.node1
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/c/gsbuser/cal_B1508+55_jan16_1.node15
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/d/gsbuser/cal_B1508+55_jan16_1.node9
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/c/gsbuser/B1508+55_jan16_2.node1.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/d/gsbuser/B1508+55_jan16_2.node9.norm
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/d/gsbuser/B1508+55_jan16_2.node9
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/a/gsbuser/B1508+55_jan16_2.node7
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/c/gsbuser/B1508+55_jan16_4.node1.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/d/gsbuser/B1508+55_jan16_4.node9.norm
+-rw----r-- 1 gsbuser gsbuser  93G Jan 16 09:57 /mnt/c/gsbuser/B1508+55_jan16_4.node1
+-rw----r-- 1 gsbuser gsbuser  81G Jan 16 09:57 /mnt/d/gsbuser/B1508+55_jan16_4.node9
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 25 22:43 /mnt/b/gsbuser/B3029+54_jan13_5.node1 -> /mnt/c/gsbuser/B3029+54_jan13_5.node1
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 25 22:43 /mnt/b/gsbuser/B3029+54_jan13_5.node9 -> /mnt/d/gsbuser/B3029+54_jan13_5.node9
+lrwxrwxrwx 1 gsbuser gsbuser   32 Jun 26 01:21 /mnt/disk4/gsbuser/cal_jan13_8.node1 -> /mnt/c/gsbuser/cal_jan13_8.node1
+lrwxrwxrwx 1 gsbuser gsbuser   32 Jun 26 01:21 /mnt/disk4/gsbuser/cal_jan13_8.node9 -> /mnt/d/gsbuser/cal_jan13_8.node9
+lrwxrwxrwx 1 gsbuser gsbuser   32 Jun 26 07:36 /mnt/d/gsbuser/cal_jan13_1.node1 -> /mnt/c/gsbuser/cal_jan13_1.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node0 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node1 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node2 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node3 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node5 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node4 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node6 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node7 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node8 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node8
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node10 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node11 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node12 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node13 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node14 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node16 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node16
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:07 /mnt/d/gsbuser/B3029+54_jan13_7.node15 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node15
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node8
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node16
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node8
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node16
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 27 03:04 /mnt/disk4/gsbuser/B3029+54_jan13_7.node9 -> /mnt/d/gsbuser/B3029+54_jan13_7.node9
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 27 03:19 /mnt/disk4/gsbuser/B3029+54_jan13_7.node1 -> /mnt/c/gsbuser/B3029+54_jan13_7.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 07:17 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node1 -> /mnt/c/gsbuser/cal_B1508+55_jan16_1.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 07:17 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node9 -> /mnt/d/gsbuser/cal_B1508+55_jan16_1.node9
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 27 08:05 /mnt/b/gsbuser/B0329+54_jan15_1.node9 -> /mnt/d/gsbuser/B0329+54_jan15_1.node9
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 27 08:05 /mnt/b/gsbuser/B0329+54_jan15_1.node1 -> /mnt/c/gsbuser/B0329+54_jan15_1.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 10:17 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node9 -> /mnt/d/gsbuser/cal_b1508+55_jan15_4.node9
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 10:18 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node1 -> /mnt/c/gsbuser/cal_b1508+55_jan15_4.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 20:42 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node9 -> /mnt/d/gsbuser/cal_b1508+55_jan15_5.node9
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 21:01 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node1 -> /mnt/c/gsbuser/cal_b1508+55_jan15_5.node1
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 27 21:56 /mnt/d/gsbuser/B1508+55_jan16_2.node1 -> /mnt/d/gsbuser/B1508+55_jan16_2.node9
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 29 00:23 /mnt/d/gsbuser/B1508+55_jan16_4.node1 -> /mnt/c/gsbuser/B1508+55_jan16_4.node1
+113
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 01:41 /mnt/b/gsbuser/B0329+54_jan13_1.node10.norm
+-rw----r-- 1 gsbuser gsbuser 9.1G Jan 13 02:01 /mnt/b/gsbuser/B0329+54_jan13_1.node10
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/cdisk4/gsbuser/cal_jan13_1.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/b/gsbuser/cal_jan13_1.node10.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/a/gsbuser/cal_jan13_1.node2.norm
+-rw----r-- 1 gsbuser gsbuser 3.8G Jan 13 17:21 /mnt/cdisk4/gsbuser/cal_jan13_1.node6
+-rw----r-- 1 gsbuser gsbuser 3.9G Jan 13 17:21 /mnt/b/gsbuser/cal_jan13_1.node10
+-rw----r-- 1 gsbuser gsbuser 3.8G Jan 13 17:21 /mnt/a/gsbuser/cal_jan13_1.node2
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 19:38 /mnt/b/gsbuser/B0329+54_jan13_4.node10.norm
+-rw----r-- 1 gsbuser gsbuser  27G Jan 13 20:37 /mnt/b/gsbuser/B0329+54_jan13_4.node10
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/cdisk4/gsbuser/B3029+54_jan13_5.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/b/gsbuser/B3029+54_jan13_5.node10.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/a/gsbuser/B3029+54_jan13_5.node2.norm
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/cdisk4/gsbuser/B3029+54_jan13_5.node6
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/b/gsbuser/B3029+54_jan13_5.node10
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/a/gsbuser/B3029+54_jan13_5.node2
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/cdisk4/gsbuser/B3029+54_jan13_7.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/b/gsbuser/B3029+54_jan13_7.node10.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/a/gsbuser/B3029+54_jan13_7.node2.norm
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/cdisk4/gsbuser/B3029+54_jan13_7.node6
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/b/gsbuser/B3029+54_jan13_7.node10
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/a/gsbuser/B3029+54_jan13_7.node2
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/cdisk4/gsbuser/cal_jan13_8.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/b/gsbuser/cal_jan13_8.node10.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/a/gsbuser/cal_jan13_8.node2.norm
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/cdisk4/gsbuser/cal_jan13_8.node6
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/b/gsbuser/cal_jan13_8.node10
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/a/gsbuser/cal_jan13_8.node2
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/cdisk4/gsbuser/B0329+54_jan15_1.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/b/gsbuser/B0329+54_jan15_1.node10.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/cdisk1/gsbuser/B0329+54_jan15_1.node14.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/a/gsbuser/B0329+54_jan15_1.node2.norm
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:07 /mnt/cdisk4/gsbuser/B0329+54_jan15_1.node6
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:07 /mnt/cdisk1/gsbuser/B0329+54_jan15_1.node14
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:07 /mnt/b/gsbuser/B0329+54_jan15_1.node10
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:07 /mnt/a/gsbuser/B0329+54_jan15_1.node2
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/cdisk4/gsbuser/B0329+54_jan15_2.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/b/gsbuser/B0329+54_jan15_2.node10.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/a/gsbuser/B0329+54_jan15_2.node2.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/cdisk1/gsbuser/B0329+54_jan15_2.node14.norm
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/cdisk4/gsbuser/B0329+54_jan15_2.node6
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/b/gsbuser/B0329+54_jan15_2.node10
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/a/gsbuser/B0329+54_jan15_2.node2
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/cdisk1/gsbuser/B0329+54_jan15_2.node14
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/cdisk4/gsbuser/cal_b1508+55_jan15_4.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node10.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/a/gsbuser/cal_b1508+55_jan15_4.node2.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/cdisk1/gsbuser/cal_b1508+55_jan15_4.node14.norm
+-rw----r-- 1 gsbuser gsbuser 4.3G Jan 15 06:50 /mnt/cdisk4/gsbuser/cal_b1508+55_jan15_4.node6
+-rw----r-- 1 gsbuser gsbuser 4.3G Jan 15 06:50 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node10
+-rw----r-- 1 gsbuser gsbuser 4.3G Jan 15 06:50 /mnt/a/gsbuser/cal_b1508+55_jan15_4.node2
+-rw----r-- 1 gsbuser gsbuser 4.4G Jan 15 06:50 /mnt/cdisk1/gsbuser/cal_b1508+55_jan15_4.node14
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/cdisk4/gsbuser/cal_b1508+55_jan15_5.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/cdisk1/gsbuser/cal_b1508+55_jan15_5.node14.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node10.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/a/gsbuser/cal_b1508+55_jan15_5.node2.norm
+-rw----r-- 1 gsbuser gsbuser 7.5G Jan 15 07:07 /mnt/cdisk4/gsbuser/cal_b1508+55_jan15_5.node6
+-rw----r-- 1 gsbuser gsbuser 7.6G Jan 15 07:07 /mnt/cdisk1/gsbuser/cal_b1508+55_jan15_5.node14
+-rw----r-- 1 gsbuser gsbuser 7.5G Jan 15 07:07 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node10
+-rw----r-- 1 gsbuser gsbuser 7.5G Jan 15 07:07 /mnt/a/gsbuser/cal_b1508+55_jan15_5.node2
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node10.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/disk2/gsbuser/cal_B1508+55_jan16_1.node2.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/cdisk4/gsbuser/cal_B1508+55_jan16_1.node6.norm
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node10
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/disk2/gsbuser/cal_B1508+55_jan16_1.node2
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/cdisk4/gsbuser/cal_B1508+55_jan16_1.node6
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/b/gsbuser/B1508+55_jan16_2.node10.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/cdisk4/gsbuser/B1508+55_jan16_2.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/a/gsbuser/B1508+55_jan16_2.node2.norm
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/b/gsbuser/B1508+55_jan16_2.node10
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/cdisk4/gsbuser/B1508+55_jan16_2.node6
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/a/gsbuser/B1508+55_jan16_2.node2
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/c/gsbuser/B1508+55_jan16_4.node10.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/cdisk2/gsbuser/B1508+55_jan16_4.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/a/gsbuser/B1508+55_jan16_4.node2.norm
+-rw----r-- 1 gsbuser gsbuser  82G Jan 16 09:57 /mnt/cdisk2/gsbuser/B1508+55_jan16_4.node6
+-rw----r-- 1 gsbuser gsbuser  81G Jan 16 09:57 /mnt/c/gsbuser/B1508+55_jan16_4.node10
+-rw----r-- 1 gsbuser gsbuser  81G Jan 16 09:57 /mnt/a/gsbuser/B1508+55_jan16_4.node2
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 25 23:27 /mnt/b/gsbuser/B3029+54_jan13_5.node2 -> /mnt/a/gsbuser/B3029+54_jan13_5.node2
+lrwxrwxrwx 1 gsbuser gsbuser   32 Jun 26 01:21 /mnt/disk4/gsbuser/cal_jan13_8.node2 -> /mnt/a/gsbuser/cal_jan13_8.node2
+lrwxrwxrwx 1 gsbuser gsbuser   33 Jun 26 01:21 /mnt/disk4/gsbuser/cal_jan13_8.node10 -> /mnt/b/gsbuser/cal_jan13_8.node10
+lrwxrwxrwx 1 gsbuser gsbuser   33 Jun 26 01:25 /mnt/cdisk4/gsbuser/cal_jan13_8.node14 -> /mnt/c/gsbuser/cal_jan13_8.node14
+lrwxrwxrwx 1 gsbuser gsbuser   32 Jun 26 07:37 /mnt/d/gsbuser/cal_jan13_1.node2 -> /mnt/a/gsbuser/cal_jan13_1.node2
+lrwxrwxrwx 1 gsbuser gsbuser   33 Jun 26 07:38 /mnt/d/gsbuser/cal_jan13_1.node10 -> /mnt/b/gsbuser/cal_jan13_1.node10
+lrwxrwxrwx 1 gsbuser gsbuser   33 Jun 26 07:52 /mnt/cdisk2/gsbuser/cal_jan13_1.node14 -> /mnt/b/gsbuser/cal_jan13_1.node14
+lrwxrwxrwx 1 gsbuser gsbuser   36 Jun 26 07:52 /mnt/cdisk2/gsbuser/cal_jan13_1.node6 -> /mnt/disk4/gsbuser/cal_jan13_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node9
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:19 /mnt/d/gsbuser/B0329+54_jan15_1.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node16
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node9
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/cdisk2/gsbuser/B0329+54_jan15_1.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node16
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node9
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:21 /mnt/d/gsbuser/B0329+54_jan15_2.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node16
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node9
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/cdisk2/gsbuser/B0329+54_jan15_2.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node16
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 27 03:00 /mnt/disk4/gsbuser/B3029+54_jan13_7.node2 -> /mnt/a/gsbuser/B3029+54_jan13_7.node2
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 27 03:04 /mnt/disk4/gsbuser/B3029+54_jan13_7.node10 -> /mnt/b/gsbuser/B3029+54_jan13_7.node10
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 27 03:07 /mnt/cdisk4/gsbuser/B3029+54_jan13_7.node14 -> /mnt/b/gsbuser/B3029+54_jan13_7.node14
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 07:18 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node2 -> /mnt/disk2/gsbuser/cal_B1508+55_jan16_1.node2
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 27 08:06 /mnt/b/gsbuser/B0329+54_jan15_1.node2 -> /mnt/a/gsbuser/B0329+54_jan15_1.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 10:18 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node2 -> /mnt/a/gsbuser/cal_b1508+55_jan15_4.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 20:44 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node2 -> /mnt/a/gsbuser/cal_b1508+55_jan15_5.node2
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 27 21:56 /mnt/d/gsbuser/B1508+55_jan16_2.node2 -> /mnt/a/gsbuser/B1508+55_jan16_2.node2
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 27 21:57 /mnt/d/gsbuser/B1508+55_jan16_2.node10 -> /mnt/b/gsbuser/B1508+55_jan16_2.node10
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 22:01 /mnt/cdisk2/gsbuser/B1508+55_jan16_2.node6 -> /mnt/disk4/gsbuser/B1508+55_jan16_2.node6
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 27 22:02 /mnt/cdisk2/gsbuser/B1508+55_jan16_2.node14 -> /mnt/c/gsbuser/B1508+55_jan16_2.node14
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 29 00:23 /mnt/d/gsbuser/B1508+55_jan16_4.node2 -> /mnt/a/gsbuser/B1508+55_jan16_4.node2
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 29 00:24 /mnt/d/gsbuser/B1508+55_jan16_4.node10 -> /mnt/c/gsbuser/B1508+55_jan16_4.node10
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 29 00:29 /mnt/cdisk2/gsbuser/B1508+55_jan16_4.node14 -> /mnt/c/gsbuser/B1508+55_jan16_4.node14
+114
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/disk3/gsbuser/cal_jan13_1.node3.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/d/gsbuser/cal_jan13_1.node11.norm
+-rw----r-- 1 gsbuser gsbuser 3.9G Jan 13 17:21 /mnt/d/gsbuser/cal_jan13_1.node11
+-rw----r-- 1 gsbuser gsbuser 3.8G Jan 13 17:21 /mnt/disk3/gsbuser/cal_jan13_1.node3
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/disk3/gsbuser/B3029+54_jan13_5.node3.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/d/gsbuser/B3029+54_jan13_5.node11.norm
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/d/gsbuser/B3029+54_jan13_5.node11
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/disk3/gsbuser/B3029+54_jan13_5.node3
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/disk3/gsbuser/B3029+54_jan13_7.node3.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/d/gsbuser/B3029+54_jan13_7.node11.norm
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/d/gsbuser/B3029+54_jan13_7.node11
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/disk3/gsbuser/B3029+54_jan13_7.node3
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/d/gsbuser/cal_jan13_8.node11.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/disk3/gsbuser/cal_jan13_8.node3.norm
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/disk3/gsbuser/cal_jan13_8.node3
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/d/gsbuser/cal_jan13_8.node11
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/d/gsbuser/B0329+54_jan15_1.node11.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/disk3/gsbuser/B0329+54_jan15_1.node3.norm
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:07 /mnt/disk3/gsbuser/B0329+54_jan15_1.node3
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:07 /mnt/d/gsbuser/B0329+54_jan15_1.node11
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/disk3/gsbuser/B0329+54_jan15_2.node3.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/d/gsbuser/B0329+54_jan15_2.node11.norm
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/disk3/gsbuser/B0329+54_jan15_2.node3
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/d/gsbuser/B0329+54_jan15_2.node11
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/d/gsbuser/cal_b1508+55_jan15_4.node11.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/disk3/gsbuser/cal_b1508+55_jan15_4.node3.norm
+-rw----r-- 1 gsbuser gsbuser 4.3G Jan 15 06:50 /mnt/disk3/gsbuser/cal_b1508+55_jan15_4.node3
+-rw----r-- 1 gsbuser gsbuser 4.3G Jan 15 06:50 /mnt/d/gsbuser/cal_b1508+55_jan15_4.node11
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/disk3/gsbuser/cal_b1508+55_jan15_5.node3.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/d/gsbuser/cal_b1508+55_jan15_5.node11.norm
+-rw----r-- 1 gsbuser gsbuser 7.5G Jan 15 07:07 /mnt/disk3/gsbuser/cal_b1508+55_jan15_5.node3
+-rw----r-- 1 gsbuser gsbuser 7.5G Jan 15 07:07 /mnt/d/gsbuser/cal_b1508+55_jan15_5.node11
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/disk2/gsbuser/cal_B1508+55_jan16_1.node11.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/disk3/gsbuser/cal_B1508+55_jan16_1.node3.norm
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/disk2/gsbuser/cal_B1508+55_jan16_1.node11
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/disk3/gsbuser/cal_B1508+55_jan16_1.node3
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/disk2/gsbuser/B1508+55_jan16_2.node11.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/disk3/gsbuser/B1508+55_jan16_2.node3.norm
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/disk2/gsbuser/B1508+55_jan16_2.node11
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/disk3/gsbuser/B1508+55_jan16_2.node3
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/disk2/gsbuser/B1508+55_jan16_4.node11.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/disk3/gsbuser/B1508+55_jan16_4.node3.norm
+-rw----r-- 1 gsbuser gsbuser  93G Jan 16 09:57 /mnt/disk2/gsbuser/B1508+55_jan16_4.node11
+-rw----r-- 1 gsbuser gsbuser  81G Jan 16 09:57 /mnt/disk3/gsbuser/B1508+55_jan16_4.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 25 22:53 /mnt/b/gsbuser/B3029+54_jan13_5.node3 -> /mnt/disk4/gsbuser/B3029+54_jan13_5.node3
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 25 22:53 /mnt/b/gsbuser/B3029+54_jan13_5.node11 -> /mnt/c/gsbuser/B3029+54_jan13_5.node11
+lrwxrwxrwx 1 gsbuser gsbuser   33 Jun 26 01:32 /mnt/disk3/gsbuser/cal_jan13_8.node11 -> /mnt/c/gsbuser/cal_jan13_8.node11
+lrwxrwxrwx 1 gsbuser gsbuser   36 Jun 26 07:50 /mnt/c/gsbuser/cal_jan13_1.node3 -> /mnt/disk4/gsbuser/cal_jan13_1.node3
+lrwxrwxrwx 1 gsbuser gsbuser   33 Jun 26 07:53 /mnt/c/gsbuser/cal_jan13_1.node11 -> /mnt/c/gsbuser/cal_jan13_1.node11
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node9
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:29 /mnt/c/gsbuser/B0329+54_jan15_1.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node16
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node9
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:31 /mnt/c/gsbuser/B0329+54_jan15_2.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node16
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 27 03:15 /mnt/disk3/gsbuser/B3029+54_jan13_7.node11 -> /mnt/c/gsbuser/B3029+54_jan13_7.node11
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 07:29 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node3 -> /mnt/disk4/gsbuser/cal_B1508+55_jan16_1.node3
+lrwxrwxrwx 1 gsbuser gsbuser   46 Jun 27 07:29 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node11 -> /mnt/disk2/gsbuser/cal_B1508+55_jan16_1.node11
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 27 08:16 /mnt/b/gsbuser/B0329+54_jan15_1.node11 -> /mnt/c/gsbuser/B0329+54_jan15_1.node11
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 08:17 /mnt/b/gsbuser/B0329+54_jan15_1.node3 -> /mnt/disk4/gsbuser/B0329+54_jan15_1.node3
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 10:29 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node3 -> /mnt/disk4/gsbuser/cal_b1508+55_jan15_4.node3
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 10:29 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node11 -> /mnt/c/gsbuser/cal_b1508+55_jan15_4.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 20:54 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node11 -> /mnt/c/gsbuser/cal_b1508+55_jan15_5.node11
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 20:55 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node3 -> /mnt/disk4/gsbuser/cal_b1508+55_jan15_5.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 22:07 /mnt/c/gsbuser/B1508+55_jan16_2.node3 -> /mnt/disk4/gsbuser/B1508+55_jan16_2.node3
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 22:08 /mnt/c/gsbuser/B1508+55_jan16_2.node11 -> /mnt/disk2/gsbuser/B1508+55_jan16_2.node11
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 29 00:35 /mnt/c/gsbuser/B1508+55_jan16_4.node3 -> /mnt/disk4/gsbuser/B1508+55_jan16_4.node3
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 29 00:35 /mnt/c/gsbuser/B1508+55_jan16_4.node11 -> /mnt/disk2/gsbuser/B1508+55_jan16_4.node11
+115
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/disk1/gsbuser/cal_jan13_1.node4.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/b/gsbuser/cal_jan13_1.node12.norm
+-rw----r-- 1 gsbuser gsbuser 3.8G Jan 13 17:21 /mnt/disk1/gsbuser/cal_jan13_1.node4
+-rw----r-- 1 gsbuser gsbuser 3.9G Jan 13 17:21 /mnt/b/gsbuser/cal_jan13_1.node12
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/disk1/gsbuser/B3029+54_jan13_5.node4.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/b/gsbuser/B3029+54_jan13_5.node12.norm
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/disk1/gsbuser/B3029+54_jan13_5.node4
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/b/gsbuser/B3029+54_jan13_5.node12
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/disk1/gsbuser/B3029+54_jan13_7.node4.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/b/gsbuser/B3029+54_jan13_7.node12.norm
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/disk1/gsbuser/B3029+54_jan13_7.node4
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/b/gsbuser/B3029+54_jan13_7.node12
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/disk1/gsbuser/cal_jan13_8.node4.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/b/gsbuser/cal_jan13_8.node12.norm
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/disk1/gsbuser/cal_jan13_8.node4
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/b/gsbuser/cal_jan13_8.node12
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/disk1/gsbuser/B0329+54_jan15_1.node4.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/b/gsbuser/B0329+54_jan15_1.node12.norm
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:07 /mnt/disk1/gsbuser/B0329+54_jan15_1.node4
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:07 /mnt/b/gsbuser/B0329+54_jan15_1.node12
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/disk1/gsbuser/B0329+54_jan15_2.node4.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/b/gsbuser/B0329+54_jan15_2.node12.norm
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/disk1/gsbuser/B0329+54_jan15_2.node4
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/b/gsbuser/B0329+54_jan15_2.node12
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/disk1/gsbuser/cal_b1508+55_jan15_4.node4.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/disk1/gsbuser/cal_b1508+55_jan15_4.node12.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node12.norm
+-rw----r-- 1 gsbuser gsbuser 4.3G Jan 15 06:50 /mnt/disk1/gsbuser/cal_b1508+55_jan15_4.node4
+-rw----r-- 1 gsbuser gsbuser 4.3G Jan 15 06:50 /mnt/disk1/gsbuser/cal_b1508+55_jan15_4.node12
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/disk1/gsbuser/cal_b1508+55_jan15_5.node4.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/disk1/gsbuser/cal_b1508+55_jan15_5.node12.norm
+-rw----r-- 1 gsbuser gsbuser 7.5G Jan 15 07:07 /mnt/disk1/gsbuser/cal_b1508+55_jan15_5.node4
+-rw----r-- 1 gsbuser gsbuser 7.5G Jan 15 07:07 /mnt/disk1/gsbuser/cal_b1508+55_jan15_5.node12
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/disk1/gsbuser/cal_B1508+55_jan16_1.node4.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node12.norm
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/disk1/gsbuser/cal_B1508+55_jan16_1.node4
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node12
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/disk1/gsbuser/B1508+55_jan16_2.node4.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/b/gsbuser/B1508+55_jan16_2.node12.norm
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/b/gsbuser/B1508+55_jan16_2.node12
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/disk1/gsbuser/B1508+55_jan16_2.node4
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/disk1/gsbuser/B1508+55_jan16_4.node12.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/disk1/gsbuser/B1508+55_jan16_4.node4.norm
+-rw----r-- 1 gsbuser gsbuser  81G Jan 16 09:57 /mnt/disk1/gsbuser/B1508+55_jan16_4.node4
+-rw----r-- 1 gsbuser gsbuser  80G Jan 16 09:57 /mnt/disk1/gsbuser/B1508+55_jan16_4.node12
+-rw----r-- 1 gsbuser gsbuser 1.9G Jun 20 16:43 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node12
+-rw----r-- 1 gsbuser gsbuser 7.2G Jun 20 16:48 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node12
+-rw----r-- 1 gsbuser gsbuser    0 Jun 20 16:48 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node12.norm
+-rw----r-- 1 gsbuser gsbuser    0 Jun 20 16:48 /mnt/b/gsbuser/B1508+55_jan16_4.node12
+-rw----r-- 1 gsbuser gsbuser    0 Jun 20 17:12 /mnt/b/gsbuser/B1508+55_jan16_4.node12.norm
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 25 22:45 /mnt/b/gsbuser/B3029+54_jan13_5.node5 -> /mnt/*/gsbuser/B3029+54_jan13_5.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 25 23:31 /mnt/b/gsbuser/B3029+54_jan13_5.node4 -> /mnt/disk1/gsbuser/B3029+54_jan13_5.node4
+lrwxrwxrwx 1 gsbuser gsbuser   36 Jun 26 01:24 /mnt/disk4/gsbuser/cal_jan13_8.node4 -> /mnt/disk1/gsbuser/cal_jan13_8.node4
+lrwxrwxrwx 1 gsbuser gsbuser   33 Jun 26 01:25 /mnt/disk4/gsbuser/cal_jan13_8.node12 -> /mnt/b/gsbuser/cal_jan13_8.node12
+lrwxrwxrwx 1 gsbuser gsbuser   33 Jun 26 07:48 /mnt/d/gsbuser/cal_jan13_1.node12 -> /mnt/b/gsbuser/cal_jan13_1.node12
+lrwxrwxrwx 1 gsbuser gsbuser   36 Jun 26 07:48 /mnt/d/gsbuser/cal_jan13_1.node4 -> /mnt/disk1/gsbuser/cal_jan13_1.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node9
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node16
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node9
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node16
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 03:03 /mnt/disk4/gsbuser/B3029+54_jan13_7.node4 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node4
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 27 03:08 /mnt/disk4/gsbuser/B3029+54_jan13_7.node12 -> /mnt/b/gsbuser/B3029+54_jan13_7.node12
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 07:23 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node4 -> /mnt/disk1/gsbuser/cal_B1508+55_jan16_1.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 08:10 /mnt/b/gsbuser/B0329+54_jan15_1.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node4
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 10:22 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node4 -> /mnt/disk1/gsbuser/cal_b1508+55_jan15_4.node4
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 20:48 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node4 -> /mnt/disk1/gsbuser/cal_b1508+55_jan15_5.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 22:01 /mnt/d/gsbuser/B1508+55_jan16_2.node4 -> /mnt/disk1/gsbuser/B1508+55_jan16_2.node4
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 22:01 /mnt/d/gsbuser/B1508+55_jan16_2.node12 -> /mnt/disk3/gsbuser/B1508+55_jan16_2.node12
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 29 00:28 /mnt/d/gsbuser/B1508+55_jan16_4.node4 -> /mnt/disk1/gsbuser/B1508+55_jan16_4.node4
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 29 00:28 /mnt/d/gsbuser/B1508+55_jan16_4.node12 -> /mnt/disk1/gsbuser/B1508+55_jan16_4.node12
+116
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/disk4/gsbuser/cal_jan13_1.node13.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/d/gsbuser/cal_jan13_1.node5.norm
+-rw----r-- 1 gsbuser gsbuser 3.9G Jan 13 17:21 /mnt/disk4/gsbuser/cal_jan13_1.node13
+-rw----r-- 1 gsbuser gsbuser 3.8G Jan 13 17:21 /mnt/d/gsbuser/cal_jan13_1.node5
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/disk4/gsbuser/B3029+54_jan13_5.node13.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/d/gsbuser/B3029+54_jan13_5.node5.norm
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/disk4/gsbuser/B3029+54_jan13_5.node13
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/d/gsbuser/B3029+54_jan13_5.node5
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/disk4/gsbuser/B3029+54_jan13_7.node13.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/d/gsbuser/B3029+54_jan13_7.node5.norm
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/disk4/gsbuser/B3029+54_jan13_7.node13
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/d/gsbuser/B3029+54_jan13_7.node5
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/disk4/gsbuser/cal_jan13_8.node13.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/d/gsbuser/cal_jan13_8.node5.norm
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/disk4/gsbuser/cal_jan13_8.node13
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/d/gsbuser/cal_jan13_8.node5
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/d/gsbuser/B0329+54_jan15_1.node5.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/b/gsbuser/B0329+54_jan15_1.node13.norm
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:07 /mnt/d/gsbuser/B0329+54_jan15_1.node5
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:07 /mnt/b/gsbuser/B0329+54_jan15_1.node13
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:32 /mnt/disk4/gsbuser/B0329+54_jan15_1.node13.norm
+-rw----r-- 1 gsbuser gsbuser  12G Jan 15 01:52 /mnt/disk4/gsbuser/B0329+54_jan15_1.node13
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/d/gsbuser/B0329+54_jan15_2.node5.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/b/gsbuser/B0329+54_jan15_2.node13.norm
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/d/gsbuser/B0329+54_jan15_2.node5
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/b/gsbuser/B0329+54_jan15_2.node13
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/disk4/gsbuser/cal_b1508+55_jan15_4.node13.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/d/gsbuser/cal_b1508+55_jan15_4.node5.norm
+-rw----r-- 1 gsbuser gsbuser 4.3G Jan 15 06:50 /mnt/disk4/gsbuser/cal_b1508+55_jan15_4.node13
+-rw----r-- 1 gsbuser gsbuser 4.3G Jan 15 06:50 /mnt/d/gsbuser/cal_b1508+55_jan15_4.node5
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/d/gsbuser/cal_b1508+55_jan15_5.node5.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node13.norm
+-rw----r-- 1 gsbuser gsbuser 7.5G Jan 15 07:07 /mnt/d/gsbuser/cal_b1508+55_jan15_5.node5
+-rw----r-- 1 gsbuser gsbuser 7.5G Jan 15 07:07 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node13
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/d/gsbuser/cal_B1508+55_jan16_1.node5.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node13.norm
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/d/gsbuser/cal_B1508+55_jan16_1.node5
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node13
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/d/gsbuser/B1508+55_jan16_2.node5.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/b/gsbuser/B1508+55_jan16_2.node13.norm
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/d/gsbuser/B1508+55_jan16_2.node5
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/b/gsbuser/B1508+55_jan16_2.node13
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/d/gsbuser/B1508+55_jan16_4.node5.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/b/gsbuser/B1508+55_jan16_4.node13.norm
+-rw----r-- 1 gsbuser gsbuser  82G Jan 16 09:57 /mnt/d/gsbuser/B1508+55_jan16_4.node5
+-rw----r-- 1 gsbuser gsbuser  81G Jan 16 09:57 /mnt/b/gsbuser/B1508+55_jan16_4.node13
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 25 22:46 /mnt/b/gsbuser/B3029+54_jan13_5.node5 -> /mnt/d/gsbuser/B3029+54_jan13_5.node5
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 25 22:46 /mnt/b/gsbuser/B3029+54_jan13_5.node13 -> /mnt/disk4/gsbuser/B3029+54_jan13_5.node13
+lrwxrwxrwx 1 gsbuser gsbuser   32 Jun 26 01:24 /mnt/disk4/gsbuser/cal_jan13_8.node5 -> /mnt/d/gsbuser/cal_jan13_8.node5
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 26 07:50 /mnt/d/gsbuser/cal_jan13_1.node13 -> /mnt/disk4/gsbuser/cal_jan13_1.node13
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node0 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node1 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node2 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node3 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node4 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node6 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node7 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node9 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node9
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node8 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node8
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node10 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node11 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node12 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node13 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node14 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node15 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:11 /mnt/d/gsbuser/B3029+54_jan13_7.node16 -> /mnt/disk1/gsbuser/B3029+54_jan13_7.node16
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node9
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node16
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node9
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node16
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 27 03:03 /mnt/disk4/gsbuser/B3029+54_jan13_7.node5 -> /mnt/d/gsbuser/B3029+54_jan13_7.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 07:23 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node5 -> /mnt/d/gsbuser/cal_B1508+55_jan16_1.node5
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 27 08:10 /mnt/b/gsbuser/B0329+54_jan15_1.node5 -> /mnt/d/gsbuser/B0329+54_jan15_1.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 10:23 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node5 -> /mnt/d/gsbuser/cal_b1508+55_jan15_4.node5
+lrwxrwxrwx 1 gsbuser gsbuser   46 Jun 27 10:23 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node13 -> /mnt/disk4/gsbuser/cal_b1508+55_jan15_4.node13
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 20:48 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node5 -> /mnt/d/gsbuser/cal_b1508+55_jan15_5.node5
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 27 22:01 /mnt/d/gsbuser/B1508+55_jan16_2.node13 -> /mnt/b/gsbuser/B1508+55_jan16_2.node13
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 29 00:28 /mnt/d/gsbuser/B1508+55_jan16_4.node13 -> /mnt/b/gsbuser/B1508+55_jan16_4.node13
+117
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/disk4/gsbuser/cal_jan13_1.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/b/gsbuser/cal_jan13_1.node14.norm
+-rw----r-- 1 gsbuser gsbuser 3.8G Jan 13 17:21 /mnt/disk4/gsbuser/cal_jan13_1.node6
+-rw----r-- 1 gsbuser gsbuser 3.7G Jan 13 17:21 /mnt/b/gsbuser/cal_jan13_1.node14
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/disk4/gsbuser/B3029+54_jan13_5.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/b/gsbuser/B3029+54_jan13_5.node14.norm
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/disk4/gsbuser/B3029+54_jan13_5.node6
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 20:45 /mnt/b/gsbuser/B3029+54_jan13_5.node14
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/disk4/gsbuser/B3029+54_jan13_7.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/b/gsbuser/B3029+54_jan13_7.node14.norm
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/disk4/gsbuser/B3029+54_jan13_7.node6
+-rw----r-- 1 gsbuser gsbuser 2.7G Jan 13 22:07 /mnt/b/gsbuser/B3029+54_jan13_7.node14
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/disk4/gsbuser/cal_jan13_8.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/c/gsbuser/cal_jan13_8.node14.norm
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/disk4/gsbuser/cal_jan13_8.node6
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/c/gsbuser/cal_jan13_8.node14
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/disk4/gsbuser/B0329+54_jan15_1.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/disk1/gsbuser/B0329+54_jan15_1.node14.norm
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:07 /mnt/disk4/gsbuser/B0329+54_jan15_1.node6
+-rw----r-- 1 gsbuser gsbuser 2.2G Jan 15 01:07 /mnt/disk1/gsbuser/B0329+54_jan15_1.node14
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:32 /mnt/b/gsbuser/B0329+54_jan15_1.node14.norm
+-rw----r-- 1 gsbuser gsbuser  12G Jan 15 01:52 /mnt/b/gsbuser/B0329+54_jan15_1.node14
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/disk4/gsbuser/B0329+54_jan15_2.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/disk1/gsbuser/B0329+54_jan15_2.node14.norm
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/disk4/gsbuser/B0329+54_jan15_2.node6
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/disk1/gsbuser/B0329+54_jan15_2.node14
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/disk4/gsbuser/cal_b1508+55_jan15_4.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/disk1/gsbuser/cal_b1508+55_jan15_4.node14.norm
+-rw----r-- 1 gsbuser gsbuser 4.3G Jan 15 06:50 /mnt/disk4/gsbuser/cal_b1508+55_jan15_4.node6
+-rw----r-- 1 gsbuser gsbuser 4.4G Jan 15 06:50 /mnt/disk1/gsbuser/cal_b1508+55_jan15_4.node14
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/disk4/gsbuser/cal_b1508+55_jan15_5.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/disk1/gsbuser/cal_b1508+55_jan15_5.node14.norm
+-rw----r-- 1 gsbuser gsbuser 7.5G Jan 15 07:07 /mnt/disk4/gsbuser/cal_b1508+55_jan15_5.node6
+-rw----r-- 1 gsbuser gsbuser 7.6G Jan 15 07:07 /mnt/disk1/gsbuser/cal_b1508+55_jan15_5.node14
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/disk4/gsbuser/cal_B1508+55_jan16_1.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/c/gsbuser/cal_B1508+55_jan16_1.node14.norm
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/disk4/gsbuser/cal_B1508+55_jan16_1.node6
+-rw----r-- 1 gsbuser gsbuser  12G Jan 16 03:17 /mnt/c/gsbuser/cal_B1508+55_jan16_1.node14
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/disk4/gsbuser/B1508+55_jan16_2.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/c/gsbuser/B1508+55_jan16_2.node14.norm
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/disk4/gsbuser/B1508+55_jan16_2.node6
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/c/gsbuser/B1508+55_jan16_2.node14
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/disk2/gsbuser/B1508+55_jan16_4.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/d/gsbuser/B1508+55_jan16_4.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/c/gsbuser/B1508+55_jan16_4.node14.norm
+-rw----r-- 1 gsbuser gsbuser  93G Jan 16 09:57 /mnt/c/gsbuser/B1508+55_jan16_4.node14
+-rw----r-- 1 gsbuser gsbuser  82G Jan 16 09:57 /mnt/disk2/gsbuser/B1508+55_jan16_4.node6
+-rw----r-- 1 gsbuser gsbuser  82G Jan 16 09:57 /mnt/d/gsbuser/B1508+55_jan16_4.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 25 23:28 /mnt/b/gsbuser/B3029+54_jan13_5.node6 -> /mnt/disk4/gsbuser/B3029+54_jan13_5.node6
+lrwxrwxrwx 1 gsbuser gsbuser   33 Jun 26 01:25 /mnt/disk4/gsbuser/cal_jan13_8.node14 -> /mnt/c/gsbuser/cal_jan13_8.node14
+lrwxrwxrwx 1 gsbuser gsbuser   33 Jun 26 07:52 /mnt/disk2/gsbuser/cal_jan13_1.node14 -> /mnt/b/gsbuser/cal_jan13_1.node14
+lrwxrwxrwx 1 gsbuser gsbuser   33 Jun 26 07:52 /mnt/d/gsbuser/cal_jan13_1.node14 -> /mnt/b/gsbuser/cal_jan13_1.node14
+lrwxrwxrwx 1 gsbuser gsbuser   36 Jun 26 07:52 /mnt/disk2/gsbuser/cal_jan13_1.node6 -> /mnt/disk4/gsbuser/cal_jan13_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   36 Jun 26 07:52 /mnt/d/gsbuser/cal_jan13_1.node6 -> /mnt/disk4/gsbuser/cal_jan13_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node9
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node9
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/disk2/gsbuser/B0329+54_jan15_1.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node16
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node16
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node9
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node9
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/disk2/gsbuser/B0329+54_jan15_2.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node16
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node16
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 27 03:07 /mnt/disk4/gsbuser/B3029+54_jan13_7.node14 -> /mnt/b/gsbuser/B3029+54_jan13_7.node14
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 07:24 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node6 -> /mnt/disk4/gsbuser/cal_B1508+55_jan16_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 07:24 /mnt/b/gsbuser/cal_B1508+55_jan16_1.node14 -> /mnt/c/gsbuser/cal_B1508+55_jan16_1.node14
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 08:11 /mnt/b/gsbuser/B0329+54_jan15_1.node6 -> /mnt/disk4/gsbuser/B0329+54_jan15_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 10:23 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node6 -> /mnt/disk4/gsbuser/cal_b1508+55_jan15_4.node6
+lrwxrwxrwx 1 gsbuser gsbuser   46 Jun 27 10:24 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node14 -> /mnt/disk2/gsbuser/cal_b1508+55_jan15_4.node14
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 10:24 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node7 -> /mnt/disk2/gsbuser/cal_b1508+55_jan15_4.node7
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 20:48 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node6 -> /mnt/disk4/gsbuser/cal_b1508+55_jan15_5.node6
+lrwxrwxrwx 1 gsbuser gsbuser   46 Jun 27 20:48 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node14 -> /mnt/disk2/gsbuser/cal_b1508+55_jan15_5.node14
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 22:01 /mnt/disk2/gsbuser/B1508+55_jan16_2.node6 -> /mnt/disk4/gsbuser/B1508+55_jan16_2.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 22:01 /mnt/d/gsbuser/B1508+55_jan16_2.node6 -> /mnt/disk4/gsbuser/B1508+55_jan16_2.node6
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 27 22:02 /mnt/disk2/gsbuser/B1508+55_jan16_2.node14 -> /mnt/c/gsbuser/B1508+55_jan16_2.node14
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 27 22:02 /mnt/d/gsbuser/B1508+55_jan16_2.node14 -> /mnt/c/gsbuser/B1508+55_jan16_2.node14
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 29 00:29 /mnt/disk2/gsbuser/B1508+55_jan16_4.node14 -> /mnt/c/gsbuser/B1508+55_jan16_4.node14
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 29 00:29 /mnt/d/gsbuser/B1508+55_jan16_4.node14 -> /mnt/c/gsbuser/B1508+55_jan16_4.node14
+118
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/disk3/gsbuser/cal_jan13_1.node15.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 17:12 /mnt/disk2/gsbuser/cal_jan13_1.node7.norm
+-rw----r-- 1 gsbuser gsbuser 3.9G Jan 13 17:21 /mnt/disk3/gsbuser/cal_jan13_1.node15
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/disk2/gsbuser/B3029+54_jan13_5.node7.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 20:39 /mnt/disk2/gsbuser/B3029+54_jan13_5.node15.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:02 /mnt/disk2/gsbuser/B3029+54_jan13_7.node7.norm
+-rw----r-- 1 gsbuser gsbuser 2.6G Jan 13 22:07 /mnt/disk2/gsbuser/B3029+54_jan13_7.node7
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/disk3/gsbuser/cal_jan13_8.node7.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 13 22:08 /mnt/disk2/gsbuser/cal_jan13_8.node15.norm
+-rw----r-- 1 gsbuser gsbuser  24G Jan 13 23:02 /mnt/b/gsbuser/cal_jan13_8.node15
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:04 /mnt/disk2/gsbuser/B0329+54_jan15_1.node7.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 01:32 /mnt/d/gsbuser/B0329+54_jan15_1.node0.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/disk2/gsbuser/B0329+54_jan15_2.node7.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/d/gsbuser/B0329+54_jan15_2.node0.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 02:00 /mnt/b/gsbuser/B0329+54_jan15_2.node15.norm
+-rw----r-- 1 gsbuser gsbuser 2.0G Jan 15 02:13 /mnt/b/gsbuser/B0329+54_jan15_2.node15
+-rw----r-- 1 gsbuser gsbuser 1.9G Jan 15 02:13 /mnt/d/gsbuser/B0329+54_jan15_2.node0
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/disk2/gsbuser/cal_b1508+55_jan15_4.node7.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:41 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node15.norm
+-rw----r-- 1 gsbuser gsbuser 4.3G Jan 15 06:50 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node15
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/disk2/gsbuser/cal_b1508+55_jan15_5.node7.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 15 06:50 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node15.norm
+-rw----r-- 1 gsbuser gsbuser 7.5G Jan 15 07:07 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node15
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 02:55 /mnt/disk2/gsbuser/cal_B1508+55_jan16_1.node7.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/disk2/gsbuser/B1508+55_jan16_2.node7.norm
+-rw----r-- 1 gsbuser gsbuser  24G Jan 16 04:11 /mnt/b/gsbuser/B1508+55_jan16_2.node15
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/disk2/gsbuser/B1508+55_jan16_2.node7
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 06:20 /mnt/b/gsbuser/B1508+55_jan16_4.node7.norm
+-rw----r-- 1 gsbuser gsbuser  84G Jan 16 09:57 /mnt/b/gsbuser/B1508+55_jan16_4.node7
+-rw----r-- 1 gsbuser gsbuser    0 Jun 20 00:19 /mnt/disk1/gsbuser/B3029+54_jan13_7.node7
+-rw----r-- 1 gsbuser gsbuser    0 Jun 20 00:20 /mnt/disk1/gsbuser/B3029+54_jan13_7.node7.norm
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 25 22:46 /mnt/b/gsbuser/B3029+54_jan13_5.node15 -> /mnt/disk2/gsbuser/B3029+54_jan13_5.node15
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 25 23:28 /mnt/b/gsbuser/B3029+54_jan13_5.node7 -> /mnt/disk2/gsbuser/B3029+54_jan13_5.node7
+lrwxrwxrwx 1 gsbuser gsbuser   36 Jun 26 01:24 /mnt/disk4/gsbuser/cal_jan13_8.node7 -> /mnt/disk3/gsbuser/cal_jan13_8.node7
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 26 01:25 /mnt/disk4/gsbuser/cal_jan13_8.node15 -> /mnt/disk2/gsbuser/cal_jan13_8.node15
+lrwxrwxrwx 1 gsbuser gsbuser   36 Jun 26 07:53 /mnt/d/gsbuser/cal_jan13_1.node7 -> /mnt/disk2/gsbuser/cal_jan13_1.node7
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 26 08:06 /mnt/d/gsbuser/cal_jan13_1.node15 -> /mnt/disk3/gsbuser/cal_jan13_1.node15
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node0 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node0
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node9
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 01:22 /mnt/d/gsbuser/B0329+54_jan15_1.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_1.node16
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node1 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node1
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node2 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node2
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node4 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node4
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node3 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node3
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node5 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node5
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node6 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node6
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node7 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node8 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node8
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node9 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node9
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node10 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node10
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node11 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node11
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node12 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node12
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node13 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node13
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node14 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node14
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node15 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node15
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 02:24 /mnt/d/gsbuser/B0329+54_jan15_2.node16 -> /mnt/disk1/gsbuser/B0329+54_jan15_2.node16
+lrwxrwxrwx 1 gsbuser gsbuser   42 Jun 27 03:07 /mnt/disk4/gsbuser/B3029+54_jan13_7.node15 -> /mnt/disk3/gsbuser/B3029+54_jan13_7.node15
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 03:19 /mnt/disk4/gsbuser/B3029+54_jan13_7.node7 -> /mnt/disk2/gsbuser/B3029+54_jan13_7.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 08:12 /mnt/b/gsbuser/B0329+54_jan15_1.node7 -> /mnt/disk2/gsbuser/B0329+54_jan15_1.node7
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 10:24 /mnt/b/gsbuser/cal_b1508+55_jan15_4.node7 -> /mnt/disk2/gsbuser/cal_b1508+55_jan15_4.node7
+lrwxrwxrwx 1 gsbuser gsbuser   45 Jun 27 20:49 /mnt/b/gsbuser/cal_b1508+55_jan15_5.node7 -> /mnt/disk2/gsbuser/cal_b1508+55_jan15_5.node7
+lrwxrwxrwx 1 gsbuser gsbuser   41 Jun 27 22:02 /mnt/d/gsbuser/B1508+55_jan16_2.node7 -> /mnt/disk2/gsbuser/B1508+55_jan16_2.node7
+lrwxrwxrwx 1 gsbuser gsbuser   38 Jun 27 22:02 /mnt/d/gsbuser/B1508+55_jan16_2.node15 -> /mnt/b/gsbuser/B1508+55_jan16_2.node15
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 29 00:29 /mnt/d/gsbuser/B1508+55_jan16_4.node7 -> /mnt/b/gsbuser/B1508+55_jan16_4.node7
+lrwxrwxrwx 1 gsbuser gsbuser   37 Jun 29 01:22 /mnt/d/gsbuser/B1508+55_jan16_4.node15 -> /mnt/b/gsbuser/B1508+55_jan16_4.node7
+-rw----r-- 1 gsbuser gsbuser  12G Jul  1 21:28 /mnt/c/gsbuser/B0329+54_jan15_1.node15
+111
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:25 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_3.node8.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:25 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_3.node0.norm
+-rw----r-- 1 gsbuser gsbuser 1.3G Jan 12 03:27 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_3.node8
+-rw----r-- 1 gsbuser gsbuser 1.3G Jan 12 03:27 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_3.node0
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:27 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node8.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:27 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node0.norm
+-rw----r-- 1 gsbuser gsbuser 997M Jan 12 03:29 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node8
+-rw----r-- 1 gsbuser gsbuser 998M Jan 12 03:29 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node0
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:29 /mnt/disk4/gsbuser/EoR/drift_jan12_5.node8.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:29 /mnt/disk3/gsbuser/EoR/drift_jan12_5.node0.norm
+-rw----r-- 1 gsbuser gsbuser 463M Jan 12 03:31 /mnt/disk4/gsbuser/EoR/drift_jan12_5.node8
+-rw----r-- 1 gsbuser gsbuser 464M Jan 12 03:31 /mnt/disk3/gsbuser/EoR/drift_jan12_5.node0
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/disk4/gsbuser/EoR/B1508+55_jan16_2.node8.norm
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/disk4/gsbuser/EoR/B1508+55_jan16_2.node8
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node1 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node1
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node2 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node2
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node3 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node3
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node4 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node4
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node5 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node5
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node6 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node6
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node7 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node7
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node8 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node8
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node9 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node9
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node10 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node10
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node11 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node11
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node12 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node12
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node13 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node13
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node14 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node14
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node15 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node15
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:46 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node16 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node16
+-rw----r-- 1 gsbuser gsbuser 529K Mar  8 04:47 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node8.fs0
+-rw----r-- 1 gsbuser gsbuser 3.0K Mar  8 04:47 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node0.fs0
+-rw----r-- 1 gsbuser gsbuser    0 Apr  9 03:53 /mnt/disk3/gsbuser/EoR/B1508+55_jan16_2.node0.norm
+-rw-rw-r-- 1 gsbuser gsbuser  167 Jun 19 06:56 /mnt/code/gsbuser/EoR/mvjan15.sh
+-rw----r-- 1 gsbuser gsbuser 396M Jun 25 23:49 /mnt/disk3/gsbuser/EoR/B3029+54_jan13_5.node8.fs0
+-rw-rw-r-- 1 gsbuser gsbuser 396M Jun 25 23:49 /mnt/disk3/gsbuser/EoR/B3029+54_jan13_5.node0.fs0
+-rw----r-- 1 gsbuser gsbuser 567M Jun 26 04:52 /mnt/d/gsbuser/EoR/cal_jan13_8.node0.fs0
+-rw----r-- 1 gsbuser gsbuser 567M Jun 26 04:52 /mnt/d/gsbuser/EoR/cal_jan13_8.node8.fs0
+-rw----r-- 1 gsbuser gsbuser 571M Jun 26 08:42 /mnt/d/gsbuser/EoR/cal_jan13_1.node8.fs0
+-rw----r-- 1 gsbuser gsbuser 570M Jun 26 08:42 /mnt/d/gsbuser/EoR/cal_jan13_1.node0.fs0
+-rw-rw-r-- 1 gsbuser gsbuser  13K Jun 27 01:42 /mnt/d/gsbuser/EoR/B0329+54_jan15_1.node0.fs0
+-rw----r-- 1 gsbuser gsbuser 380M Jun 27 03:59 /mnt/d/gsbuser/EoR/B3029+54_jan13_7.node8.fs0
+-rw-rw-r-- 1 gsbuser gsbuser 380M Jun 27 03:59 /mnt/d/gsbuser/EoR/B3029+54_jan13_7.node0.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:12 /mnt/d/gsbuser/EoR/cal_B1508+55_jan16_1.node8.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:12 /mnt/d/gsbuser/EoR/cal_B1508+55_jan16_1.node0.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:38 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_4.node8.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:38 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_4.node0.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:59 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_5.node8.fs0
+-rw-rw-r-- 1 gsbuser gsbuser 1.2G Jun 27 21:59 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_5.node0.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:04 /mnt/d/gsbuser/EoR/B1508+55_jan16_2.node8.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:04 /mnt/d/gsbuser/EoR/B1508+55_jan16_2.node0.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:43 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node8.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:43 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node0.fs0
+112
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:25 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_3.node9.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:25 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_3.node1.norm
+-rw----r-- 1 gsbuser gsbuser 1.3G Jan 12 03:27 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_3.node9
+-rw----r-- 1 gsbuser gsbuser 1.3G Jan 12 03:27 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_3.node1
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:27 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node9.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:27 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node1.norm
+-rw----r-- 1 gsbuser gsbuser 997M Jan 12 03:29 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node9
+-rw----r-- 1 gsbuser gsbuser 997M Jan 12 03:29 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node1
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:29 /mnt/disk4/gsbuser/EoR/drift_jan12_5.node9.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:29 /mnt/disk3/gsbuser/EoR/drift_jan12_5.node1.norm
+-rw----r-- 1 gsbuser gsbuser 463M Jan 12 03:31 /mnt/disk4/gsbuser/EoR/drift_jan12_5.node9
+-rw----r-- 1 gsbuser gsbuser 463M Jan 12 03:31 /mnt/disk3/gsbuser/EoR/drift_jan12_5.node1
+-rw----r-- 1 gsbuser gsbuser  32K Jan 16 03:17 /mnt/disk3/gsbuser/EoR/B1508+55_jan16_2.node1.norm
+-rw----r-- 1 gsbuser gsbuser  25G Jan 16 04:12 /mnt/disk3/gsbuser/EoR/B1508+55_jan16_2.node1
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node0 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node0
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node2 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node2
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node3 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node3
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node4 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node4
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node5 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node5
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node6 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node6
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node7 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node7
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node8 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node8
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node9 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node9
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node10 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node10
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node11 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node11
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node12 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node12
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node13 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node13
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node14 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node14
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node15 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node15
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node16 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node16
+-rw----r-- 1 gsbuser gsbuser    0 Mar  8 04:55 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node1.fs0
+-rw----r-- 1 gsbuser gsbuser 198K Mar  8 04:55 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node9.fs0
+-rw----r-- 1 gsbuser gsbuser    0 Apr  9 04:17 /mnt/disk4/gsbuser/EoR/B1508+55_jan16_2.node9.norm
+-rw----r-- 1 gsbuser gsbuser 396M Jun 25 23:45 /mnt/disk3/gsbuser/EoR/B3029+54_jan13_5.node9.fs0
+-rw----r-- 1 gsbuser gsbuser 396M Jun 25 23:45 /mnt/disk3/gsbuser/EoR/B3029+54_jan13_5.node1.fs0
+-rw----r-- 1 gsbuser gsbuser 567M Jun 26 04:49 /mnt/d/gsbuser/EoR/cal_jan13_8.node1.fs0
+-rw----r-- 1 gsbuser gsbuser 567M Jun 26 04:49 /mnt/d/gsbuser/EoR/cal_jan13_8.node9.fs0
+-rw----r-- 1 gsbuser gsbuser 571M Jun 26 08:38 /mnt/d/gsbuser/EoR/cal_jan13_1.node1.fs0
+-rw----r-- 1 gsbuser gsbuser 571M Jun 26 08:38 /mnt/d/gsbuser/EoR/cal_jan13_1.node9.fs0
+-rw----r-- 1 gsbuser gsbuser    0 Jun 27 01:39 /mnt/d/gsbuser/EoR/B0329+54_jan15_1.node9.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 03:56 /mnt/d/gsbuser/EoR/B3029+54_jan13_7.node1.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 03:56 /mnt/d/gsbuser/EoR/B3029+54_jan13_7.node9.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:09 /mnt/d/gsbuser/EoR/cal_B1508+55_jan16_1.node9.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:09 /mnt/d/gsbuser/EoR/cal_B1508+55_jan16_1.node1.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:34 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_4.node1.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:34 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_4.node9.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:56 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_5.node1.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:56 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_5.node9.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:01 /mnt/d/gsbuser/EoR/B1508+55_jan16_2.node9.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:01 /mnt/d/gsbuser/EoR/B1508+55_jan16_2.node1.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:40 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node1.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:40 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node9.fs0
+113
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:20 /mnt/cdisk4/gsbuser/EoR/B0329+54_jan12_3.node14.norm
+-rw----r-- 1 gsbuser gsbuser 2.9G Jan 12 03:25 /mnt/cdisk4/gsbuser/EoR/B0329+54_jan12_3.node14
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:25 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_3.node10.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:25 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_3.node2.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:25 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_3.node6.norm
+-rw----r-- 1 gsbuser gsbuser 1.3G Jan 12 03:27 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_3.node10
+-rw----r-- 1 gsbuser gsbuser 1.3G Jan 12 03:27 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_3.node2
+-rw----r-- 1 gsbuser gsbuser 1.3G Jan 12 03:27 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_3.node6
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:27 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node10.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:27 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node2.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:27 /mnt/cdisk4/gsbuser/EoR/B0329+54_jan12_4.node14.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:27 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node6.norm
+-rw----r-- 1 gsbuser gsbuser 997M Jan 12 03:29 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node10
+-rw----r-- 1 gsbuser gsbuser 997M Jan 12 03:29 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node2
+-rw----r-- 1 gsbuser gsbuser 834M Jan 12 03:29 /mnt/cdisk4/gsbuser/EoR/B0329+54_jan12_4.node14
+-rw----r-- 1 gsbuser gsbuser 996M Jan 12 03:29 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node6
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:29 /mnt/disk4/gsbuser/EoR/drift_jan12_5.node10.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:29 /mnt/disk3/gsbuser/EoR/drift_jan12_5.node2.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:29 /mnt/cdisk3/gsbuser/EoR/drift_jan12_5.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:29 /mnt/cdisk4/gsbuser/EoR/drift_jan12_5.node14.norm
+-rw----r-- 1 gsbuser gsbuser 463M Jan 12 03:31 /mnt/disk4/gsbuser/EoR/drift_jan12_5.node10
+-rw----r-- 1 gsbuser gsbuser 463M Jan 12 03:31 /mnt/disk3/gsbuser/EoR/drift_jan12_5.node2
+-rw----r-- 1 gsbuser gsbuser 464M Jan 12 03:31 /mnt/cdisk4/gsbuser/EoR/drift_jan12_5.node14
+-rw----r-- 1 gsbuser gsbuser 463M Jan 12 03:31 /mnt/cdisk3/gsbuser/EoR/drift_jan12_5.node6
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node0 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node0
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node1 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node1
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node3 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node3
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node4 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node4
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node5 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node5
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node7 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node7
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node6 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node6
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node8 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node8
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node9 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node9
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node10 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node10
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node11 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node11
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node12 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node12
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node13 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node13
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node14 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node14
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node15 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node15
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:53 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node16 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node16
+-rw----r-- 1 gsbuser gsbuser    0 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node2.fs0
+-rw----r-- 1 gsbuser gsbuser    0 Mar  8 04:54 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node10.fs0
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node0 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node0
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node1 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node1
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node2 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node2
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node3 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node3
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node4 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node4
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node5 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node5
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node7 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node7
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node8 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node8
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node9 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node9
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node10 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node10
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node11 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node11
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node12 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node12
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node13 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node13
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node14 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node14
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node15 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node15
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node16 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node16
+-rw----r-- 1 gsbuser gsbuser    0 Mar  8 04:58 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 529K Mar  8 04:58 /mnt/cdisk3/gsbuser/EoR/B0329+54_jan12_4.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 396M Jun 25 23:45 /mnt/disk3/gsbuser/EoR/B3029+54_jan13_5.node2.fs0
+-rw----r-- 1 gsbuser gsbuser 396M Jun 25 23:45 /mnt/disk3/gsbuser/EoR/B3029+54_jan13_5.node10.fs0
+-rw----r-- 1 gsbuser gsbuser 396M Jun 25 23:49 /mnt/cdisk3/gsbuser/EoR/B3029+54_jan13_5.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 396M Jun 25 23:49 /mnt/cdisk3/gsbuser/EoR/B3029+54_jan13_5.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 03:56 /mnt/d/gsbuser/EoR/B3029+54_jan13_7.node2.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 03:56 /mnt/d/gsbuser/EoR/B3029+54_jan13_7.node10.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 03:59 /mnt/cdisk2/gsbuser/EoR/B3029+54_jan13_7.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 03:59 /mnt/cdisk2/gsbuser/EoR/B3029+54_jan13_7.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:09 /mnt/d/gsbuser/EoR/cal_B1508+55_jan16_1.node2.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:09 /mnt/d/gsbuser/EoR/cal_B1508+55_jan16_1.node10.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:12 /mnt/cdisk2/gsbuser/EoR/cal_B1508+55_jan16_1.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:12 /mnt/cdisk2/gsbuser/EoR/cal_B1508+55_jan16_1.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:34 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_4.node10.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:34 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_4.node2.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:38 /mnt/cdisk2/gsbuser/EoR/cal_b1508+55_jan15_4.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:38 /mnt/cdisk2/gsbuser/EoR/cal_b1508+55_jan15_4.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:56 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_5.node2.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:56 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_5.node10.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:59 /mnt/cdisk2/gsbuser/EoR/cal_b1508+55_jan15_5.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:59 /mnt/cdisk2/gsbuser/EoR/cal_b1508+55_jan15_5.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:01 /mnt/d/gsbuser/EoR/B1508+55_jan16_2.node10.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:01 /mnt/d/gsbuser/EoR/B1508+55_jan16_2.node2.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:04 /mnt/cdisk2/gsbuser/EoR/B1508+55_jan16_2.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:04 /mnt/cdisk2/gsbuser/EoR/B1508+55_jan16_2.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:40 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node2.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:40 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node10.fs0
+114
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:25 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_3.node11.norm
+-rw----r-- 1 gsbuser gsbuser 1.3G Jan 12 03:27 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_3.node11
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:27 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node11.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:27 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node3.norm
+-rw----r-- 1 gsbuser gsbuser 995M Jan 12 03:29 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node3
+-rw----r-- 1 gsbuser gsbuser 999M Jan 12 03:29 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node11
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:29 /mnt/disk3/gsbuser/EoR/drift_jan12_5.node11.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:29 /mnt/disk4/gsbuser/EoR/drift_jan12_5.node3.norm
+-rw----r-- 1 gsbuser gsbuser 463M Jan 12 03:31 /mnt/disk4/gsbuser/EoR/drift_jan12_5.node3
+-rw----r-- 1 gsbuser gsbuser 464M Jan 12 03:31 /mnt/disk3/gsbuser/EoR/drift_jan12_5.node11
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node0 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node0
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node1 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node1
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node2 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node2
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node4 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node4
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node5 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node5
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node6 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node6
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node7 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node7
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node8 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node8
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node9 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node9
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node10 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node10
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node11 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node11
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node12 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node12
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node13 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node13
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node14 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node14
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node15 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node15
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 05:02 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node16 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node16
+-rw----r-- 1 gsbuser gsbuser    0 Mar  8 05:03 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node3.fs0
+-rw----r-- 1 gsbuser gsbuser    0 Mar  8 05:03 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node11.fs0
+-rw----r-- 1 gsbuser gsbuser 396M Jun 25 23:56 /mnt/disk4/gsbuser/EoR/B3029+54_jan13_5.node11.fs0
+-rw----r-- 1 gsbuser gsbuser 396M Jun 25 23:56 /mnt/disk4/gsbuser/EoR/B3029+54_jan13_5.node3.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 04:06 /mnt/c/gsbuser/EoR/B3029+54_jan13_7.node11.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 04:06 /mnt/c/gsbuser/EoR/B3029+54_jan13_7.node3.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:19 /mnt/c/gsbuser/EoR/cal_B1508+55_jan16_1.node11.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:19 /mnt/c/gsbuser/EoR/cal_B1508+55_jan16_1.node3.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:45 /mnt/c/gsbuser/EoR/cal_b1508+55_jan15_4.node11.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:45 /mnt/c/gsbuser/EoR/cal_b1508+55_jan15_4.node3.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 22:06 /mnt/c/gsbuser/EoR/cal_b1508+55_jan15_5.node11.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 22:06 /mnt/c/gsbuser/EoR/cal_b1508+55_jan15_5.node3.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:11 /mnt/c/gsbuser/EoR/B1508+55_jan16_2.node11.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:11 /mnt/c/gsbuser/EoR/B1508+55_jan16_2.node3.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:51 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node11.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:51 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node3.fs0
+115
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:25 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_3.node12.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:25 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_3.node4.norm
+-rw----r-- 1 gsbuser gsbuser 1.3G Jan 12 03:27 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_3.node12
+-rw----r-- 1 gsbuser gsbuser 1.3G Jan 12 03:27 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_3.node4
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:27 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node12.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:27 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node4.norm
+-rw----r-- 1 gsbuser gsbuser 999M Jan 12 03:29 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node12
+-rw----r-- 1 gsbuser gsbuser 996M Jan 12 03:29 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node4
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:29 /mnt/disk4/gsbuser/EoR/drift_jan12_5.node12.norm
+-rw----r-- 1 gsbuser gsbuser 464M Jan 12 03:31 /mnt/disk4/gsbuser/EoR/drift_jan12_5.node12
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node0 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node0
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node1 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node1
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node2 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node2
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node3 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node3
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node5 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node5
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node6 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node6
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node7 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node7
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node8 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node8
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node9 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node9
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node10 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node10
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node11 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node11
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node12 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node12
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node13 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node13
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node14 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node14
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node15 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node15
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node16 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node16
+-rw----r-- 1 gsbuser gsbuser    0 Mar  8 04:58 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node4.fs0
+-rw----r-- 1 gsbuser gsbuser    0 Mar  8 04:58 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node12.fs0
+-rw----r-- 1 gsbuser gsbuser 396M Jun 25 23:49 /mnt/disk3/gsbuser/EoR/B3029+54_jan13_5.node4.fs0
+-rw----r-- 1 gsbuser gsbuser 396M Jun 25 23:49 /mnt/disk3/gsbuser/EoR/B3029+54_jan13_5.node12.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 03:59 /mnt/d/gsbuser/EoR/B3029+54_jan13_7.node12.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 03:59 /mnt/d/gsbuser/EoR/B3029+54_jan13_7.node4.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:12 /mnt/d/gsbuser/EoR/cal_B1508+55_jan16_1.node4.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:12 /mnt/d/gsbuser/EoR/cal_B1508+55_jan16_1.node12.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:38 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_4.node12.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:38 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_4.node4.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:59 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_5.node12.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:59 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_5.node4.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:04 /mnt/d/gsbuser/EoR/B1508+55_jan16_2.node4.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:04 /mnt/d/gsbuser/EoR/B1508+55_jan16_2.node12.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:43 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node12.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:43 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node4.fs0
+116
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:25 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_3.node13.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:25 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_3.node5.norm
+-rw----r-- 1 gsbuser gsbuser 1.3G Jan 12 03:27 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_3.node13
+-rw----r-- 1 gsbuser gsbuser 1.3G Jan 12 03:27 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_3.node5
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:27 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node5.norm
+-rw----r-- 1 gsbuser gsbuser 996M Jan 12 03:29 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node5
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:29 /mnt/disk4/gsbuser/EoR/drift_jan12_5.node13.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:29 /mnt/disk3/gsbuser/EoR/drift_jan12_5.node5.norm
+-rw----r-- 1 gsbuser gsbuser 464M Jan 12 03:31 /mnt/disk4/gsbuser/EoR/drift_jan12_5.node13
+-rw----r-- 1 gsbuser gsbuser 463M Jan 12 03:31 /mnt/disk3/gsbuser/EoR/drift_jan12_5.node5
+-rw----r-- 1 gsbuser gsbuser    0 Jan 21 18:53 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node13
+-rw----r-- 1 gsbuser gsbuser    0 Jan 21 18:54 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node13.norm
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node0 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node0
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node1 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node1
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node2 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node2
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node3 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node3
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node4 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node4
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node6 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node6
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node7 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node7
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node9 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node9
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node8 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node8
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node10 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node10
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node11 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node11
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node12 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node12
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node13 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node13
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node14 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node14
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node15 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node15
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node16 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node16
+-rw----r-- 1 gsbuser gsbuser    0 Mar  8 04:58 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node5.fs0
+-rw----r-- 1 gsbuser gsbuser    0 Mar  8 04:58 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node13.fs0
+-rw----r-- 1 gsbuser gsbuser 395M Jun 25 23:49 /mnt/disk3/gsbuser/EoR/B3029+54_jan13_5.node5.fs0
+-rw----r-- 1 gsbuser gsbuser 396M Jun 25 23:49 /mnt/disk3/gsbuser/EoR/B3029+54_jan13_5.node13.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 03:59 /mnt/d/gsbuser/EoR/B3029+54_jan13_7.node5.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 03:59 /mnt/d/gsbuser/EoR/B3029+54_jan13_7.node13.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:12 /mnt/d/gsbuser/EoR/cal_B1508+55_jan16_1.node13.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:12 /mnt/d/gsbuser/EoR/cal_B1508+55_jan16_1.node5.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:38 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_4.node13.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:38 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_4.node5.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:59 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_5.node13.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:59 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_5.node5.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:04 /mnt/d/gsbuser/EoR/B1508+55_jan16_2.node13.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:04 /mnt/d/gsbuser/EoR/B1508+55_jan16_2.node5.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:43 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node13.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:43 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node5.fs0
+117
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:20 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_3.node14.norm
+-rw----r-- 1 gsbuser gsbuser 2.9G Jan 12 03:25 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_3.node14
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:25 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_3.node6.norm
+-rw----r-- 1 gsbuser gsbuser 1.3G Jan 12 03:27 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_3.node6
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:27 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node14.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:27 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node6.norm
+-rw----r-- 1 gsbuser gsbuser 834M Jan 12 03:29 /mnt/disk4/gsbuser/EoR/B0329+54_jan12_4.node14
+-rw----r-- 1 gsbuser gsbuser 996M Jan 12 03:29 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node6
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:29 /mnt/disk3/gsbuser/EoR/drift_jan12_5.node6.norm
+-rw----r-- 1 gsbuser gsbuser  32K Jan 12 03:29 /mnt/disk4/gsbuser/EoR/drift_jan12_5.node14.norm
+-rw----r-- 1 gsbuser gsbuser 464M Jan 12 03:31 /mnt/disk4/gsbuser/EoR/drift_jan12_5.node14
+-rw----r-- 1 gsbuser gsbuser 463M Jan 12 03:31 /mnt/disk3/gsbuser/EoR/drift_jan12_5.node6
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node0 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node0
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node1 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node1
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node2 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node2
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node3 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node3
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node4 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node4
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node5 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node5
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node7 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node7
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node8 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node8
+lrwxrwxrwx 1 gsbuser gsbuser   46 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node9 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node9
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node10 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node10
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node11 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node11
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node12 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node12
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node13 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node13
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node14 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node14
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node15 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node15
+lrwxrwxrwx 1 gsbuser gsbuser   47 Mar  8 04:57 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node16 -> /mnt/disk4/gsbuser/EoR//B0329+54_jan12_4.node16
+-rw----r-- 1 gsbuser gsbuser    0 Mar  8 04:58 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 529K Mar  8 04:58 /mnt/disk3/gsbuser/EoR/B0329+54_jan12_4.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 396M Jun 25 23:49 /mnt/disk3/gsbuser/EoR/B3029+54_jan13_5.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 396M Jun 25 23:49 /mnt/disk3/gsbuser/EoR/B3029+54_jan13_5.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 03:59 /mnt/disk2/gsbuser/EoR/B3029+54_jan13_7.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 03:59 /mnt/d/gsbuser/EoR/B3029+54_jan13_7.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 03:59 /mnt/disk2/gsbuser/EoR/B3029+54_jan13_7.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 03:59 /mnt/d/gsbuser/EoR/B3029+54_jan13_7.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:12 /mnt/disk2/gsbuser/EoR/cal_B1508+55_jan16_1.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:12 /mnt/d/gsbuser/EoR/cal_B1508+55_jan16_1.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:12 /mnt/disk2/gsbuser/EoR/cal_B1508+55_jan16_1.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:12 /mnt/d/gsbuser/EoR/cal_B1508+55_jan16_1.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:38 /mnt/disk2/gsbuser/EoR/cal_b1508+55_jan15_4.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:38 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_4.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:38 /mnt/disk2/gsbuser/EoR/cal_b1508+55_jan15_4.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:38 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_4.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:59 /mnt/disk2/gsbuser/EoR/cal_b1508+55_jan15_5.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:59 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_5.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:59 /mnt/disk2/gsbuser/EoR/cal_b1508+55_jan15_5.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:59 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_5.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:04 /mnt/disk2/gsbuser/EoR/B1508+55_jan16_2.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:04 /mnt/d/gsbuser/EoR/B1508+55_jan16_2.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:04 /mnt/disk2/gsbuser/EoR/B1508+55_jan16_2.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:04 /mnt/d/gsbuser/EoR/B1508+55_jan16_2.node6.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:43 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node14.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:43 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node6.fs0
+118
+-rw----r-- 1 gsbuser gsbuser 395M Jun 25 23:49 /mnt/disk3/gsbuser/EoR/B3029+54_jan13_5.node15.fs0
+-rw----r-- 1 gsbuser gsbuser 396M Jun 25 23:49 /mnt/disk3/gsbuser/EoR/B3029+54_jan13_5.node7.fs0
+-rw----r-- 1 gsbuser gsbuser 380M Jun 27 03:59 /mnt/d/gsbuser/EoR/B3029+54_jan13_7.node15.fs0
+-rw----r-- 1 gsbuser gsbuser 381M Jun 27 03:59 /mnt/d/gsbuser/EoR/B3029+54_jan13_7.node7.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:12 /mnt/d/gsbuser/EoR/cal_B1508+55_jan16_1.node7.fs0
+-rw----r-- 1 gsbuser gsbuser 1.8G Jun 27 09:12 /mnt/d/gsbuser/EoR/cal_B1508+55_jan16_1.node15.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:38 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_4.node15.fs0
+-rw----r-- 1 gsbuser gsbuser 294M Jun 27 20:38 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_4.node7.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:59 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_5.node15.fs0
+-rw----r-- 1 gsbuser gsbuser 1.2G Jun 27 21:59 /mnt/d/gsbuser/EoR/cal_b1508+55_jan15_5.node7.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:04 /mnt/d/gsbuser/EoR/B1508+55_jan16_2.node15.fs0
+-rw----r-- 1 gsbuser gsbuser 3.2G Jun 28 01:04 /mnt/d/gsbuser/EoR/B1508+55_jan16_2.node7.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:43 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node7.fs0
+-rw----r-- 1 gsbuser gsbuser 3.6G Jul  2 00:43 /mnt/b/gsbuser/EoR/B1508+55_jan16_4.node15.fs0
