@@ -16,7 +16,7 @@ def LoadDataSpaces(fname):
     f.close()
     return data
 #Loads a list of the rows in the file f, splitting on the tabs
-def LoadDataSpaces(fname):
+def LoadDataTab(fname):
     f=open(fname,'r')
     data=[]
     for line in f.readlines():

@@ -1,11 +1,20 @@
 import numpy as np
 import manage as man
 from astropy.time import Time
+from astropy.constants import c
+from astropy import units as units
 import sys
 
+def FloatMaker(values):
+    newlist=[]
+    for i in range(len(values)):
+        point=float(values[i])
+        newlist.append(point)
+    return newlist
+
 #import from command line the file containing the GST's and an output file
-fname=sys.argv[1]
-name=sys.argv[2]
+name_GST=sys.argv[1]
+name_out=sys.argv[2]
 
 ####CHANGE THIS FOR SOURCE: INPUT IN RADIANS####
 #May 17 2013: b1919+21
@@ -21,7 +30,7 @@ dec=0.38240013618954616
 #ra=0.9338347801769575
 #dec=0.953358324077975
 ################################################
-TJD_GMST=man.LoadData('fname')
+TJD_GMST=man.LoadData(str(name_GST))
 sin=np.sin
 cos=np.cos
 GST=man.IterativeFloatAppend(TJD_GMST,1)
@@ -35,20 +44,25 @@ t=Time(MJD,format='mjd',scale='utc')
 time=t.iso
 #this program takes a set of X Y Z coordinates for various antennas or 
 #observatories, calculates their baselines with respect to a given observatory
-#for now, this reference point will be ARO because that it the location of 
+#for now, this reference point will be ARO because that is the location of 
 #writing
 #start out with only two observatories and work up from there
 
 #ABOUT THE OBSERVATORIES
-
-gmrt=[1656318.94,5797865.99,2073213.72]
-gmrt_lon=(74+(2./60)+(59.07/3600))*(np.pi/180)
-aro=[915400.53,-4333785.13,4579662.37]
-aro_lon=(78+(4./60)+(22.95/3600))*(np.pi/180)
-eff=[4033949.5,486989.4,4900430.8]
-eff_lon=(6+(52./60)+(58./3600))*(np.pi/180)
+data=man.LoadDataTab('VLBIantennacoord.dat')
+aro=data[3][:3]
+aro=FloatMaker(aro)
+aro_lon=float(data[8][1])
+gmrt=data[2][:3]
+gmrt=FloatMaker(gmrt)
+gmrt_lon=float(data[9][1])
+eff=data[4][:3]
+eff=FloatMaker(eff)
+eff_lon=float(data[10][1])
 observatories=[aro,gmrt,eff]
 lon=[aro_lon,gmrt_lon,eff_lon]
+
+
 
 #function takes a list of coordinate sets (a list of (x,y,z) points) and finds
 #the baseline of each set with respect to the first one
@@ -65,7 +79,7 @@ def Baseline(coords):
 baseline=Baseline(observatories)
 
 #TESTING CONSISTENCY
-antenna=man.LoadData('data/pycoords60_2013.dat')
+antenna=man.LoadData('pycoords60_2013.dat')
 for i in range(len(antenna)):
     antenna[i].pop(3)
 baseline_gmrt=[]    
@@ -94,11 +108,8 @@ lon_gmrt=gmrt_lon
 def HourAngle(GMST,longitude,RA):
     newlist=[]
     for i in range(len(GMST)):
-        timeset=[]
-        for j in range(len(longitude)):
-            hour=GST[i]-longitude[j]-RA
-            timeset.append(hour)
-        newlist.append(timeset)
+        hour=GST[i]-RA
+        newlist.append(hour)
     return newlist
 
 hour=HourAngle(GST,lon,ra)
@@ -150,21 +161,35 @@ def UVWGMRT(BL,h,d):
     return newlist
 uvw_gmrt=UVWGMRT(baseline_gmrt,hour_gmrt,dec)           
 
+def microseconds(values):
+    newlist=[]
+    for i in range(len(values)):
+        for j in range(len(values[i])):
+            u=values[i][j][0]
+            v=values[i][j][1]
+            w=values[i][j][2]
+            c=299792458.0
+            u=(u/c)*1e6
+            v=(v/c)*1e6
+            w=(w/c)*1e6
+            point=[u,v,w]
+            newlist.append(point)
+    return newlist
+            
+ms_gmrt=microseconds(uvw_gmrt)
+ms_vlbi=microseconds(uvw)
+
 #this function writes the results to file for future examination 
 #it is the WriteFile function in manage.py modified for a list of lists
-def WriteFileCols(values1,values2,fname):
+def WriteFile(values,fname):
     with open(fname,"w") as data:
-        for i in range(len(values1)):
-            data.write("{0}\n".format(values2[i]))
-            data.write("antenna\t u coordinate\t v coordinate\t w coordinate\n")
-            for j in range(len(values1[i])):
-                data.write("{0}\t{1}\t{2}\t{3}\n".format(j,values1[i][j][0],values1[i][j][1],values1[i][j][2]))
-def WriteFile(values1,values2,fname):
-    with open(fname,"w") as data:
-        for i in range(len(values1)):
-            data.write("{0}".format(values2[i]))
+        for i in range(len(values)):
+            for j in range(len(values[i])):
+                data.write("{0}".format(values[i][j][2]))
 
-WriteFileCols(uvw_gmrt,time,'GMRT_{0}'.format(name))
-WriteFile(uvw,time,'VLBI_{0}'.format(name))
+WriteFile(uvw_gmrt,'GMRT_metres_{0}'.format(name_out))
+WriteFile(ms_gmrt,'GMRT_microsec_{0}'.format(name_out))
+WriteFile(uvw,'VLBI_metres_{0}'.format(name_out))
+WriteFile(ms_vlbi,'VLBI_microsec_{0}'.format(name_out))
 
 
