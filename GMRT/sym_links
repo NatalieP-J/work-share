@@ -1,0 +1,24 @@
+node111
+mv node33/b0329+54_Aug22_4.node0 .
+ln -s /mnt/disk3/gsbuser/TSAS/b0329+54_Aug22_4.node0 /mnt/disk3/gsbuser/TSAS/b0329+54_Aug22_4.node8
+node112
+mv node34/b0329+54_Aug22_4.node1 .
+ln -s /mnt/disk3/gsbuser/TSAS/b0329+54_Aug22_4.node1 /mnt/disk3/gsbuser/TSAS/b0329+54_Aug22_4.node9
+node113
+mv node35/b0329+54_Aug22_4.node2 .
+ln -s /mnt/disk3/gsbuser/TSAS/b0329+54_Aug22_4.node2 /mnt/disk3/gsbuser/TSAS/b0329+54_Aug22_4.node10
+node114
+ln -s /mnt/disk4/gsbuser/TSAS/node36/b0329+54_Aug22_4.node3 /mnt/disk3/gsbuser/TSAS/b0329+54_Aug22_4.node3
+ln -s /mnt/disk4/gsbuser/TSAS/node36/b0329+54_Aug22_4.node3 /mnt/disk3/gsubser/TSAS/b0329+54_Aug22_4.node11
+node115
+mv node37/b0329+54_Aug22_4.node4 .
+ln -s /mnt/c/gsbuser/TSAS/node45/b0329+54_Aug22_4.node12 /mnt/disk3/gsbuser/TSAS/b0329+54_Aug22_4.node12
+node116
+mv node38/b0329+54_Aug22_4.node5 .
+ln -s /mnt/c/gsbuser/TSAS/node46/b0329+54_Aug22_4.node13 /mnt/disk3/gsbuser/TSAS/b0329+54_Aug22_4.node13
+node117
+mv node39/b0329+54_Aug22_4.node6 .
+ln -s /mnt/c/gsbuser/TSAS/node47/b0329+54_Aug22_4.node14 /mnt/disk3/gsbuser/TSAS/b0329+54_Aug22_4.node14
+node118
+mv node40/b0329+54_Aug22_4.node7
+ln -s /mnt/c/gsbuser/TSAS/node48/b0329+54_Aug22_4.node15 /mnt/disk3/gsbuser/TSAS/b0329+54_Aug22_4.node15
