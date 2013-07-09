@@ -116,9 +116,10 @@ gc_coords=[aro_gc,gmrt_gc,eff_gc]
 
 aro_gd=[0.802074,4.920553,260.4]
 gmrt_gd=[0.333297,1.292411,407.0]
-eff_gd=[0.881823,0.12027,416.72]
+eff_gd=[0.88182470,0.12014168,416.72]
+gmrt_gd_1=[0.33323752922569944, 1.2924253519073263, 407]
 
-gd_coords=[aro_gd,gmrt_gd,eff_gd]
+gd_coords=[aro_gd,gmrt_gd,eff_gd,gmrt_gd_1]
 
 gen_gc_coords=iauGd2gce(gd_coords)
     

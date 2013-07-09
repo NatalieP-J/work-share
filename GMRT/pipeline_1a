@@ -1,0 +1,65 @@
+#!/bin/sh -x
+MONTH=Jan
+month=jan
+DATE=16
+YEAR=2013
+TARGET=B1508+55
+DISKIN1=d
+DISKOUT=b
+TBMACHINE=gsbm3 
+DISKTB=b
+FSALLDISK=b
+FNINPATH1=/mnt/$DISKIN1/gsbuser
+FNINPATH2=/mnt/$DISKIN2/gsbuser/EoR
+FNOUTPATH=/mnt/$DISKOUT/gsbuser/EoR
+FSALLOUTPATH=/mnt/$DISKTB/gsbuser/EoR/$YEAR
+NODES=dual_nodes
+#ETH_PORTS=eth3
+ETH_PORTS=eth2
+OMP_NUM_THREADS=4
+export OMP_NUM_THREADS
+for i in 4; do #
+FN=${TARGET}_${month}"$DATE"_$i
+FSALLDIR=$FSALLOUTPATH/${MONTH}"$DATE"/"$FN"
+
+pwd
+make
+
+mkdir -p $FSALLOUTPATH/${MONTH}"$DATE"
+mkdir $FSALLOUTPATH/${MONTH}"$DATE"/"$FN"
+mkdir $FN
+cd $FN
+../decodetimecompressed.x $FNINPATH1/$FN.node0 timestamp.dat | gawk '{if (NR%256==1) print }'
+perl ../convert_timestamp.perl timestamp.dat > tjd.dat
+../tjd2gst.x < tjd.dat > times.dat
+NEPOCH=`wc -l times.dat|gawk '{print $1 -5}'`
+OBS_EPOCH=`head -1 times.dat|gawk '{print $1}'`
+cd ..
+#done
+make clean
+make CFLAGS1="-DNEPOCH=$NEPOCH -DOBS_EPOCH=$OBS_EPOCH" || exit
+sleep 1  # need some time for NFS to catch up
+time mpirun -np 16 -bynode -hostfile ${NODES} --mca btl_tcp_if_include ${ETH_PORTS} ./fringestop.x  $FNINPATH1/$FN $FNOUTPATH/$FN $FSALLDIR/$FN
+#time /opt/openmpi-1.2.2/bin/mpirun -np 16 -bynode -hostfile ${NODES} --mca btl_tcp_if_include ${ETH_PORTS} \
+#    ./fringestop.x  $FNINPATH1/$FN $FNOUTPATH/$FN $FSALLDIR/$FN : \
+#    ./fringestop.x  $FNINPATH1/$FN $FNOUTPATH/$FN $FSALLDIR/$FN : \
+#    ./fringestop.x  $FNINPATH1/$FN $FNOUTPATH/$FN $FSALLDIR/$FN : \
+#    ./fringestop.x  $FNINPATH1/$FN $FNOUTPATH/$FN $FSALLDIR/$FN : \
+#    ./fringestop.x  $FNINPATH1/$FN $FNOUTPATH/$FN $FSALLDIR/$FN : \
+#    ./fringestop.x  $FNINPATH1/$FN $FNOUTPATH/$FN $FSALLDIR/$FN : \
+#    ./fringestop.x  $FNINPATH1/$FN $FNOUTPATH/$FN $FSALLDIR/$FN : \
+#    ./fringestop.x  $FNINPATH1/$FN $FNOUTPATH/$FN $FSALLDIR/$FN : \
+#    ./fringestop.x  $FNINPATH2/$FN $FNOUTPATH/$FN $FSALLDIR/$FN : \
+#    ./fringestop.x  $FNINPATH2/$FN $FNOUTPATH/$FN $FSALLDIR/$FN : \
+#    ./fringestop.x  $FNINPATH2/$FN $FNOUTPATH/$FN $FSALLDIR/$FN : \
+#    ./fringestop.x  $FNINPATH2/$FN $FNOUTPATH/$FN $FSALLDIR/$FN : \
+#    ./fringestop.x  $FNINPATH2/$FN $FNOUTPATH/$FN $FSALLDIR/$FN : \
+#    ./fringestop.x  $FNINPATH2/$FN $FNOUTPATH/$FN $FSALLDIR/$FN : \
+#    ./fringestop.x  $FNINPATH2/$FN $FNOUTPATH/$FN $FSALLDIR/$FN : \
+#    ./fringestop.x  $FNINPATH2/$FN $FNOUTPATH/$FN $FSALLDIR/$FN
+
+cat $FN/timestamp.dat >> $FNOUTPATH/$FN.node0.fs0
+/mnt/code/gsbuser/EoR/Analysis/analyze_dual8nodes.sh $FN $MONTH $DATE $i $DISKIN $DISKOUT $FSALLDISK $NEPOCH $YEAR >& /mnt/disk1/gsbuser/EoR/LOGS/LOGanalysis_${MONTH}"$DATE"_"$i" &
+#ssh -n $TBMACHINE /mnt/code/gsbuser/EoR/Analysis/analyze_dual64.sh $FN $MONTH $DATE $i $DISKIN $DISKOUT $FSALLDISK $NEPOCH $YEAR >& /mnt/EoRc/gsbuser/EoR/LOGS/LOGanalysis_${MONTH}"$DATE"_"$i" &
+
+done
