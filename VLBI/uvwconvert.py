@@ -52,13 +52,13 @@ time=t.iso
 data=man.LoadDataTab('VLBIantennacoord.dat')
 aro=data[3][:3]
 aro=FloatMaker(aro)
-aro_lon=float(data[8][1])
+aro_lon=float(data[9][1])
 gmrt=data[2][:3]
 gmrt=FloatMaker(gmrt)
-gmrt_lon=float(data[9][1])
+gmrt_lon=float(data[10][1])
 eff=data[4][:3]
 eff=FloatMaker(eff)
-eff_lon=float(data[10][1])
+eff_lon=float(data[11][1])
 observatories=[aro,gmrt,eff]
 lon=[aro_lon,gmrt_lon,eff_lon]
 
@@ -66,17 +66,17 @@ lon=[aro_lon,gmrt_lon,eff_lon]
 
 #function takes a list of coordinate sets (a list of (x,y,z) points) and finds
 #the baseline of each set with respect to the first one
-def Baseline(coords):
+def Baseline(coords,index):
     newlist=[]
     for i in range(len(coords)):
-        x=coords[0][0]-coords[i][0]
-        y=coords[0][1]-coords[i][1]
-        z=coords[0][2]-coords[i][2]
+        x=coords[index][0]-coords[i][0]
+        y=coords[index][1]-coords[i][1]
+        z=coords[index][2]-coords[i][2]
         baseline=[x,y,z]
         newlist.append(baseline)
     return newlist
 
-baseline=Baseline(observatories)
+baseline=Baseline(observatories,0)
 
 #TESTING CONSISTENCY
 antenna=man.LoadData('pycoords60_2013.dat')
@@ -90,7 +90,7 @@ for i in range(len(antenna)):
         points.append(point)
     baseline_gmrt.append(points)
 
-baseline_gmrt=Baseline(baseline_gmrt)
+baseline_gmrt=Baseline(baseline_gmrt,2)
 
 lon_gmrt=gmrt_lon
 
