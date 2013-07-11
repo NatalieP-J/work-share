@@ -12,7 +12,7 @@ def LoadDataSpace(fname):
     f=open(fname,'r')
     data=[]
     for line in f.readlines():
-        data.append(line.replace('\n','').split('  '))
+        data.append(line.replace('\n','').split(' '))
     f.close()
     return data
 

@@ -108,20 +108,23 @@ lon_gmrt=gmrt_lon
 def HourAngle(GMST,longitude,RA):
     newlist=[]
     for i in range(len(GMST)):
-        hour=GST[i]-RA
-        newlist.append(hour)
+        check_values=[]
+        for j in range(len(longitude)):
+            hour=GST[i]-longitude[j]-RA
+            check_values.append(hour)
+        newlist.append(check_values)
     return newlist
 
 hour=HourAngle(GST,lon,ra)
 
-def HourAngleGMRT(GMST,RA):
+def HourAngleGMRT(GMST,longitude,RA):
     newlist=[]
     for i in range(len(GMST)):
-        hour=GST[i]-RA
+        hour=GST[i]-longitude-RA
         newlist.append(hour)
     return newlist
 
-hour_gmrt=HourAngleGMRT(GST,ra)
+hour_gmrt=HourAngleGMRT(GST,lon_gmrt,ra)
             
 #this function takes a list of coordinate sets, a list of hour angles at given
 #longitudes over time and declination, and outputs u v w coordinates for each 
@@ -162,8 +165,9 @@ def UVWGMRT(BL,h,d):
 uvw_gmrt=UVWGMRT(baseline_gmrt,hour_gmrt,dec)           
 
 def microseconds(values):
-    newlist=[]
+    masterlist=[]
     for i in range(len(values)):
+        newlist=[]
         for j in range(len(values[i])):
             u=values[i][j][0]
             v=values[i][j][1]
@@ -174,7 +178,8 @@ def microseconds(values):
             w=(w/c)*1e6
             point=[u,v,w]
             newlist.append(point)
-    return newlist
+        masterlist.append(newlist)
+    return masterlist
             
 ms_gmrt=microseconds(uvw_gmrt)
 ms_vlbi=microseconds(uvw)
@@ -185,7 +190,7 @@ def WriteFile(values,fname):
     with open(fname,"w") as data:
         for i in range(len(values)):
             for j in range(len(values[i])):
-                data.write("{0}".format(values[i][j][2]))
+                data.write("{0}\n".format(values[i][j][2]))
 
 WriteFile(uvw_gmrt,'GMRT_metres_{0}'.format(name_out))
 WriteFile(ms_gmrt,'GMRT_microsec_{0}'.format(name_out))

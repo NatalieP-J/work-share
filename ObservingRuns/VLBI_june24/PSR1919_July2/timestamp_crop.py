@@ -45,12 +45,12 @@ for d in range(len(disk_type)):
                     for j in range(len(times)):
 #point is in seconds, and has no real meaning as a time measurment - it is only
 #the difference that concerns us in this instance
-                        point=(hour[j]*3600)+(minute[j]*60)+(seconds[j])+(frac[j])+799.67499
+                        point=(hour[j]*3600)+(minute[j]*60)+(seconds[j])+(frac[j])
                         time.append(point)
                     for j in range(len(time)):
 #add the time and the disk to which it was written (timestamp number minus 1) 
 #to the masterlist within the node
-                        if 12120 <= time[j] <= 18600:
+                        if  time[j] <= 18600:
                             time_1919.append(times[j])
                             mastertime_1919.append(times[j])
                             masterlist_1919.append(times[j])
@@ -111,7 +111,7 @@ for d in range(len(disk_type)):
                     for j in range(len(time)):
 #add the time and the disk to which it was written (timestamp number minus 1) 
 #to the masterlist within the node
-                        if 12120 <= time[j] <= 18600:
+                        if  time[j] <= 18600:
                             time_1919.append(times[j])
                             mastertime_1919.append(times[j])
                             masterlist_1919.append(times[j])

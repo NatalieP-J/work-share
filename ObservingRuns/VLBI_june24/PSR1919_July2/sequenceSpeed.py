@@ -33,7 +33,7 @@ disk_type=['EoR','a_d']
 #begin outer loop at node33 to be looped over all nodes up to node39
 for d in range(len(disk_type)):
     n=33
-    while n<41:
+    while n<40:
         if n == 34:
             mastertime_1919=[]
             mastertime_1957=[]
@@ -60,7 +60,7 @@ for d in range(len(disk_type)):
                     for j in range(len(times)):
 #point is in seconds, and has no real meaning as a time measurment - it is only
 #the difference that concerns us in this instance
-                        point=(hour[j]*3600)+(minute[j]*60)+(seconds[j])+(frac[j])
+                        point=(hour[j]*3600)+(minute[j]*60)+(seconds[j])+(frac[j])+813.4349439999987
                         time.append(point)
                     for j in range(len(time)):
 #add the time and the disk to which it was written (timestamp number minus 1) 

@@ -8,7 +8,7 @@ def WriteFileCols(values,fname):
 
 diff=[]
 n=33
-while n < 49:
+while n < 40:
     mastertime=[]
     j=1
     while j<5:
@@ -50,7 +50,7 @@ while n < 49:
             pass
 
     mastertime.sort()
-    name='node{0}/MasterTimeStamp.dat'.format(n)
+    name='node{0}_july2/MasterTimeStamp.dat'.format(n)
     WriteFileCols(mastertime,name)
     print 'Done master time stamp node{0}'.format(n)
     n+=1
