@@ -1,0 +1,96 @@
+astro_cal.c:  DasParType *daspar = &corr->daspar ;
+astro_cal.c:  CorrParType *corrpar = &corr->corrpar ;
+astro_cal.c:  SamplerType *samp = corr->sampler ;
+astro_cal.c:  NcoTickTime = (corr->corrpar.statime/1e6)/corr->corrpar.sta ;
+astro_cal.c:    samp = corr->sampler + i ;
+astro_cal.c:    ant = corr->antenna + samp->ant_id ;
+astro_cal.c:      p2fstc[samp->fft_id] = -corr->corrpar.f_step*StaTime*
+astro_cal.c:    i = corr->antenna[ant_id].samp_id[band] ;
+astro_cal.c:  for (samp_id=0; samp_id < corr->daspar.samplers ; samp_id++)
+astro_cal.c:    int ant_id=corr->sampler[samp_id].ant_id;
+astro_cal.c:    int band=corr->sampler[samp_id].band;
+astro_cal.c:    AntennaParType *ant = &corr->antenna[ant_id] ;
+astro_cal.c:    //dt = tm + (corr->daspar.mjd_ref - source->mjd0)*86400 ;
+astro_cal.c:    lst = lmst(corr->daspar.mjd_ref + tm/86400);
+astro_cal.c:  ut = corr->daspar.mjd_ref + tm/86400 ;
+astro_cal.c:    /*    fprintf(fp,"Mpar%04d [Samp %04d Fft %04d] ) set to %s %d\n",samp_id,corr->sampler[samp_id].dpc, corr->sampler[samp_id].fft_id, ant->name,band); */
+corrsub.c:  if (corr->endian & LittleEndian)
+corrsub.c:       corr->endian &= ~LittleEndian;
+corrsub.c:  else corr->endian |= LittleEndian;
+corrsub.c:  for (i=0; i<MAX_ANTS; i++)flipAnt(&(corr->antenna[i]));
+corrsub.c:  flipCorrPar(&corr->corrpar);
+corrsub.c:  flipDasPar(&corr->daspar);
+corrsub.c:  { AntennaParType ant = corr->antenna[id] ;
+corrsub.c:  for (i=0; i<4; i++)p+=sprintf(p,"BAND%02d  = %s\n",i, corr->bandname[i]);
+corrsub.c:  p+=sprintf(p,"%-8.8s= %s     \n", varname[Version], corr->version );
+corrsub.c:  p+=sprintf(p,"%-8.8s= %f Hz  \n",   varname[Clock], corr->corrpar.clock);
+corrsub.c:  p+=sprintf(p,"%-8.8s= %d Cycles\n",varname[Sta   ], corr->corrpar.sta);
+corrsub.c:  p+=sprintf(p,"%-8.8s= %d usec\n",varname[StaTime ], corr->corrpar.statime) ;
+corrsub.c:  p+=sprintf(p,"%-8.8s= %f  sec\n",varname[T_unit  ], corr->daspar.t_unit);
+corrsub.c:  p+=sprintf(p,"%-8.8s= %d     \n",varname[Samplers], corr->daspar.samplers);
+corrsub.c:  p+=sprintf(p,"%-8.8s= %d     \n",varname[Macs    ], corr->corrpar.macs);
+corrsub.c:  p+=sprintf(p,"%-8.8s= %d     \n",varname[Chan_max], corr->corrpar.channels);
+corrsub.c:  p+=sprintf(p,"%-8.8s= %d     \n",varname[Pols    ], corr->corrpar.pols);
+corrsub.c:  for(i=0,n=0;i<corr->daspar.samplers;i++) 
+corrsub.c:    if((j=corr->sampler[i].dpc + 1) >n)n=j;
+corrsub.c:    for (j=0; j<corr->daspar.samplers; j++)
+corrsub.c:    { SamplerType *samp = corr->sampler + j ;
+corrsub.c:      { p+=sprintf(p,"%s %s %03d\n", corr->antenna[samp->ant_id].name,
+corrsub.c:                   corr->bandname[samp->band], samp->fft_id) ;
+corrsub.c:    if (j == corr->daspar.samplers) p+=sprintf(p,"None\n");
+corrsub.c:  for (base=corr->baseline, i=0; i < corr->corrpar.macs; i++ )
+corrsub.c:      p+=sprintf(p,"  %03d", base[corr->corrpar.macs].samp[j].fft_id) ;
+corrsub.c:    /* corr->daspar.mac_num[i] = i; */ /* redefine MAC numbers. WHY??  */
+corrsub.c:  for (i=0; i < corr->daspar.baselines; i++ )
+corrsub.c:  { BaseParType *base = &corr->baseline[i];
+corrsub.c:    if(strstr(corr->version,"COR30x2")==NULL)
+corrsub.c:      p+=sprintf(p,"  %s %s", corr->antenna [base->samp [j].ant_id].name,
+corrsub.c:                              corr->bandname[base->samp[j].band]);
+corrsub.c:    /* corr->daspar.base_num[i] = i; */ /* redefine baseline numbers. WHY?? */
+corrsub.c:  for (i=0; i<corr->daspar.samplers; i++)samp_num[i] = corr->sampler[i].dpc ;
+corrsub.c:  p+=sprintf(p,"%-8.8s= %hx \n",  varname[Mode    ], corr->daspar.mode);
+corrsub.c:  p+=sprintf(p,"%-8.8s= %d \n",  varname[Lta     ], corr->daspar.lta);
+corrsub.c:  l=print_range(str, samp_num, corr->daspar.samplers);
+corrsub.c:  l=print_range(str, corr->daspar.chan_num, corr->daspar.channels);
+corrsub.c:  corr->corrpar.macs = get_unique_macs(corr->baseline, 
+corrsub.c:                       &all, corr->corrpar.macmode ) ;
+corrsub.c:  memcpy(base, corr->baseline, all*sizeof(BaseParType)) ;
+corrsub.c:  corr->daspar.baselines = 0;
+corrsub.c:    for (j=0; j < corr->daspar.samplers; j++)
+corrsub.c:    { if (corr->sampler[j].fft_id == fft_col)col_local = j ;
+corrsub.c:      if (corr->sampler[j].fft_id == fft_row)row_local = j ;
+corrsub.c:    bdest = corr->baseline + corr->daspar.baselines ;
+corrsub.c:    memcpy(&bdest->samp[0],&corr->sampler[col_local], sizeof(SamplerType)) ;
+corrsub.c:    memcpy(&bdest->samp[1],&corr->sampler[row_local], sizeof(SamplerType)) ;
+corrsub.c:    corr->daspar.baselines++ ;
+corrsub.c:  return corr->daspar.baselines ;
+corrsub.c:{ unsigned char s[4],muxval=corr->corrpar.dpcmux;
+corrsub.c:  DasParType   *daspar=&corr->daspar;
+corrsub.c:  { SamplerType  *samp=corr->sampler+i;
+corrsub.c:  AntennaParType* const antenna = corr->antenna;
+corrsub.c:  SamplerType   *samp    = corr->sampler;
+corrsub.c:  DasParType    *daspar  =&corr->daspar ;
+corrsub.c:/*band_name[0] =  corr->bandname[0];
+corrsub.c:  band_name[1] =  corr->bandname[1];
+corrsub.c:  band_name[2] =  corr->bandname[2];
+corrsub.c:  band_name[3] =  corr->bandname[3];
+corrsub.c:    /*  fft_ids = dpc2fft(id,corr->corrpar.dpcmux,fft_id_list) ;
+corrsub.c:      samp = corr->sampler + daspar->samplers ;
+corrsub.c:  samp=corr->sampler; 
+corrsub.c:  DasParType *daspar = &corr->daspar ;
+corrsub.c:  CorrParType *corrpar = &corr->corrpar ;
+corrsub.c:  CorrParType *corrpar = &corr->corrpar ;
+corrsub.c:  strncpy(corr->version, LtaFileVersion,NAMELEN);corr->version[NAMELEN-1]='\0';
+corrsub.c:  { case 0: sprintf(corr->version+24,"HST00 "); break;
+corrsub.c:    case 1: sprintf(corr->version+24,"HST01 "); break;
+corrsub.c:   default: sprintf(corr->version+24,"HST?? "); break;
+corrsub.c:  for (i=0; i<MAX_BANDS; i++) strcpy(corr->bandname[i],band_name[i]) ;
+corrsub.c:        get_antenna(f, corr->antenna);
+corrsub.c:        endian = get_corrsys(f, corr->version, &corr->corrpar) ;
+corrsub.c:        corr->endian = endian & 255 ;
+corrsub.c:  corr->endian=endian; /* may also set by get_corrsys -- no harm if it is done twice */
+corrsub.c:        get_antenna(f, corr->antenna);
+corrsub.c:        get_corrsys(f, corr->version, &corr->corrpar) ;
+freq:astro_cal.c:    //dt = tm + (corr->daspar.mjd_ref - source->mjd0)*86400 ;
+newcorr.h:              corr->sampler[samp_id].dpc gives the absolute
+newcorr.h:{ double t0 ;  /* seconds wrt corr->daspar.mjd_ref */
