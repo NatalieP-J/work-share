@@ -25,6 +25,8 @@ def Differences(values,index):
 masterlist_1919=[]
 masterlist_1957=[]
 masterlist_2016=[]
+masterlist=[]
+sequence_begin=[]
 #define the rate at which timestamps should appear
 nanoseconds=15.
 samples=2.**24
@@ -67,15 +69,28 @@ for d in range(len(disk_type)):
 #to the masterlist within the node
                         point=[time[j],i-1,d]
                         pt=[time[j],i-1,n-33,d]
+                        masterlist.append(pt)
                         if 12120 <= time[j] <= 18600:
                             mastertime_1919.append(point)
                             masterlist_1919.append(pt)
+                            if time[j]==12120:
+                                sequence_begin.append('1919 begins')
+                            else:
+                                sequence_begin.append('')
                         if 18660 <= time[j] <= 25560:
                             mastertime_1957.append(point)
                             masterlist_1957.append(pt)
+                            if time[j]==18660:
+                                sequence_begin.append('1957 begins')
+                            else:
+                                sequence_begin.append('')
                         if 25680 <= time[j] <= 26400:
                             mastertime_2016.append(point)
                             masterlist_2016.append(pt)
+                            if time[j]==25680:
+                                sequence_begin.append('2016 begins')
+                            else:
+                                sequence_begin.append('')
 #print a status update to screen and go to the next timestamp
                     print "Done node{0}_july2/timestamp_voltage.all.1919_2_july2.{1}.dat".format(n,i)
                     i+=1 
@@ -118,6 +133,7 @@ for d in range(len(disk_type)):
 #to the masterlist within the node
                         point=[time[j],i-1,d]
                         pt=[time[j],i-1,n-33,d]
+                        masterlist.append(pt)
                         if 12120 <= time[j] <= 18600:
                             mastertime_1919.append(point)
                             masterlist_1919.append(pt)
@@ -152,7 +168,8 @@ for d in range(len(disk_type)):
 masterlist_1919.sort()
 masterlist_1957.sort()
 masterlist_2016.sort()
-
+masterlist.sort()
+mastertime=masterlist
 
 duplicates=[' ']*len(masterlist_1919)
         
@@ -278,6 +295,49 @@ for i in range(len(masterlist_2016)):
     masterlist_2016[i].append(duplicates[i])
 
 
+duplicates=[' ']*len(masterlist)
+        
+stamp_number=[] #a list to store the timestamp identifiers 
+j=2 #the timestamp identifier, beginning at two
+# add the first timestamp identifier (since the intervals will be one less than
+# the length of the masterlist)
+stamp_number.append(int(j)) 
+intervals=[]
+#diagnostic indices that track how often the various if statments are satisfied
+for i in range(len(masterlist)-1):
+#calculate intervals between consecutive entries in the masterlist
+    interval=masterlist[i+1][0]-masterlist[i][0]
+    intervals.append(interval)
+#if anywhere the difference between the consecutive entries is less than zero
+#the sort failed: report it
+    if interval < 0:
+        print 'masterlist sort failed'
+#if rounded values of the interval is zero, do not increment j - assign both 
+#timestamps the same j value
+    if np.around(interval,decimals=1) == 0:
+        stamp_number.append(int(j))
+#if they are from the same node, timestamps are duplicates - report it in the 
+#duplicate list
+        if masterlist[i+1][2]==masterlist[i][2] and masterlist[i+1][3]!=masterlist[i][3]:
+            duplicates[i]='duplicate'
+            duplicates[i+1]='duplicate'
+        m+=1
+#if rounded value of the interval is not zero, increment j by the number of 
+#times the interval is greater than the rate
+    if np.around(interval,decimals=1) > 0:
+        point=interval/rate
+        point=np.around(point,decimals=0)
+        j+=point
+        stamp_number.append(int(j))
+        n+=1
+
+for i in range(len(masterlist)):
+    masterlist[i].append(stamp_number[i])
+    masterlist[i].append(duplicates[i])
+    masterlist[i].append(sequence_begin[i])
+
+
+
 #print out diagnostic information
 
 print '''Diagnostics
@@ -288,10 +348,15 @@ print '''Diagnostics
 
 #print sequence number, disk, and duplication (if applicable) to a file for each
 #node, coordinating the stamp_number across all nodes
+def WriteFile6Cols(values,fname):
+    with open(fname,"w") as data:
+        for i in range(len(values)):
+            data.write("{0} {1} {2} {3} {4} {5}\n".format(values[i][0],values[i][1],values[i][2],values[i][3],values[i][4],values[i][5]))
+
 def WriteFile5Cols(values,fname):
     with open(fname,"w") as data:
         for i in range(len(values)):
-            data.write("{0} {1} {2}\n".format(values[i][0],values[i][1],values[i][2],values[i][3],values[i][4]))
+            data.write("{0} {1} {2} {3} {4}\n".format(values[i][0],values[i][1],values[i][2],values[i][3],values[i][4]))
 
 def WriteFile4Cols(values,fname):
     with open(fname,"w") as data:
@@ -370,3 +435,27 @@ for i in range(len(masterlist)):
     point=[masterlist[i][4],masterlist[i][1],(masterlist[i][2]+33),masterlist[i][3],masterlist[i][5]]
     master.append(point)
 WriteFile5Cols(master,name)
+
+masterlist=mastertime
+
+n=33
+while n < 40:
+    name='node{0}_july2/coordinated_generated_sequence.dat'.format(n)
+    master=[]
+    node=n-33
+    for i in range(len(masterlist)):
+        if masterlist[i][2] == node:
+            point=[masterlist[i][4], masterlist[i][1], masterlist[i][3], masterlist[i][5]]
+            master.append(point)
+    WriteFile4Cols(master,name)
+    n+=1
+#print the master sequence file, with sequence number, disk, node and 
+#duplication (if applicable)
+
+
+name='MasterSequenceFile.dat'
+master=[]
+for i in range(len(masterlist)):
+    point=[masterlist[i][4],masterlist[i][1],(masterlist[i][2]+33),masterlist[i][3],masterlist[i][5],masterlist[i][6]]
+    master.append(point)
+WriteFile6Cols(master,name)
