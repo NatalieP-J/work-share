@@ -1,12 +1,9 @@
 #!/bin/sh -x
-MONTH=Aug
-DATE=22
-TARGET=b0329+54
+FILE=b0329+54_Aug22_4
+STEM=/mnt/*/gsbuser/TSAS/node*
 DISKOUT=disk3
-PATHOUT=/mnt/$DISKOUT/gsbuser/
-for i in {111..118}
-  j=i-78
-  m=j-33
-  for disk in {a,b,c,d,disk1,disk2,disk3,disk4}
-    do ssh -n node$i "
-    
+PATHOUT=/mnt/$DISKOUT/gsbuser/TSAS/
+
+for ((i=111;i<119;i++));
+do ssh node$i "ls $STEM/$FILE";
+done
