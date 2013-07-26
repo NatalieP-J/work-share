@@ -1,162 +1,128 @@
 import manage as man
 from astropy.time import Time
 import numpy as np
+import argparse
 
-#NODE34 is still 14 min early
+parser=argparse.ArgumentParser()
 
-def WriteFileCols(values,fname):
-    with open(fname,"w") as data:
-        for i in range(len(values)):
-            data.write("{0} {1}\n".format(values[i][0],values[i][1]))
-def WriteFile3Cols(values,fname):
-    with open(fname,"w") as data:
-        for i in range(len(values)):
-            data.write("{0} {1} {2}\n".format(values[i][0],values[i][1],values[i][2]))
+parser.add_argument('--tot', type=int,default=8, help="Total number of nodes")
+parser.add_argument('--min', type=int,default=17, help="Minimum node number")
+parser.add_argument('--sta', type=int,default=3,help='''Choose a source to evaluate a sequence file for - options are:
+0=.20130719053400
+1=.2013-07-19T05:36:00
+2=_voltage.all.test_2_july19
+3=_voltage.all.1810_2_july19 ''')
 
-def Differences(values,index):
-    new_list=[]
-    i=0
-    while i < (len(values)-1):
-        point=values[i+1][index]-values[i][index]
-        new_list.append(point)
-        i+=1
-    return new_list
-#create an empty list to store timestamps in
-masterlist_1919=[]
-masterlist_1957=[]
-masterlist_2016=[]
-masterlist=[]
-sequence_begin=[]
+#parse command line
+args=parser.parse_args()
+
+min_node=args.min
+tot=args.tot
+max_node=min_node+tot + 1
+source=args.sta
+
+stamps=[]
+stamps.append('.20130719053400')
+stamps.append('.2013-07-19T05:36:00')
+stamps.append('_voltage.all.test_2_july19')
+stamps.append('_voltage.all.1810_2_july19')
+stamp = stamps[source]
+
 #define the rate at which timestamps should appear
 nanoseconds=15.
 samples=2.**24
 rate=(nanoseconds/10**9)*samples
-disk_type=['EoR','a_d']
-#begin outer loop at node33 to be looped over all nodes up to node39
-for d in range(len(disk_type)):
-    n=33
-    while n<40:
-        if n == 34:
-            mastertime_1919=[]
-            mastertime_1957=[]
-            mastertime_2016=[]
+
+#NODE18 is early
+prob = 18
+bump_val = 956.8149109999999
+
+
+#create an empty list to store timestamps in
+masterlist=[]
+sequence_begin=[]
+#d
+
+n=min_node
+while n<max_node:
+    if n == prob: #problem node
 #within node, extract the times from every timestamp file
-            i=1
-            while i<5:
+        i=0
+        while i<5:
 #identifies the name of each timestamp file within a given node's 
 #directory
-                fname='node{0}_july2/{1}/timestamp_voltage.all.1919_2_july2.{2}.dat'.format(n,disk_type[d],i)
+            fname='node{0}/timestamp{1}.{2}.dat'.format(n,stamp,i)
 #if fname points to a real file, extract the times
-                try:
-                    times=man.LoadData(fname)
-                #year=man.IterativeIntAppend(times,0) irrelevant for our purpose
-                #month=man.IterativeIntAppend(times,1)
+            try:
+                times=man.LoadData(fname)
 #include day to account for possibility of observations spanning a transition 
 #between days 
-                    hour=man.IterativeIntAppend(times,3)
-                    minute=man.IterativeIntAppend(times,4)
-                    seconds=man.IterativeIntAppend(times,5)
-                    frac=man.IterativeFloatAppend(times,6) #fraction of second
+                hour=man.IterativeIntAppend(times,3)
+                minute=man.IterativeIntAppend(times,4)
+                seconds=man.IterativeIntAppend(times,5)
+                frac=man.IterativeFloatAppend(times,6) #fraction of second
 
-                    time=[] #create empty list for times from each timestamp file
-                    for j in range(len(times)):
+                time=[] #create empty list for times from each timestamp file
+                for j in range(len(times)):
 #point is in seconds, and has no real meaning as a time measurment - it is only
 #the difference that concerns us in this instance
-                        point=(hour[j]*3600)+(minute[j]*60)+(seconds[j])+(frac[j])+813.4349439999987
-                        time.append(point)
-                    for j in range(len(time)):
+                    point=(hour[j]*3600)+(minute[j]*60)+(seconds[j])+(frac[j])+bump_val #normalizing problem node
+                    time.append(point)
+                for j in range(len(time)):
 #add the time and the disk to which it was written (timestamp number minus 1) 
 #to the masterlist within the node
-                        point=[time[j],i-1,d]
-                        pt=[time[j],i-1,n-33,d]
-                        masterlist.append(pt)
-                        if 12120 <= time[j] <= 18600:
-                            mastertime_1919.append(point)
-                            masterlist_1919.append(pt)
-                            if time[j]==12120:
-                                sequence_begin.append('1919 begins')
-                            else:
-                                sequence_begin.append('')
-                        if 18660 <= time[j] <= 25560:
-                            mastertime_1957.append(point)
-                            masterlist_1957.append(pt)
-                            if time[j]==18660:
-                                sequence_begin.append('1957 begins')
-                            else:
-                                sequence_begin.append('')
-                        if 25680 <= time[j] <= 26400:
-                            mastertime_2016.append(point)
-                            masterlist_2016.append(pt)
-                            if time[j]==25680:
-                                sequence_begin.append('2016 begins')
-                            else:
-                                sequence_begin.append('')
+                    point=[time[j],i-1]
+                    pt=[time[j],i-1,n-min_node]
+                    masterlist.append(pt)
 #print a status update to screen and go to the next timestamp
-                    print "Done node{0}_july2/timestamp_voltage.all.1919_2_july2.{1}.dat".format(n,i)
-                    i+=1 
+                print "Done node{0}/timestamp{1}.{2}.dat".format(n,stamp,i)
+                i+=1 
 #if a timestamp file is missing, report it and go to the next one
-                except IOError:
-                    print "Missing node{0}_july2/timestamp_voltage.all.1919_2_july2.{1}.dat".format(n,i)
-                    i+=1
-                    pass
+            except IOError:
+                print "Missing node{0}/timestamp{1}.{2}.dat".format(n,stamp,i)
+                i+=1
+                pass
         
-        else:
-            mastertime_1919=[]
-            mastertime_1957=[]
-            mastertime_2016=[]
+    else:
 #within node, extract the times from every timestamp file
-            i=1
-            while i<5:
+        i=0
+        while i<5:
 #identifies the name of each timestamp file within a given node's 
 #directory
-                fname='node{0}_july2/{1}/timestamp_voltage.all.1919_2_july2.{2}.dat'.format(n,disk_type[d],i)
+            fname='node{0}/timestamp{1}.{2}.dat'.format(n,stamp,i)
 #if fname points to a real file, extract the times
-                try:
-                    times=man.LoadData(fname)
-                #year=man.IterativeIntAppend(times,0) irrelevant for our purpose
-                #month=man.IterativeIntAppend(times,1)
+            try:
+                times=man.LoadData(fname)
 #include day to account for possibility of observations spanning a transition 
 #between days 
-                    hour=man.IterativeIntAppend(times,3)
-                    minute=man.IterativeIntAppend(times,4)
-                    seconds=man.IterativeIntAppend(times,5)
-                    frac=man.IterativeFloatAppend(times,6) #fraction of second
+                hour=man.IterativeIntAppend(times,3)
+                minute=man.IterativeIntAppend(times,4)
+                seconds=man.IterativeIntAppend(times,5)
+                frac=man.IterativeFloatAppend(times,6) #fraction of second
 
-                    time=[] #create empty list for times from each timestamp file
-                    for j in range(len(times)):
+                time=[] #create empty list for times from each timestamp file
+                for j in range(len(times)):
 #point is in seconds, and has no real meaning as a time measurment - it is only
 #the difference that concerns us in this instance
-                        point=(hour[j]*3600)+(minute[j]*60)+(seconds[j])+(frac[j])
-                        time.append(point)
-                    for j in range(len(time)):
+                    point=(hour[j]*3600)+(minute[j]*60)+(seconds[j])+(frac[j])
+                    time.append(point)
+                for j in range(len(time)):
 #add the time and the disk to which it was written (timestamp number minus 1) 
 #to the masterlist within the node
-                        point=[time[j],i-1,d]
-                        pt=[time[j],i-1,n-33,d]
-                        masterlist.append(pt)
-                        if 12120 <= time[j] <= 18600:
-                            mastertime_1919.append(point)
-                            masterlist_1919.append(pt)
-                        if 18660 <= time[j] <= 25560:
-                            mastertime_1957.append(point)
-                            masterlist_1957.append(pt)
-                        if 25680 <= time[j] <= 26400:
-                            mastertime_2016.append(point)
-                            masterlist_2016.append(pt)
+                    point=[time[j],i-1]
+                    pt=[time[j],i-1,n-min_node]
+                    masterlist.append(pt)
 #print a status update to screen and go to the next timestamp
-                    print "Done node{0}_july2/timestamp_voltage.all.1919_2_july2.{1}.dat".format(n,i)
-                    i+=1 
+                print "Done node{0}/timestamp{1}.{2}.dat".format(n,stamp,i)
+                i+=1 
 #if a timestamp file is missing, report it and go to the next one
-                except IOError:
-                    print "Missing node{0}_july2/timestamp_voltage.all.1919_2_july2.{1}.dat".format(n,i)
-                    i+=1
-                    pass
+            except IOError:
+                print "Missing node{0}/timestamp{1}.{2}.dat".format(n,stamp,i)
+                i+=1
+                pass            
 
 #sort the file within the node to be in chronological order                
-            mastertime_1919.sort()
-            mastertime_1957.sort()
-            mastertime_2016.sort()
-
+        
 #name the file that will result and put it in the appropriate node direactory
         #name='node{0}/SequencedTimeStamp.dat'.format(n)
         #WriteFileCols(mastertime,name)
@@ -165,149 +131,19 @@ for d in range(len(disk_type)):
         n+=1 
         
 #sort the masterlist      
-masterlist_1919.sort()
-masterlist_1957.sort()
-masterlist_2016.sort()
 masterlist.sort()
 mastertime=masterlist
 
-duplicates=[' ']*len(masterlist_1919)
-        
-stamp_number=[] #a list to store the timestamp identifiers 
-j=2 #the timestamp identifier, beginning at two
-# add the first timestamp identifier (since the intervals will be one less than
-# the length of the masterlist)
-stamp_number.append(int(j)) 
-intervals_1919=[]
-#diagnostic indices that track how often the various if statments are satisfied
-m=0
-n=0
-for i in range(len(masterlist_1919)-1):
-#calculate intervals between consecutive entries in the masterlist
-    interval=masterlist_1919[i+1][0]-masterlist_1919[i][0]
-    intervals_1919.append(interval)
-#if anywhere the difference between the consecutive entries is less than zero
-#the sort failed: report it
-    if interval < 0:
-        print 'masterlist sort failed'
-#if rounded values of the interval is zero, do not increment j - assign both 
-#timestamps the same j value
-    if np.around(interval,decimals=1) == 0:
-        stamp_number.append(int(j))
-#if they are from the same node, timestamps are duplicates - report it in the 
-#duplicate list
-        if masterlist_1919[i+1][2]==masterlist_1919[i][2] and masterlist_1919[i+1][3]!=masterlist_1919[i][3]:
-            duplicates[i]='duplicate'
-            duplicates[i+1]='duplicate'
-        m+=1
-#if rounded value of the interval is not zero, increment j by the number of 
-#times the interval is greater than the rate
-    if np.around(interval,decimals=1) > 0:
-        point=interval/rate
-        point=np.around(point,decimals=0)
-        j+=point
-        stamp_number.append(int(j))
-        n+=1
-
-for i in range(len(masterlist_1919)):
-    masterlist_1919[i].append(stamp_number[i])
-    masterlist_1919[i].append(duplicates[i])
-
-duplicates=[' ']*len(masterlist_1957)
-        
-stamp_number=[] #a list to store the timestamp identifiers 
-j=2 #the timestamp identifier, beginning at two
-# add the first timestamp identifier (since the intervals will be one less than
-# the length of the masterlist)
-stamp_number.append(int(j)) 
-intervals_1957=[]
-#diagnostic indices that track how often the various if statments are satisfied
-for i in range(len(masterlist_1957)-1):
-#calculate intervals between consecutive entries in the masterlist
-    interval=masterlist_1957[i+1][0]-masterlist_1957[i][0]
-    intervals_1957.append(interval)
-#if anywhere the difference between the consecutive entries is less than zero
-#the sort failed: report it
-    if interval < 0:
-        print 'masterlist sort failed'
-#if rounded values of the interval is zero, do not increment j - assign both 
-#timestamps the same j value
-    if np.around(interval,decimals=1) == 0:
-        stamp_number.append(int(j))
-#if they are from the same node, timestamps are duplicates - report it in the 
-#duplicate list
-        if masterlist_1957[i+1][2]==masterlist_1957[i][2] and masterlist_1957[i+1][3]!=masterlist_1957[i][3]:
-            duplicates[i]='duplicate'
-            duplicates[i+1]='duplicate'
-        m+=1
-#if rounded value of the interval is not zero, increment j by the number of 
-#times the interval is greater than the rate
-    if np.around(interval,decimals=1) > 0:
-        point=interval/rate
-        point=np.around(point,decimals=0)
-        j+=point
-        stamp_number.append(int(j))
-        n+=1
-
-for i in range(len(masterlist_1957)):
-    masterlist_1957[i].append(stamp_number[i])
-    masterlist_1957[i].append(duplicates[i])
-
-
-duplicates=[' ']*len(masterlist_2016)
-        
-stamp_number=[] #a list to store the timestamp identifiers 
-j=2 #the timestamp identifier, beginning at two
-# add the first timestamp identifier (since the intervals will be one less than
-# the length of the masterlist)
-stamp_number.append(int(j)) 
-intervals_2016=[]
-#diagnostic indices that track how often the various if statments are satisfied
-for i in range(len(masterlist_2016)-1):
-#calculate intervals between consecutive entries in the masterlist
-    interval=masterlist_2016[i+1][0]-masterlist_2016[i][0]
-    intervals_2016.append(interval)
-#if anywhere the difference between the consecutive entries is less than zero
-#the sort failed: report it
-    if interval < 0:
-        print 'masterlist sort failed'
-#if rounded values of the interval is zero, do not increment j - assign both 
-#timestamps the same j value
-    if np.around(interval,decimals=1) == 0:
-        stamp_number.append(int(j))
-#if they are from the same node, timestamps are duplicates - report it in the 
-#duplicate list
-        if masterlist_2016[i+1][2]==masterlist_2016[i][2] and masterlist_2016[i+1][3]!=masterlist_2016[i][3]:
-            duplicates[i]='duplicate'
-            duplicates[i+1]='duplicate'
-        m+=1
-#if rounded value of the interval is not zero, increment j by the number of 
-#times the interval is greater than the rate
-    if np.around(interval,decimals=1) > 0:
-        point=interval/rate
-        point=np.around(point,decimals=0)
-        j+=point
-        stamp_number.append(int(j))
-        n+=1
-
-for i in range(len(masterlist_2016)):
-    masterlist_2016[i].append(stamp_number[i])
-    masterlist_2016[i].append(duplicates[i])
-
-
 duplicates=[' ']*len(masterlist)
-        
+m=0        
 stamp_number=[] #a list to store the timestamp identifiers 
 j=2 #the timestamp identifier, beginning at two
 # add the first timestamp identifier (since the intervals will be one less than
 # the length of the masterlist)
 stamp_number.append(int(j)) 
-intervals=[]
-#diagnostic indices that track how often the various if statments are satisfied
 for i in range(len(masterlist)-1):
 #calculate intervals between consecutive entries in the masterlist
     interval=masterlist[i+1][0]-masterlist[i][0]
-    intervals.append(interval)
 #if anywhere the difference between the consecutive entries is less than zero
 #the sort failed: report it
     if interval < 0:
@@ -334,7 +170,6 @@ for i in range(len(masterlist)-1):
 for i in range(len(masterlist)):
     masterlist[i].append(stamp_number[i])
     masterlist[i].append(duplicates[i])
-    masterlist[i].append(sequence_begin[i])
 
 
 
@@ -346,116 +181,29 @@ print '''Diagnostics
  '''.format(int(m),int(n))
 
 
-#print sequence number, disk, and duplication (if applicable) to a file for each
-#node, coordinating the stamp_number across all nodes
-def WriteFile6Cols(values,fname):
-    with open(fname,"w") as data:
-        for i in range(len(values)):
-            data.write("{0} {1} {2} {3} {4} {5}\n".format(values[i][0],values[i][1],values[i][2],values[i][3],values[i][4],values[i][5]))
-
-def WriteFile5Cols(values,fname):
-    with open(fname,"w") as data:
-        for i in range(len(values)):
-            data.write("{0} {1} {2} {3} {4}\n".format(values[i][0],values[i][1],values[i][2],values[i][3],values[i][4]))
-
-def WriteFile4Cols(values,fname):
-    with open(fname,"w") as data:
-        for i in range(len(values)):
-            data.write("{0} {1} {2} {3}\n".format(values[i][0],values[i][1],values[i][2],values[i][3]))
-
-masterlist=masterlist_1919
-
-n=33
-while n < 40:
-    name='node{0}_july2/1919_coordinated_generated_sequence.dat'.format(n)
-    master=[]
-    node=n-33
-    for i in range(len(masterlist)):
-        if masterlist[i][2] == node:
-            point=[masterlist[i][4], masterlist[i][1], masterlist[i][3], masterlist[i][5]]
-            master.append(point)
-    WriteFile4Cols(master,name)
-    n+=1
-#print the master sequence file, with sequence number, disk, node and 
-#duplication (if applicable)
-
-
-name='1919_MasterSequenceFile.dat'
-master=[]
-for i in range(len(masterlist)):
-    point=[masterlist[i][4],masterlist[i][1],(masterlist[i][2]+33),masterlist[i][3],masterlist[i][5]]
-    master.append(point)
-WriteFile5Cols(master,name)
-
-masterlist=masterlist_1957
-
-n=33
-while n < 40:
-    name='node{0}_july2/1957_coordinated_generated_sequence.dat'.format(n)
-    master=[]
-    node=n-33
-    for i in range(len(masterlist)):
-        if masterlist[i][2] == node:
-            point=[masterlist[i][4], masterlist[i][1], masterlist[i][3],masterlist[i][5]]
-            master.append(point)
-    WriteFile4Cols(master,name)
-    n+=1
-#print the master sequence file, with sequence number, disk, node and 
-#duplication (if applicable)
-
-
-name='1957_MasterSequenceFile.dat'
-master=[]
-for i in range(len(masterlist)):
-    point=[masterlist[i][4],masterlist[i][1],(masterlist[i][2]+33),masterlist[i][3],masterlist[i][5]]
-    master.append(point)
-WriteFile5Cols(master,name)
-
-            
-masterlist=masterlist_2016
-
-n=33
-while n < 40:
-    name='node{0}_july2/2016_coordinated_generated_sequence.dat'.format(n)
-    master=[]
-    node=n-33
-    for i in range(len(masterlist)):
-        if masterlist[i][2] == node:
-            point=[masterlist[i][4], masterlist[i][1], masterlist[i][3],masterlist[i][5]]
-            master.append(point)
-    WriteFile4Cols(master,name)
-    n+=1
-#print the master sequence file, with sequence number, disk, node and 
-#duplication (if applicable)
-
-
-name='2016_MasterSequenceFile.dat'
-master=[]
-for i in range(len(masterlist)):
-    point=[masterlist[i][4],masterlist[i][1],(masterlist[i][2]+33),masterlist[i][3],masterlist[i][5]]
-    master.append(point)
-WriteFile5Cols(master,name)
+#print sequence number, disk, and duplication (if applicable) to a file for
+#each node, coordinating the stamp_number across all nodes
 
 masterlist=mastertime
 
-n=33
-while n < 40:
-    name='node{0}_july2/coordinated_generated_sequence.dat'.format(n)
+n=min_node
+while n < max_node:
+    name='node{0}/coordinated_generated_sequence.dat'.format(n)
     master=[]
-    node=n-33
+    node=n-min_node
     for i in range(len(masterlist)):
         if masterlist[i][2] == node:
             point=[masterlist[i][4], masterlist[i][1], masterlist[i][3], masterlist[i][5]]
             master.append(point)
-    WriteFile4Cols(master,name)
+    man.WriteFile4Cols(master,name)
     n+=1
 #print the master sequence file, with sequence number, disk, node and 
 #duplication (if applicable)
 
 
-name='MasterSequenceFile.dat'
+name='MasterSequenceFile{0}.dat'.format(stamp)
 master=[]
 for i in range(len(masterlist)):
-    point=[masterlist[i][4],masterlist[i][1],(masterlist[i][2]+33),masterlist[i][3],masterlist[i][5],masterlist[i][6]]
+    point=[masterlist[i][4],masterlist[i][1],(masterlist[i][2]+min_node),masterlist[i][3],masterlist[i][5]]
     master.append(point)
-WriteFile6Cols(master,name)
+man.WriteFile5Cols(master,name)

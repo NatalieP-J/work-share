@@ -1,7 +1,7 @@
 ! perform SVD on pulsar
 ! diagonalize ll and rr separately, and apply their product on lr
 !
-integer, parameter :: n=64,nout=1,nt=6,nchan=64,ncorrtot=nchan*(nchan+1)/2,ncorr=ncorrtot,nr=1
+integer, parameter :: n=64,nout=1,nt=12,nchan=64,ncorrtot=nchan*(nchan+1)/2,ncorr=ncorrtot,nr=1
 
 complex, dimension(n,ncorr) :: cmatin,cmatin1
 complex, dimension(n,ncorr) :: cmatinc,cmatt

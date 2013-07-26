@@ -3,7 +3,7 @@ import manage as man
 n=33
 while n < 49:
     try:
-        fname='node{0}/generated_sequence.dat'.format(n)
+        fname='node{0}/coordinated_generated_sequence.dat'.format(n)
         gen_sequence=man.LoadData(fname)
         gen_stamp=man.IterativeIntAppend(gen_sequence,0)
         fname='node{0}/sequence.sorted.dat'.format(n)

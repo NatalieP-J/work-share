@@ -6,13 +6,14 @@ def WriteFileCols(values,fname):
         for i in range(len(values)):
             data.write("{0}\t{1}\n".format(values[i][0],values[i][1]))
 
+stamp='1810_2_july19'
 diff=[]
-n=33
-while n < 49:
+n=17
+while n < 32:
     mastertime=[]
     j=1
     while j<5:
-        fname='node{0}/timestamp_voltage.all.0329_june29.{1}.dat'.format(n,j)
+        fname='node{0}/timestamp_voltage.all.{1}.{2}.dat'.format(n,stamp,j)
         try:
             times=man.LoadData(fname)
             year=man.IterativeStrAppend(times,0)
@@ -42,10 +43,10 @@ while n < 49:
             for i in range(len(iso)):
                 point=[iso[i],j-1]
                 mastertime.append(point)
-            print "Done node{0}/timestamp_voltage.all.0329_june29.{1}.dat".format(n,j)
+            print "Done node{0}/timestamp_voltage.all.{1}.{2}.dat".format(n,stamp,j)
             j+=1 
         except IOError:
-            print "Missing node{0}/timestamp_voltage.all.0329_june29.{1}.dat".format(n,j)
+            print "Missing node{0}/timestamp_voltage.all.{1}.{2}.dat".format(n,stamp,j)
             j+=1
             pass
 

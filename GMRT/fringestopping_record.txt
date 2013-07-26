@@ -1,0 +1,20 @@
+
+===July 5 2013===
+Scans To Do:
+*Prasun's 0329 Data of August 22
+**Scans 7 through 51
+**Located on /mnt/*/gsbuser/TSAS/node*/*[scan date]_[scan number]*
+
+Results of Liam's Scans:
+*Page will receive further updates upon the return of connection to India
+*Jan13
+**Scan 1 finished at epoch=2623
+**Scan 3 finished at epoch=8703
+**Scan 7 finished at epoch=703
+*Jan15
+**Scan 4 finished at epoch=511
+**Scan 5 finished at epoch=2239
+*Jan16
+**Scan 1 finished at epoch=3455
+**Scan 2 finished at epoch=6335
+**Scan 4 finished at epoch=7039
