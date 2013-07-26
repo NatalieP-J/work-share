@@ -58,6 +58,9 @@ for i in range(len(node)):
 		if new_node[i] == n:
 			if node[i] in node_files:
 				print 'Duplicate files'
+				node_files.append(node[i])
+			else:
+				node_files.append(node[i])
 			node_file_1 = n - 111 #should be one of the .node file numbers
 			node_file_2 = node_file_1 + 8 #should be the other .node file number
 			if node[i] == node_file_1: #if the .node file number matches node_file_1, define its disk number as disk1
