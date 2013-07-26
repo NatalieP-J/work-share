@@ -1,4 +1,0 @@
-#! /bin/bash
-
-/sbin/sysctl -w kernel.shmmax=547356672
-/sbin/sysctl -w kernel.shmall=8552448

@@ -1,9 +1,0 @@
-plugin_LTLIBRARIES+= interpolate_@T2ARCH@_plug.la
-PLUGINSTALLS+= interpolate-install
-PLUGINS+= interpolate
-interpolate_@T2ARCH@_plug_la_SOURCES=../tempo2.h interpolate_plug.C
-interpolate_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @PGPLOT_LIBS@ @FFTW_LIBS@
-interpolate_@T2ARCH@_plug_la_INCLUDES=@PGPLOT_CFLAGS@ @FFTW_CFLAGS@
-interpolate-install: interpolate_@T2ARCH@_plug.la plugdir
-	$(INSTALL) .libs/interpolate_@T2ARCH@_plug.t2 $(plugindir)
-interpolate: interpolate_@T2ARCH@_plug.la

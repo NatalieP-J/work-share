@@ -1,4 +1,0 @@
-import sofa_sidereal
-
-def time2gmst(t):
-    return sofa_sidereal(t.utc.jd1, t.utc.jd2)

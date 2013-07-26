@@ -1,9 +1,0 @@
-plugin_LTLIBRARIES+= photons_@T2ARCH@_plug.la
-PLUGINSTALLS+= photons-install
-PLUGINS+= photons
-photons_@T2ARCH@_plug_la_SOURCES=../tempo2.h photons_plug.C
-photons_@T2ARCH@_plug_la_LIBADD=../libtempo2.la ../sofa/libsofa.la @CFITSIO_LIBS@
-photons_@T2ARCH@_plug_la_INCLUDES=@CFITSIO_CFLAGS@
-photons-install: photons_@T2ARCH@_plug.la plugdir
-	$(INSTALL) .libs/photons_@T2ARCH@_plug.t2 $(plugindir)
-photons: photons_@T2ARCH@_plug.la
