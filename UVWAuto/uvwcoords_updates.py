@@ -1,3 +1,4 @@
+
 from __future__ import division, print_function
 
 import numpy as np
@@ -10,11 +11,11 @@ from astropy.coordinates import ICRSCoordinates
 from astropy.table import Table
 from astropy.constants import c as SPEED_OF_LIGHT
 
-SOURCE = ICRSCoordinates('19h21m44.815s +21d53m02.25s') #1919
-#SOURCE = ICRSCoordinates('19h59m36.76988s +20d48m15.1222s') #1957
+#SOURCE = ICRSCoordinates('19h21m44.815s +21d53m02.25s') #1919
+SOURCE = ICRSCoordinates('19h59m36.76988s +20d48m15.1222s') #1957
 #SOURCE = ICRSCoordinates('20h18m03.92s +28d39m55.2s') #2016
 #SOURCE = ICRSCoordinates('18h10m37.28s +17d44m37.38s') #1810
-SOURCE = ICRSCoordinates('21h13m24.307s +46d44m08.70s')
+#SOURCE = ICRSCoordinates('21h13m24.307s +46d44m08.70s') #2111
 
 #OUTFILES
 OUTFILE = 'July2_1919_uwvcoords.dat'                                           
@@ -33,6 +34,10 @@ OUTFILE = 'July25_1810_uvwcoords.dat'
 OUTFILE = 'July25_1919_uvwcoords.dat'
 OUTFILE = 'July25_2111_uvwcoords.dat'
 
+OUTFILE = 'July27_1810_uvwcoords.dat'
+OUTFILE = 'July27_1919_uvwcoords.dat'
+OUTFILE = 'July27_1957_uvwcoords.dat'
+
 # first time stamp of all.  Maybe should be rounded to minute?
 TIME_STAMP0 = '2013 07 02 04 30 00 0.694016' #1919 July 2
 TIME_STAMP0 = '2013 07 02 05 11 00 0.133888' #1957 July 2
@@ -50,6 +55,10 @@ TIME_STAMP0 = '2013 07 25 01 30 00 0.438530' #July 25 1810
 TIME_STAMP0 = '2013 07 25 03 45 00 0.053255' #July 25 1919
 TIME_STAMP0 = '2013 07 25 04 03 00 0.025350' #July 25 2111 
 
+TIME_STAMP0 = '2013 07 27 01 26 00 0.685825' #July 27 1810
+TIME_STAMP0 = '2013 07 27 03 42 00 0.688129' #July 27 1919
+TIME_STAMP0 = '2013 07 27 03 56 00 0.692482' #July 27 1957
+
 #MAX_NO_IN_SEQ_FILE
 MAX_NO_IN_SEQ_FILE = 3234 #1919 July 2
 MAX_NO_IN_SEQ_FILE = 20546 #1957 July 2
@@ -66,6 +75,10 @@ MAX_NO_IN_SEQ_FILE = 2385 # July 24 1919
 MAX_NO_IN_SEQ_FILE = 17767 # July 25 1810
 MAX_NO_IN_SEQ_FILE = 2742 # July 25 1919
 MAX_NO_IN_SEQ_FILE = 950 # July 25 2111
+
+MAX_NO_IN_SEQ_FILE = 31066 #July 27 1810
+MAX_NO_IN_SEQ_FILE = 2849 #July 27 1919
+MAX_NO_IN_SEQ_FILE = 3632 #July 27 1957
 
 N_BLOCK = MAX_NO_IN_SEQ_FILE - 1
 DT_SAMPLE = TimeDelta(0., (3/(200*u.MHz)).to(u.s).value, format='sec')

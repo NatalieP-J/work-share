@@ -1,0 +1,122 @@
+Last login: Sat Jul 27 16:01:38 on ttys004
+Spectre:~ Natalie$ arolocal -X
+Welcome to Ubuntu 12.10 (GNU/Linux 3.5.0-36-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+New release '13.04' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+Last login: Sat Jul 27 15:22:12 2013 from macbook.local
+algonquin@pen-node10:~$ cd /mnt/b/algonquin/
+July25/ mhvk/   
+algonquin@pen-node10:~$ cd /mnt/b/algonquin/
+July25/ mhvk/   
+algonquin@pen-node10:~$ cd /mnt/c/algonquin/July25/PSR1919/node9/
+algonquin@pen-node10:/mnt/c/algonquin/July25/PSR1919/node9$ xv 
+folded3B1919+21.pgm    foldedbinB1919+21.pgm  
+foldedB1919+21.pgm     waterfall.pgm          
+algonquin@pen-node10:/mnt/c/algonquin/July25/PSR1919/node9$ xv 
+folded3B1919+21.pgm    foldedbinB1919+21.pgm  
+foldedB1919+21.pgm     waterfall.pgm          
+algonquin@pen-node10:/mnt/c/algonquin/July25/PSR1919/node9$ xv foldedB1919+21.pgm 
+algonquin@pen-node10:/mnt/c/algonquin/July25/PSR1919/node9$ xv foldedbinB1919+21.pgm 
+algonquin@pen-node10:/mnt/c/algonquin/July25/PSR1919/node9$ ipython
+Python 2.7.3 (default, Apr 10 2013, 05:13:16) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 0.13.2 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: import numpy as np
+
+In [2]: import matplotlib.pylab as plt
+
+In [3]: foldspec2 = np.load('aro
+aroB1919+21foldspec2.npy  aroB1919+21waterfall.npy  
+
+In [3]: foldspec2 = np.load('aroB1919+21foldspec2.npy')
+
+In [4]: plt.ion()
+
+In [5]: plt.imshow(foldspec2.transpose(0,2,1))
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-5-f6bda2709181> in <module>()
+----> 1 plt.imshow(foldspec2.transpose(0,2,1))
+
+/usr/lib/pymodules/python2.7/matplotlib/pyplot.pyc in imshow(X, cmap, norm, aspect, interpolation, alpha, vmin, vmax, origin, extent, shape, filternorm, filterrad, imlim, resample, url, hold, **kwargs)
+   2375         ax.hold(hold)
+   2376     try:
+-> 2377         ret = ax.imshow(X, cmap, norm, aspect, interpolation, alpha, vmin, vmax, origin, extent, shape, filternorm, filterrad, imlim, resample, url, **kwargs)
+   2378         draw_if_interactive()
+   2379     finally:
+
+/usr/lib/pymodules/python2.7/matplotlib/axes.pyc in imshow(self, X, cmap, norm, aspect, interpolation, alpha, vmin, vmax, origin, extent, shape, filternorm, filterrad, imlim, resample, url, **kwargs)
+   6794                        filterrad=filterrad, resample=resample, **kwargs)
+   6795 
+-> 6796         im.set_data(X)
+   6797         im.set_alpha(alpha)
+   6798         self._set_artist_props(im)
+
+/usr/lib/pymodules/python2.7/matplotlib/image.pyc in set_data(self, A)
+    409         if (self._A.ndim not in (2, 3) or
+    410             (self._A.ndim == 3 and self._A.shape[-1] not in (3, 4))):
+--> 411             raise TypeError("Invalid dimensions for image data")
+    412 
+    413         self._imcache =None
+
+TypeError: Invalid dimensions for image data
+
+In [6]: plt.imshow(foldspec2.transpose(0,2,1).reshape(1024,-1))
+Out[6]: <matplotlib.image.AxesImage at 0x3a91d90>
+
+In [7]: plt.imshow(foldspec2.transpose(0,2,1).reshape(1024,-1), vmin=-1e4,vmax=1e4)
+Out[7]: <matplotlib.image.AxesImage at 0x33df610>
+
+In [8]: plt.imshow(foldspec2.transpose(0,2,1).reshape(1024,-1), vmin=-1e2,vmax=1e2)
+Out[8]: <matplotlib.image.AxesImage at 0x33a6f10>
+
+In [9]: plt.imshow(foldspec2.transpose(0,2,1).reshape(1024,-1), vmin=-1e3,vmax=1e3)
+Out[9]: <matplotlib.image.AxesImage at 0x33dfd10>
+
+In [10]: fol
+folded3B1919+21.pgm    foldedbinB1919+21.pgm  
+foldedB1919+21.pgm     foldspec2              
+
+In [10]: foldspec2.shape
+Out[10]: (1024, 64, 16)
+
+In [11]: plt.imshow(foldspec2.transpose(0,2,1).reshape(1024,-1).T, vmin=-1e3,vmax=1e3)
+Out[11]: <matplotlib.image.AxesImage at 0x33dc510>
+
+In [12]: f2 = np.vstack((foldspec2[:,32:,:], foldspec2[:,:32,:]))
+
+In [13]: f2.shape
+Out[13]: (2048, 32, 16)
+
+In [14]: f2 = np.dstack((foldspec2[:,32:,:], foldspec2[:,:32,:]))
+
+In [15]: f2.shape
+Out[15]: (1024, 32, 32)
+
+In [16]: f2 = np.hstack((foldspec2[:,32:,:], foldspec2[:,:32,:]))
+
+In [17]: f2.shape
+Out[17]: (1024, 64, 16)
+
+In [18]: plt.imshow(f2.transpose(0,2,1).reshape(1024,-1).T, vmin=-1e3,vmax=1e3)
+Out[18]: <matplotlib.image.AxesImage at 0x3a91d50>
+
+In [19]: plt.imshow(f2.transpose(0,2,1).reshape(1024,-1).T, vmin=-1e1,vmax=1e1)
+Out[19]: <matplotlib.image.AxesImage at 0x5178810>
+
+In [20]: plt.imshow(f2.transpose(0,2,1).reshape(1024,-1).T, vmin=-1e3,vmax=1e3)
+Out[20]: <matplotlib.image.AxesImage at 0x7feb710>
+
+In [21]: XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server "localhost:10.0"
+      after 9640 requests (9640 known processed) with 0 events remaining.
+algonquin@pen-node10:/mnt/c/algonquin/July25/PSR1919/node9$ 
