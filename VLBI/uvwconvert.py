@@ -4,7 +4,6 @@ from astropy.time import Time
 from astropy.constants import c
 from astropy import units as units
 import sys
-
 def FloatMaker(values):
     newlist=[]
     for i in range(len(values)):
@@ -15,20 +14,32 @@ def FloatMaker(values):
 #import from command line the file containing the GST's and an output file
 name_GST=sys.argv[1]
 name_out=sys.argv[2]
+source=int(sys.argv[3])
 
 ####CHANGE THIS FOR SOURCE: INPUT IN RADIANS####
-#May 17 2013: b1919+21
-ra=5.0715791948861657 
-dec=0.38240013618954616
-#May 17 2013: b1957+20
-#ra=5.2368626022705502
-#dec=0.36375085679967373
-#June 11 2013: b1937+21
-#ra=5.149701586646474
-#dec=0.37724768183081842
-#June 29 2013: b0329+54
-#ra=0.9338347801769575
-#dec=0.953358324077975
+#July26
+if source==0:
+    pass
+if source==1:
+    ra = 0.3381077037274833
+    dec = 5.73610167205466
+
+if source==2:
+    ra = 0.349126646034477
+    dec = 5.45640465999683
+
+#July27
+if source==3:
+    pass
+if source==4:
+    ra = 0.33810775220885136
+    dec = 5.736103126495703
+
+if source==5:
+    ra = 0.3705588529166544
+    dec = 12.250170768216401
+
+
 ################################################
 TJD_GMST=man.LoadData(str(name_GST))
 sin=np.sin
@@ -90,10 +101,6 @@ for i in range(len(antenna)):
         points.append(point)
     baseline_gmrt.append(points)
 
-baseline_gmrt=Baseline(baseline_gmrt,2)
-
-lon_gmrt=gmrt_lon
-
 #now that we have baselines, we want to convert X Y Z system to u v w system and
 #extract the w value
 
@@ -124,7 +131,6 @@ def HourAngleGMRT(GMST,longitude,RA):
         newlist.append(hour)
     return newlist
 
-hour_gmrt=HourAngleGMRT(GST,lon_gmrt,ra)
             
 #this function takes a list of coordinate sets, a list of hour angles at given
 #longitudes over time and declination, and outputs u v w coordinates for each 
@@ -161,8 +167,7 @@ def UVWGMRT(BL,h,d):
             uvw=[u,v,w]
             timeset.append(uvw)
         newlist.append(timeset)
-    return newlist
-uvw_gmrt=UVWGMRT(baseline_gmrt,hour_gmrt,dec)           
+    return newlist           
 
 def microseconds(values):
     masterlist=[]
@@ -181,8 +186,6 @@ def microseconds(values):
         masterlist.append(newlist)
     return masterlist
             
-ms_gmrt=microseconds(uvw_gmrt)
-ms_vlbi=microseconds(uvw)
 
 #this function writes the results to file for future examination 
 #it is the WriteFile function in manage.py modified for a list of lists
@@ -192,9 +195,7 @@ def WriteFile(values,fname):
             for j in range(len(values[i])):
                 data.write("{0}\n".format(values[i][j][2]))
 
-WriteFile(uvw_gmrt,'GMRT_metres_{0}'.format(name_out))
-WriteFile(ms_gmrt,'GMRT_microsec_{0}'.format(name_out))
 WriteFile(uvw,'VLBI_metres_{0}'.format(name_out))
-WriteFile(ms_vlbi,'VLBI_microsec_{0}'.format(name_out))
+
 
 
