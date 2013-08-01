@@ -70,8 +70,11 @@ gmrt_lon=float(data[10][1])
 eff=data[4][:3]
 eff=FloatMaker(eff)
 eff_lon=float(data[11][1])
-observatories=[aro,gmrt,eff]
-lon=[aro_lon,gmrt_lon,eff_lon]
+lofar=data[5][:3]
+lofar=FloatMaker(lofar)
+lofar_lon=float(data[12][1])
+observatories=[aro,gmrt,eff,lofar]
+lon=[aro_lon,gmrt_lon,eff_lon,lofar_lon]
 
 
 
@@ -195,7 +198,7 @@ def WriteFile(values,fname):
             for j in range(len(values[i])):
                 data.write("{0}\n".format(values[i][j][2]))
 
-WriteFile(uvw,'VLBI_metres_{0}'.format(name_out))
+WriteFile(uvw,'{0}'.format(name_out))
 
 
 
