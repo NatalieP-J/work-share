@@ -26,7 +26,10 @@ do
 ssh node$i "python /mnt/software/gsbuser/TSAS/TSAS_FS/symlinks/DISKS_check.py /mnt/software/gsbuser/TSAS/TSAS_FS/symlinks/disks$NAME.dat $DISKOUT $NAME $i"
 done
 
-rm /mnt/software/gsbuser/TSAS/TSAS_FS/symlinks/disks$NAME.dat
+for ((i=111;i<119;i++));
+do
+python /mnt/software/gsbuser/TSAS/TSAS_FS/RUN/symlinks/DISKS_check.py /mnt/software/gsbuser/TSAS/TSAS_FS/RUN/symlinks/disks_$NAME.dat $DISKOUT $NAME $i
+done
 
 #now list the files are the desired location to confirm things worked
 for ((i=111;i<119;i++));
