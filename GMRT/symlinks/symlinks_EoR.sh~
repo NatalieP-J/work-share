@@ -23,7 +23,7 @@ done
 #for each node, read in the file containing location information and deal with the file according to a set of cases
 for ((i=111;i<119;i++));
 do
-ssh node$i "python /mnt/software/gsbuser/EoR/Fringestop/symlinks/DISKS_check.py /mnt/software/gsbuser/EoR/Fringestop/symlinks/disks$NAME.dat $DISKOUT $NAME $i"
+ssh node$i "python /mnt/software/gsbuser/EoR/Fringestop/symlinks/DISKS_check_EoR.py /mnt/software/gsbuser/EoR/Fringestop/symlinks/disks$NAME.dat $DISKOUT $NAME $i"
 done
 
 rm /mnt/software/gsbuser/EoR/Fringestop/symlinkes/disks$NAME

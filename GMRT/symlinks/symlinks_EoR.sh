@@ -31,5 +31,5 @@ rm /mnt/software/gsbuser/EoR/Fringestop/symlinkes/disks$NAME
 #now list the files are the desired location to confirm things worked
 for ((i=111;i<119;i++));
 do 
-ssh node$i "ls $PATHOUT/$FILE -lthr"
+ssh node$i "ls $PATHOUT/*$FILE* -lthr"
 done
