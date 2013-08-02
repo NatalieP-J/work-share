@@ -72,19 +72,23 @@ while j < (len(node_files)): #now loop through accepted values and check cases
 				print "/mnt/{0}/gsbuser/TSAS/{2}.node{3]".format(diskout,node_file_1+33,name,node_file_1)
 				print "to /mnt/{0}/gsbuser/TSAS/".format(diskout)
 				call(["mv","/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3]".format(diskout,node_file_1+33,name,node_file_1),"/mnt/{0}/gsbuser/TSAS/".format(diskout)])
+				call(["mv","/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3].norm".format(diskout,node_file_1+33,name,node_file_1),"/mnt/{0}/gsbuser/TSAS/".format(diskout)])
 				print 'Linking file:'
 				print "/mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_1)
 				print "to /mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_2)
 				call(["ln","-s","/mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_1),"/mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_2)])
+				call(["ln","-s","/mnt/{0}/gsbuser/TSAS/{1}.node{2}.norm".format(diskout,name,node_file_1),"/mnt/{0}/gsbuser/TSAS/{1}.node{2}.norm".format(diskout,name,node_file_2)])
 			if disk != diskout: #or its on another disk - then symbolic link it to the correct one
 				print 'Linking file:'
 				print "/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}".format(disk,node_file_1+33,name,node_file_1)
 				print "to /mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_1)
-                                call(["ln","-s","/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}".format(disk,node_file_1+33,name,node_file_1),"/mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_1)])
+                call(["ln","-s","/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}".format(disk,node_file_1+33,name,node_file_1),"/mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_1)])
+				call(["ln","-s","/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}.norm".format(disk,node_file_1+33,name,node_file_1),"/mnt/{0}/gsbuser/TSAS/{1}.node{2}.norm".format(diskout,name,node_file_1)])
 				print 'Linking file"'
 				print "/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}".format(disk,node_file_1+33,name,node_file_1)
 				print "to /mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_2)
 				call(["ln","-s","/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}".format(disk,node_file_1+33,name,node_file_1),"/mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_2)])						
+				call(["ln","-s","/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}.norm".format(disk,node_file_1+33,name,node_file_1),"/mnt/{0}/gsbuser/TSAS/{1}.node{2}.norm".format(diskout,name,node_file_2)])	
 		j+=1
 	if node_file_2 in node_files2 and node_file_1 not in node_files2: #if only one of the .node numbers is on a given node, follow steps below
 		if node == node_file_2: #if the .node number matches the file that exists
@@ -92,20 +96,24 @@ while j < (len(node_files)): #now loop through accepted values and check cases
 				print 'Moving file:'
 				print "/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3]".format(diskout,node_file_2+33,name,node_file_2)
 				print "to /mnt/{0}/gsbuser/TSAS/".format(diskout)
-				call(["mv", "/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3]".format(diskout,node_file_2+33,name,node_file_2),"/mnt/{0}/gsbuser/TSAS/".format(diskout)])
+				call(["mv", "/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}".format(diskout,node_file_2+33,name,node_file_2),"/mnt/{0}/gsbuser/TSAS/".format(diskout)])
+				call(["mv", "/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}.norm".format(diskout,node_file_2+33,name,node_file_2),"/mnt/{0}/gsbuser/TSAS/".format(diskout)])
 				print 'Linking file:'
 				print "/mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_2)
 				print "to /mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_1)
 				call(["ln","-s","/mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_2),"/mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_1)])
+				call(["ln","-s","/mnt/{0}/gsbuser/TSAS/{1}.node{2}.norm".format(diskout,name,node_file_2),"/mnt/{0}/gsbuser/TSAS/{1}.node{2}.norm".format(diskout,name,node_file_1)])
 			if disk != diskout: #or is on another disk - then symbolic link it to the correct one
 				print 'Linking file:'
 				print "/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}".format(disk,node_file_2+33,name,node_file_2)
 				print "to /mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_2)
 				call(["ln","-s","/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}".format(disk,node_file_2+33,name,node_file_2),"/mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_2)])
+				call(["ln","-s","/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}.norm".format(disk,node_file_2+33,name,node_file_2),"/mnt/{0}/gsbuser/TSAS/{1}.node{2}.norm".format(diskout,name,node_file_2)])
 				print 'Linking file:'
 				print "/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}".format(disk,node_file_2+33,name,node_file_2)
 				print "to /mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_1)
 				call(["ln","-s","/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}".format(disk,node_file_2+33,name,node_file_2),"/mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node_file_1)])				
+				call(["ln","-s","/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}.norm".format(disk,node_file_2+33,name,node_file_2),"/mnt/{0}/gsbuser/TSAS/{1}.node{2}.norm".format(diskout,name,node_file_1)])		
 		j+=1
 	if node_file_2 in node_files2 and node_file_1 in node_files2: #if both .node number are present on the node, then move or link the file as depending on their current location
 		if disk == diskout: 
@@ -114,6 +122,7 @@ while j < (len(node_files)): #now loop through accepted values and check cases
 			print "/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}".format(diskout,old_node,name,node)
 			print "to /mnt/{0}/gsbuser/TSAS/".format(diskout)
 			call(["mv","/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}".format(diskout,old_node,name,node),"/mnt/{0}/gsbuser/TSAS/".format(diskout)])
+			call(["mv","/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}.norm".format(diskout,old_node,name,node),"/mnt/{0}/gsbuser/TSAS/".format(diskout)])
 			j+=1
 		if disk != diskout:
 			old_node = 33 + node
@@ -121,4 +130,5 @@ while j < (len(node_files)): #now loop through accepted values and check cases
 			print "/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}".format(disk,old_node,name,node)
 			print "to /mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node)
 			call(["ln","-s","/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}".format(disk,old_node,name,node),"/mnt/{0}/gsbuser/TSAS/{1}.node{2}".format(diskout,name,node)])
+			call(["ln","-s","/mnt/{0}/gsbuser/TSAS/node{1}/{2}.node{3}.norm".format(disk,old_node,name,node),"/mnt/{0}/gsbuser/TSAS/{1}.node{2}.norm".format(diskout,name,node)])
 			j+=1
