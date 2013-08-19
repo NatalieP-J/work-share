@@ -1,0 +1,19 @@
+Introduction
+
+Science
+
+Pulsars
+
+Pulsars, by emitting in radio at well defined intervals, provide a useful observational source with a known timescale. This property of periodic emission is helpful because a pulsar is either 'on' or 'off', unlike a constant source, allowing its location to be more clearly resolved. In addition, pulsars are point sources, with none of the smearing that affects many other objects. Their point source nature allows for observable pulsar scintillation. 
+
+All stellar objects visible to the naked eye can be seen to scintillate. The term refers to the 'twinkling' caused by turbulence in the Earth's atmosphere where stars seem to grow brighter and fainter with time. Pulsars exhibit a the same phenom, though much less obvious to the unassisted human observer. Like the earth's atmosphere, the interstellar medium (ISM) causes scintillation in radio sources. The scintillation has a timescale anywhere from hours to days (http://www.astrophys-assist.com/educate/starry/starrynight.htm) - much longer than the period of even the long-period pulsars. There is not yet evidence for a satisfactory model that explains the various properties of pulsar scintellometry. Unlike the twinkling of stars, pulsar scintillation is not the product of turbulence. Turbulence is a random process, and that random quality would be evident in observations. Instead, images of the pulsar caused by its lensing through the ISM are clearly distributed along a line. In addition, a turbulent scattering model would require overdensities much higher than can be easily accounted for by known plasma behaviours. From this, it has been proposed that the pulsar's regular signal (the pulse), has been scattered by a thin sheet, the exact geometry of which has yet to be determined.
+
+For the purposes of this project, the exact mechanism of pulsar scintellation is not as import as the property itself. A new technique, dubbed scintellometry, makes use of it in an interesting way.
+
+Scintellometry and VLBI
+
+Very Long Baseline Interferometry (VLBI), is a technique used by radio astronomers to extend the baseline of their observations and thus gain greater resolving power. Any two telescopes that can see the same source in the sky can be used to perform interferometry.The distance between telescope antennas is known and it is possible to calculate the difference in signal arrival time between them.With this information, it is possible to phase up the signal - that is, shift the data so that it is the signal that was emitted at the same time that is added rather than adding by arrival time. This can be done on small scales (as it is done with the Giant Metrewave Radio Telescope's 30 antennas), as well as very large ones. In the case of VLBI, the distances are akin the diameter of the planet. The larger the distance between the two recievers of the signal, the greater the resolving accuracy. Current VLBI achieves an angular resolution on the order of milliarcseconds. 
+
+However, scintellometry makes use of pulsar scattering to decrease the diffraction limit exponentially - down to the nanoarcsecond scale. This will be done by using the ISM itself as a series of antennas with a baseline of an astronomical unit. To do this, VLBI will be done with several telescopes across the world. These telescopes will be used to resolve the images of the pulsar scattered by the ISM. By applying the components of interferometry again on a grander scale, it will be possible to treat the scattered images as the signal reaching an array of telescopes with a baseline the size of Earth's orbital radius.
+
+This new technique would make it possible to probe the nature of pulsars more deeply than before, perhaps even affording some understanding of the ways in which they produce pulses.
