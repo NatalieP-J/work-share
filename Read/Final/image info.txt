@@ -1,0 +1,23 @@
+getting the rmap
+go into 
+/mnt/EoR/gsbuser/EoR/Aug02/b2217+47_aug02_22
+currently on gsbm3
+
+/mnt/code/gsbuser/EoR/Analysis/onegate.x b2217+47_aug02_22.fsall.rebin.float 50 64 1 128 16 7
+requires: 
+/mnt/EoR/gsbuser/EoR/Aug02/b2217+47_aug02_22/b2217+47_aug02_22.fsall.rebin.float
+
+
+/mnt/code/gsbuser/EoR/Analysis/ivmap.x 12
+
+getting the vismap
+go into
+/mnt/EoR/gsbuser/EoR/Dec.17.07/Pimage
+
+run
+/mnt/EoR/gsbuser/EoR/Dec.17.07/Pimage/ivmap.x 2000 2000
+
+requires:
+/mnt/EoR/gsbuser/EoR/Dec.17.07/Pimage/datcalall.dat
+/mnt/EoR/gsbuser/EoR/Dec.17.07/Pimage/noisecaldiag.dat
+/mnt/EoR/gsbuser/EoR/Dec.17.07/Pimage/generic.mat

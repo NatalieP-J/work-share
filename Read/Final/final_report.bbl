@@ -1,0 +1,40 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Iliev et~al.(2007)Iliev, Mellema, Pen, and
+  Shapiro]{characteranddetectability}
+I.~Iliev, G.~Mellema, U.~Pen, and P.~Shapiro.
+\newblock Character and detectability of the dark ages and the epoch of
+  reionization: the view from the simulations.
+\newblock \emph{arXiv:0712.1356v1}, Dec 2007.
+
+\bibitem[Kim and Pen(2009)]{21cminthedark}
+Juhan Kim and Ue-Li Pen.
+\newblock Redshifted 21-cm in the dark ages.
+\newblock \emph{arXiv:0908.1973v1}, Aug 2009.
+
+\bibitem[Paciga et~al.(2010)Paciga, Chang, Gupta, Nityanada, Ogegova, Pan,
+  Peterson, Roy, and Sigurdson]{gmrt}
+G.~Paciga, T.~Chang, Y.~Gupta, R.~Nityanada, J.~Ogegova, U.~Pan, J.~Peterson,
+  J.~Roy, and K.~Sigurdson.
+\newblock The gmrt epoch of reionization experiment: A new upper limit on
+  neutral hydrogen power pectrum and z ≈ 8.6.
+\newblock \emph{arXiv:1006.1351v2}, Dec 2010.
+
+\bibitem[Pen et~al.(2008)Pen, Chang, Peterson, Roy, Gupta, and
+  Bandura]{gmrtsearchforeor}
+Ue-Li Pen, T.~Chang, J.~Peterson, J.~Roy, Y.~Gupta, and K.~Bandura.
+\newblock The gmrt search for reionization.
+\newblock \emph{arXiv:0804.2501v1}, Apr 2008.
+
+\bibitem[Shapiro et~al.(2008)Shapiro, Iliev, Mellema, Pen, and
+  Merz]{theoryandsim}
+Paul~R. Shapiro, Ilian~T. Iliev, Garrelt Mellema, Ue-Li Pen, and Hugh Merz.
+\newblock The theory and simulation of the 21-cm.
+\newblock \emph{arXiv:0806.30901v1}, Jun 2008.
+
+\end{thebibliography}

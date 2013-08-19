@@ -1,0 +1,11 @@
+requires latex packages: 
+SIunits
+graphicx
+natbib
+
+Compile with:
+
+pdflatex final_report.tex
+bibtex final_report.aux
+pdflatex final_report.tex
+pdflatex final_report.tex

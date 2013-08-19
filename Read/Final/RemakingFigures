@@ -1,0 +1,10 @@
+Making rmap.pgm
+
+/mnt/code/gsbuser/EoR/Analysis/onegate.x 
+using b2217+47_aug02_22.fsall.rebin.float from /mnt/EoR/gsbuser/EoR/Aug02/b2217+47_aug02_22
+and 50 64 1 128 16 7
+
+Making vismaps
+
+use ivmap.x 2000 2000
+while in this folder /mnt/EoR/gsbuser/EoR/Dec.17.07/Pimage/
