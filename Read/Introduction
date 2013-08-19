@@ -1,7 +1,5 @@
 Introduction
 
-Science
-
 Pulsars
 
 Pulsars, by emitting in radio at well defined intervals, provide a useful observational source with a known timescale. This property of periodic emission is helpful because a pulsar is either 'on' or 'off', unlike a constant source, allowing its location to be more clearly resolved. In addition, pulsars are point sources, with none of the smearing that affects many other objects. Their point source nature allows for observable pulsar scintillation. 
@@ -16,4 +14,8 @@ Very Long Baseline Interferometry (VLBI), is a technique used by radio astronome
 
 However, scintellometry makes use of pulsar scattering to decrease the diffraction limit exponentially - down to the nanoarcsecond scale. This will be done by using the ISM itself as a series of antennas with a baseline of an astronomical unit. To do this, VLBI will be done with several telescopes across the world. These telescopes will be used to resolve the images of the pulsar scattered by the ISM. By applying the components of interferometry again on a grander scale, it will be possible to treat the scattered images as the signal reaching an array of telescopes with a baseline the size of Earth's orbital radius.
 
-This new technique would make it possible to probe the nature of pulsars more deeply than before, perhaps even affording some understanding of the ways in which they produce pulses.
+This new technique would make it possible to probe the nature of pulsars more deeply than before, perhaps even affording some understanding of the ways in which they produce pulses. Even with the greater resolution afforded by scintellometry, it would not be possible to actually discern the actual shape of even the closest pulsars. However, greater resolution would allow development of theories of the reason for pulsars' unusual emission.
+
+Why Radio?
+
+Observing in radio has quite a few advantages over its optical couterpart. While most Earthbound astronomy is hampered by the fluctuations and general absorbing properties of the atmosphere, this does not pose a problem for radio astronomers. They are forced to contend with emission rather than absorption. Radio astronomy also means that VLBI is possible - essential for the current project. Observing in radio wavelengths ensures that pulse signals are actually scattered, where a wave with a shorter wavelength might pass through unscathed.
