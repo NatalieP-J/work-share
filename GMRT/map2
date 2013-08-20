@@ -1,0 +1,86 @@
+33
+/dev/sde2             931G  541G  344G  62% /mnt/EoRa
+/dev/sdf2             931G  329G  557G  38% /mnt/EoRb
+
+34
+/dev/sdd2             931G  541G  344G  62% /mnt/EoRd
+/dev/sdc2             931G  541G  344G  62% /mnt/EoRc
+/dev/sde2             931G  541G  344G  62% /mnt/EoRa
+/dev/sdf2             931G  541G  344G  62% /mnt/EoRb
+
+35
+/dev/sde2             931G  566G  319G  65% /mnt/EoRa
+
+36
+
+37
+
+38
+
+39
+/dev/sda2             931G  560G  325G  64% /mnt/EoRa
+
+40
+/dev/sdc1             500G   23G  478G   5% /mnt/b
+/dev/sdb1             500G   23G  478G   5% /mnt/c
+/dev/sdc2             931G  1.1M  931G   1% /mnt/EoRc
+/dev/sdb2             931G  1.1M  931G   1% /mnt/EoRb
+/dev/sdb3             433G  560K  433G   1% /mnt/rawb
+/dev/sda3             433G  5.8G  405G   2% /mnt/rawa
+/dev/sdd3             433G   13G  398G   4% /mnt/rawd
+/dev/sdc3             433G  560K  433G   1% /mnt/rawc
+
+41
+
+42
+/dev/sdd3             433G  209G  202G  51% /mnt/rawd
+/dev/sdc3             433G  209G  202G  51% /mnt/rawc
+/dev/sdb3             433G  209G  224G  49% /mnt/rawb
+/dev/sda3             433G  209G  202G  51% /mnt/rawa
+
+43
+/dev/sda1             500G  219G  282G  44% /mnt/a
+/dev/sdc1             500G  240G  261G  48% /mnt/b
+/dev/sdd1             500G  222G  279G  45% /mnt/d
+/dev/sdc2             931G  303G  583G  35% /mnt/EoRc
+/dev/sda2             931G  419G  466G  48% /mnt/EoRa
+
+44
+/dev/sdb1             500G  192G  309G  39% /mnt/c
+/dev/sdd1             500G  222G  279G  45% /mnt/d
+/dev/sdd2             931G  406G  479G  46% /mnt/EoRd
+
+45
+/dev/sdd1             500G  163G  337G  33% /mnt/c
+/dev/sde1             500G  171G  330G  35% /mnt/d
+/dev/sdd2             931G   23G  862G   3% /mnt/EoRd
+/dev/sdc2             931G   23G  862G   3% /mnt/EoRc
+/dev/sdb2             931G   52G  833G   6% /mnt/EoRb
+/dev/sde2             931G   23G  862G   3% /mnt/EoRa
+
+46
+/dev/sdb1             500G  143G  358G  29% /mnt/a
+/dev/sdc1             500G  164G  337G  33% /mnt/b
+/dev/sdd1             500G   91G  410G  19% /mnt/c
+/dev/sdb2             931G  265G  620G  30% /mnt/EoRb
+/dev/sdc2             931G  311G  575G  36% /mnt/EoRc
+/dev/sdd2             931G  232G  653G  27% /mnt/EoRd
+/dev/sdd3             433G  199M  411G   1% /mnt/rawd
+/dev/sdc3             433G  199M  411G   1% /mnt/rawc
+/dev/sdb3             433G  199M  411G   1% /mnt/rawb
+
+47
+/dev/sda2             931G  579G  306G  66% /mnt/EoRa
+/dev/sdc2             931G  390G  496G  45% /mnt/EoRc
+/dev/sdb2             931G  451G  434G  51% /mnt/EoRb
+/dev/sdc3             433G  199M  411G   1% /mnt/rawc
+/dev/sda3             433G  199M  411G   1% /mnt/rawa
+/dev/sdb3             433G  199M  411G   1% /mnt/rawb
+
+48
+/dev/sdb3             433G  156G  256G  38% /mnt/rawb
+/dev/sda3             433G  156G  256G  38% /mnt/rawa
+/dev/sdd3             433G  156G  256G  38% /mnt/rawd
+/dev/sdc3             433G  156G  256G  38% /mnt/rawc
+
+

@@ -1,0 +1,35 @@
+Run 1:
+1)37a (171G),39EoRa (104G),40b,c(500G each)
+2)46c (322G),42c (91G), EoRc (388G), 33 EoRa (344G)
+3)41[a,b,c,d] (144G each)
+4)43[a,b,c,d] (349G,327G,77G,345G)
+5)44[a,b,c,d] (253G,327G,375G,345G)
+6)45 raw[a,b,c,d] (411G each)
+7)48a (93G),b (85G),46a (358G),b (337G)
+Run 2:
+1)37a (171G),35EoRa(320G),40b,c(500G each)
+2)46c (322G),36EoRb (259G),42 EoRc (388G), 33EoRa (344G)
+3)41[a,b,c,d] (144G each)
+4)43[a,b,d] (349G,327G,345G), 37a (171G)
+5)44[a,b,c,d] (253G,327G,375G,345G)
+6)45 raw[a,b,c,d] (411G each)
+7)39EoRa (292G),42rawb (410G),46a (358G),b (337G)
+
+Run 1:
+1) node34 EoR[a,b,c,d] (557G each)
+2) node40 raw[a,b,c,d] (~400G each)
+3) node42 raw[a,b,c,d] (~400G each)
+4) node44 raw[a,b,c,d] (411G each)
+5) node45 EoR[a,b,c,d] (~800G each)
+6) node48 raw[a,b,c,d] (411G each)
+7) 33 EoRb (557G), 39 EoRa (518G), 43 EoRc (583G), 46 EoRd (656G)
+8) 46 rawb,rawc, 47 rawa,rawb (411G each)
+
+Run 2:
+1) node34 EoR[a,b,c,d] (557G each)
+2) 33 EoRa (338G), 35 EoRa (319G), 40 b (472G), c (485G) 
+3) 33 EoRb (557G), 39 EoRa (518G), 43 EoRc (583G), 46 EoRd (656G)
+4) node45 EoR[a,b,c,d] (~800G each)
+
+Run 3:
+1) node45 EoR[a,b,c,d] (~800G)
