@@ -12,10 +12,10 @@ if __name__ == '__main__':
     # pulsar parameters
     # psr = 'B1919+21'
     # psr = 'B2016+28'
-    psr = 'B1957+20'
+    #psr = 'B1957+20'
     # psr = 'B0329+54'
     # psr = 'B0823+26'
-    #psr = 'J1810+1744'
+    psr = 'J1810+1744'
     dm_dict = {'B0329+54': 26.833 * u.pc / u.cm**3,
                'B0823+26': 19.454 * u.pc / u.cm**3,
                'J1810+1744': 39.659298 * u.pc / u.cm**3,
@@ -25,18 +25,18 @@ if __name__ == '__main__':
                'noise': 0. * u.pc / u.cm**3}
     phasepol_dict = {'B0329+54': Polynomial([0., 1.399541538720]),
                      'B0823+26': Polynomial([0., 1.88444396743]),
-                     'J1810+1744': Polynomial([-1252679.1986725251,
-                                               601.39629721056895,
-                                               -6.6664639926379228e-06,
-                                               -3.005404797321569e-10,
-                                               1.3404520057431192e-13,
-                                               3.5632030706667189e-18,
-                                               -1.0874017282180807e-21,
-                                               -1.8089896985287676e-26,
-                                               4.803545433801123e-30,
-                                               1.4787240038933893e-35,
-                                               -1.1792841185454315e-38,
-                                               2.6298912108944255e-43]),
+                     'J1810+1744': Polynomial([-4018563.4995850539,
+                                                601.41163207594536,
+                                                4.6317049685341791e-06,
+                                                -8.3737142966724068e-10,
+                                                -9.2069440760843247e-14,
+                                                9.7406036210629003e-18,
+                                                7.1778284402552812e-22,
+                                                -2.6355294340008817e-26,
+                                                -9.7399739118678408e-30,
+                                                8.6429925676499164e-34,
+                                                -2.7512833940346705e-38,
+                                                3.1438236190109298e-43]),
                      'B1919+21': Polynomial([0.5, 0.7477741603725]),
                      'B1957+20': Polynomial([-4432632.745592528,
                                              622.12215911292049,
@@ -73,7 +73,7 @@ if __name__ == '__main__':
     recsize = 2**25  # 32MB sets
     ntint = recsize//nchan  # number of samples after FFT
     nt = size//recsize    # number of sets to fold
-    nt = 1000
+    nt = 5000
     ngate = 64  # number of bins over the pulsar period
     ntw = min(100000, nt*ntint)  # number of samples to combine for waterfall
 
@@ -99,10 +99,10 @@ if __name__ == '__main__':
     #                '/mnt/aro/hdd1_node7/algonquin/raw_voltage.2013-07-27T16:55:17.1.dat',
     #                '/mnt/aro/hdd3_node7/algonquin/raw_voltage.2013-07-27T16:55:17.2.dat']) as fh1:
 
-    with multifile('/cita/h/home-2/njones/work-share/Folding/sequence.test.dat',
-                   ['/mnt/data-pen1/pen/njones/VLBI_july212013/hdd2_node9/raw_voltage.2013-07-26T18:31:14.0.dat',
-                    '/mnt/data-pen1/pen/njones/VLBI_july212013/hdd1_node9/raw_voltage.2013-07-26T18:31:14.1.dat',
-                    '/mnt/data-pen1/pen/njones/VLBI_july212013/hdd3_node9/raw_voltage.2013-07-26T18:31:14.2.dat']) as fh1:
+    with multifile('/mnt/data-pen1/pen/njones/VLBI_july212013/hdd2_node9/sequence.2013-07-24T16:38:37.3.dat',
+                   ['/mnt/data-pen1/pen/njones/VLBI_july212013/hdd2_node9/raw_voltage.2013-07-24T16:38:37.0.dat',
+                    '/mnt/data-pen1/pen/njones/VLBI_july212013/hdd1_node9/raw_voltage.2013-07-24T16:38:37.1.dat',
+                    '/mnt/data-pen1/pen/njones/VLBI_july212013/hdd3_node9/raw_voltage.2013-07-24T16:38:37.2.dat']) as fh1:
 
         foldspec2, waterfall = fold(fh1, '4bit', samplerate,
                                     fedge, fedge_at_top, nchan,
