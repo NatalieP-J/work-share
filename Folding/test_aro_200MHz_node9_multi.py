@@ -99,7 +99,7 @@ if __name__ == '__main__':
     #                '/mnt/aro/hdd1_node7/algonquin/raw_voltage.2013-07-27T16:55:17.1.dat',
     #                '/mnt/aro/hdd3_node7/algonquin/raw_voltage.2013-07-27T16:55:17.2.dat']) as fh1:
 
-    with multifile('/cita/h/home-2/njones/work-share/ObservingRuns/VLBI_july21/ARO/node9/sequence.2013-07-26T18:31:14.mod.dat',
+    with multifile('/cita/h/home-2/njones/work-share/Folding/sequence.test.dat',
                    ['/mnt/data-pen1/pen/njones/VLBI_july212013/hdd2_node9/raw_voltage.2013-07-26T18:31:14.0.dat',
                     '/mnt/data-pen1/pen/njones/VLBI_july212013/hdd1_node9/raw_voltage.2013-07-26T18:31:14.1.dat',
                     '/mnt/data-pen1/pen/njones/VLBI_july212013/hdd3_node9/raw_voltage.2013-07-26T18:31:14.2.dat']) as fh1:
