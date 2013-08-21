@@ -73,7 +73,7 @@ if __name__ == '__main__':
     recsize = 2**25  # 32MB sets
     ntint = recsize//nchan  # number of samples after FFT
     nt = size//recsize    # number of sets to fold
-    nt = 5000
+    nt = 15000
     ngate = 64  # number of bins over the pulsar period
     ntw = min(100000, nt*ntint)  # number of samples to combine for waterfall
 
