@@ -1,0 +1,37 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[et~al(1990)]{millisecondpulsar}
+A.~S.~Fruchter et~al.
+\newblock The eclipsing millisecond pulsar psr 1957+20.
+\newblock \emph{The Astrophysical Journal}, 351:\penalty0 642--650, Mar 1990.
+
+\bibitem[et~al(2013)]{picoarcsecondastrometry}
+Ue-Li~Pen et~al.
+\newblock 50 pico arcsecond astrometry of pulsar emission.
+\newblock \emph{Prepublication}, Jun 2013.
+
+\bibitem[et~al(2010)]{anisotropicinsterstellar}
+W.~F.~Brisken et~al.
+\newblock 100 microarcsecond resolution vlbi imaging of anisotropic
+  interstellar scattering toward pulsar b0834+06.
+\newblock \emph{The Astrophysical Journal}, 708:\penalty0 232--243, Jan 2010.
+
+\bibitem[M.~A.~Walker and van Straten(2008)]{interstellarholography}
+D.~R.~Stinebring M.~A.~Walker, L. V. E.~Koopmans and W.~van Straten.
+\newblock Interstellar holography.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  388:\penalty0 1212--1222, May 2008.
+
+\bibitem[Pen and King(2012)]{plasmalenses}
+Ue-Li Pen and Lindsay King.
+\newblock Refractive convergent plasma leneses explain extreme scattering
+  events and pulsar scintillations.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  421:\penalty0 L132--L136, Jan 2012.
+
+\end{thebibliography}

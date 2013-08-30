@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  30 AUG 2013 13:29
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  30 AUG 2013 19:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**final_report.tex
-(./final_report.tex
+**CTA399final.tex
+(./CTA399final.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
@@ -135,41 +135,61 @@ LaTeX Info: Redefining \usk on input line 576.
 Option `cdot' provided!
 LaTeX Info: Redefining \@qsk on input line 576.
 Option `mediumqspace' provided!
-) (./final_report.aux)
-\openout1 = `final_report.aux'.
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 10.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen114
+\captionmargin@=\dimen115
+\captionwidth=\dimen116
+\caption@indent=\dimen117
+\caption@parindent=\dimen118
+\caption@hangindent=\dimen119
+)
+\c@ContinuedFloat=\count93
+Package caption Info: rotating package is loaded.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2012/01/12 v1.1d Sub-captions (AR)
+\c@subfigure=\count94
+\c@subtable=\count95
+)
+(./CTA399final.aux)
+\openout1 = `CTA399final.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 12.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    ... okay on input line 12.
 
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count93
-\scratchdimen=\dimen114
+\scratchcounter=\count96
+\scratchdimen=\dimen120
 \scratchbox=\box27
-\nofMPsegments=\count94
-\nofMParguments=\count95
+\nofMPsegments=\count97
+\nofMParguments=\count98
 \everyMPshowfont=\toks18
-\MPscratchCnt=\count96
-\MPscratchDim=\dimen115
-\MPnumerator=\count97
-\makeMPintoPDFobject=\count98
+\MPscratchCnt=\count99
+\MPscratchDim=\dimen121
+\MPnumerator=\count100
+\makeMPintoPDFobject=\count101
 \everyMPtoPDFconversion=\toks19
 ) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -249,162 +269,146 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 15.
+(Font)              <14.4> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 15.
+(Font)              <7> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 22.
+(Font)              <10.95> on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 22.
+(Font)              <8> on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 22.
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
+(Font)              <6> on input line 24.
 [1
 
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 42.
-
 [2]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 58.
+(Font)              <12> on input line 69.
  [3] [4]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
+Missing character: There is no ì in font cmr12!
  [5]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- <june24chimapmode17.pdf, id=29, 4017.0075pt x 4017.0075pt>
-File: june24chimapmode17.pdf Graphic file (type pdf)
-
-<use june24chimapmode17.pdf>
-Package pdftex.def Info: june24chimapmode17.pdf used on input line 138.
-(pdftex.def)             Requested size: 362.37569pt x 362.3732pt.
- [6] [7 <./june24chimapmode17.pdf>]
-<july12chimapmode3.pdf, id=40, 1005.7575pt x 1005.7575pt>
-File: july12chimapmode3.pdf Graphic file (type pdf)
-
-<use july12chimapmode3.pdf>
-Package pdftex.def Info: july12chimapmode3.pdf used on input line 148.
-(pdftex.def)             Requested size: 362.37569pt x 362.36401pt.
- [8 <./july12chimapmode3.pdf>]
-<GeneratorMeter.pdf, id=47, 794.97pt x 614.295pt>
-File: GeneratorMeter.pdf Graphic file (type pdf)
- <use GeneratorMeter.pdf>
-Package pdftex.def Info: GeneratorMeter.pdf used on input line 187.
-(pdftex.def)             Requested size: 362.37569pt x 280.02019pt.
-
-[9] [10 <./GeneratorMeter.pdf, page is rotated 90 degrees>] [11]
-<ElectricMeter.pdf, id=61, 614.295pt x 794.97pt>
-File: ElectricMeter.pdf Graphic file (type pdf)
- <use ElectricMeter.pdf>
-Package pdftex.def Info: ElectricMeter.pdf used on input line 219.
-(pdftex.def)             Requested size: 362.37569pt x 468.95546pt.
-
-Overfull \hbox (39.75082pt too wide) in paragraph at lines 238--239
-\OT1/cmr/m/n/12 From scan 6 on July 7, mode 3 a very prob-a-ble source was re-v
-ealed at $(+[]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 +[])$.
- []
-
-
-Overfull \hbox (50.38553pt too wide) in paragraph at lines 238--239
-\OT1/cmr/m/n/12 was dis-cov-ered that a low volt-age power line was a strong RF
-I source at $(+[]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 +[]$).
- []
-
-[12] [13 <./ElectricMeter.pdf>]
-Overfull \hbox (22.57333pt too wide) in paragraph at lines 246--247
-\OT1/cmr/m/n/12 During an RFI scan on July 7 a source was ob-served to be lo-ca
-ted at $(+[]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 +[])$.
- []
-
-Missing character: There is no ‚ in font cmti12!
-Missing character: There is no Ä in font cmti12!
-Missing character: There is no ò in font cmti12!
-Missing character: There is no ‚ in font cmti12!
-Missing character: There is no Ä in font cmti12!
-Missing character: There is no ô in font cmti12!
-[14]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
-Missing character: There is no ú in font cmr12!
+Missing character: There is no ô in font cmr12!
+ [6] <256ChanLag.pdf, id=27, 256.96pt x 160.6pt>
+File: 256ChanLag.pdf Graphic file (type pdf)
+
+<use 256ChanLag.pdf>
+Package pdftex.def Info: 256ChanLag.pdf used on input line 127.
+(pdftex.def)             Requested size: 226.48395pt x 141.55386pt.
+ <4096ChanFailedLag.pdf, id=28, 128.48pt x 176.66pt>
+File: 4096ChanFailedLag.pdf Graphic file (type pdf)
+
+<use 4096ChanFailedLag.pdf>
+Package pdftex.def Info: 4096ChanFailedLag.pdf used on input line 133.
+(pdftex.def)             Requested size: 181.18784pt x 249.15262pt.
+
+Underfull \hbox (badness 1389) in paragraph at lines 134--134
+[]\OT1/cmr/m/n/10.95 (b) |An ex-am-ple of a pos-si-ble un-suc-cess-ful
+ []
+
+<4096ChanLag.pdf, id=29, 284.06125pt x 93.34875pt>
+File: 4096ChanLag.pdf Graphic file (type pdf)
+ <use 4096ChanLag.pdf>
+Package pdftex.def Info: 4096ChanLag.pdf used on input line 143.
+(pdftex.def)             Requested size: 452.9679pt x 148.86961pt.
+
+<lag102.pdf, id=30, 4111.36pt x 96.36pt>
+File: lag102.pdf Graphic file (type pdf)
+ <use lag102.pdf>
+Package pdftex.def Info: lag102.pdf used on input line 144.
+(pdftex.def)             Requested size: 452.9679pt x 10.6158pt.
+ [7 <./256ChanLag.pdf> <./4096ChanFailedLag.pdf
+
+pdfTeX warning: pdflatex (file ./4096ChanFailedLag.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+>]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
- [15] [16] <rmap.pdf, id=81, 1027.84pt x 1027.84pt>
-File: rmap.pdf Graphic file (type pdf)
- <use rmap.pdf>
-Package pdftex.def Info: rmap.pdf used on input line 307.
-(pdftex.def)             Requested size: 362.37569pt x 362.38423pt.
+Missing character: There is no ô in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+ <1919fig1node9.pdf, id=48, 586.83357pt x 442.29327pt>
+File: 1919fig1node9.pdf Graphic file (type pdf)
 
-<vismaprebefore.pdf, id=82, 1027.84pt x 1027.84pt>
-File: vismaprebefore.pdf Graphic file (type pdf)
- <use vismaprebefore.pdf>
-Package pdftex.def Info: vismaprebefore.pdf used on input line 344.
-(pdftex.def)             Requested size: 226.48395pt x 226.47054pt.
+<use 1919fig1node9.pdf>
+Package pdftex.def Info: 1919fig1node9.pdf used on input line 176.
+(pdftex.def)             Requested size: 452.9679pt x 341.41048pt.
 
-<vismapimbefore.pdf, id=83, 1027.84pt x 1027.84pt>
-File: vismapimbefore.pdf Graphic file (type pdf)
- <use vismapimbefore.pdf>
-Package pdftex.def Info: vismapimbefore.pdf used on input line 345.
-(pdftex.def)             Requested size: 226.48395pt x 226.47054pt.
+<1919fig1node9crop.pdf, id=49, 363.51884pt x 87.44687pt>
+File: 1919fig1node9crop.pdf Graphic file (type pdf)
 
-<vismapreafter.pdf, id=84, 1027.84pt x 1027.84pt>
-File: vismapreafter.pdf Graphic file (type pdf)
- <use vismapreafter.pdf>
-Package pdftex.def Info: vismapreafter.pdf used on input line 347.
-(pdftex.def)             Requested size: 226.48395pt x 226.47054pt.
+<use 1919fig1node9crop.pdf>
+Package pdftex.def Info: 1919fig1node9crop.pdf used on input line 177.
+(pdftex.def)             Requested size: 452.9679pt x 108.96938pt.
+ [8 <./4096ChanLag.pdf> <./lag102.pdf
 
-<vismapimafter.pdf, id=85, 1027.84pt x 1027.84pt>
-File: vismapimafter.pdf Graphic file (type pdf)
- <use vismapimafter.pdf>
-Package pdftex.def Info: vismapimafter.pdf used on input line 348.
-(pdftex.def)             Requested size: 226.48395pt x 226.47054pt.
+pdfTeX warning: pdflatex (file ./lag102.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>] <1810fig1node9.pdf, id=66, 586.83357pt x 442.29327pt>
+File: 1810fig1node9.pdf Graphic file (type pdf)
 
-Overfull \hbox (24.0pt too wide) in paragraph at lines 343--350
+<use 1810fig1node9.pdf>
+Package pdftex.def Info: 1810fig1node9.pdf used on input line 186.
+(pdftex.def)             Requested size: 294.42981pt x 221.91545pt.
+
+Overfull \hbox (67.94586pt too wide) in paragraph at lines 186--188
  [][] 
  []
 
-[17] [18 <./rmap.pdf>] [19] [20 <./vismaprebefore.pdf> <./vismapimbefore.pdf> <
-./vismapreafter.pdf> <./vismapimafter.pdf>] [21] [22] (./final_report.bbl
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no à in font cmr12!
+<1810fig2node7.pdf, id=67, 586.83357pt x 442.29327pt>
+File: 1810fig2node7.pdf Graphic file (type pdf)
+ <use 1810fig2node7.pdf>
+Package pdftex.def Info: 1810fig2node7.pdf used on input line 191.
+(pdftex.def)             Requested size: 294.42981pt x 221.91545pt.
 
-[23]) [24] (./final_report.aux) ) 
+Overfull \hbox (67.94586pt too wide) in paragraph at lines 191--193
+ [][] 
+ []
+
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+[9] [10 <./1919fig1node9.pdf> <./1919fig1node9crop.pdf
+
+pdfTeX warning: pdflatex (file ./1919fig1node9crop.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+>] [11 <./1810fig1node9.pdf> <./1810fig2node7.pdf
+
+pdfTeX warning: pdflatex (file ./1810fig2node7.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+>] [12] (./CTA399final.bbl) [13] (./CTA399final.aux) ) 
 Here is how much of TeX's memory you used:
- 3095 strings out of 493488
- 44086 string characters out of 3141326
- 111174 words of memory out of 3000000
- 6350 multiletter control sequences out of 15000+200000
- 14191 words of font info for 49 fonts, out of 3000000 for 9000
+ 4128 strings out of 493488
+ 62613 string characters out of 3141326
+ 129095 words of memory out of 3000000
+ 7381 multiletter control sequences out of 15000+200000
+ 12053 words of font info for 42 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,12n,28p,17806b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr17.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr7.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmti12.pfb>
-Output written on final_report.pdf (24 pages, 3791002 bytes).
+ 38i,8n,38p,1623b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2012/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2012/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2012/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on CTA399final.pdf (13 pages, 2571301 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
+ 131 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
