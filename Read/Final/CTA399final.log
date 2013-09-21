@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  30 AUG 2013 19:19
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  18 SEP 2013 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -393,7 +393,7 @@ fs with page group included in a single page
 Here is how much of TeX's memory you used:
  4128 strings out of 493488
  62613 string characters out of 3141326
- 129095 words of memory out of 3000000
+ 128095 words of memory out of 3000000
  7381 multiletter control sequences out of 15000+200000
  12053 words of font info for 42 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -405,7 +405,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2012/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on CTA399final.pdf (13 pages, 2571301 bytes).
+Output written on CTA399final.pdf (13 pages, 2571289 bytes).
 PDF statistics:
  131 PDF objects out of 1000 (max. 8388607)
  85 compressed objects within 1 object stream
