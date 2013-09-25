@@ -1,0 +1,163 @@
+from __future__ import division, print_function
+
+import numpy as np
+from numpy.polynomial import Polynomial
+import astropy.units as u
+
+from fold_aro2 import fold
+from pmap import pmap
+from multifile_nonconsecutive import multifile
+
+if __name__ == '__main__':
+    # pulsar parameters
+    psr = 'B1919+21'
+    # psr = 'B2016+28'
+    #psr = 'B1957+20'
+    # psr = 'B0329+54'
+    # psr = 'B0823+26'
+    #psr = 'J1810+1744'
+    dm_dict = {'B0329+54': 26.833 * u.pc / u.cm**3,
+               'B0823+26': 19.454 * u.pc / u.cm**3,
+               'J1810+1744': 39.659298 * u.pc / u.cm**3,
+               'B1919+21': 12.455 * u.pc / u.cm**3,
+               'B1957+20': 29.11680*1.001 * u.pc / u.cm**3,
+               'B2016+28': 14.172 * u.pc / u.cm**3,
+               'noise': 0. * u.pc / u.cm**3}
+    phasepol_dict = {'B0329+54': Polynomial([0., 1.399541538720]),
+                     'B0823+26': Polynomial([0., 1.88444396743]),
+                     'J1810+1744': Polynomial([-4018563.4995850539,
+                                                601.41163207594536,
+                                                4.6317049685341791e-06,
+                                                -8.3737142966724068e-10,
+                                                -9.2069440760843247e-14,
+                                                9.7406036210629003e-18,
+                                                7.1778284402552812e-22,
+                                                -2.6355294340008817e-26,
+                                                -9.7399739118678408e-30,
+                                                8.6429925676499164e-34,
+                                                -2.7512833940346705e-38,
+                                                3.1438236190109298e-43]),
+                     'B1919+21': Polynomial([0.5, 0.7477741603725]),
+                     'B1957+20': Polynomial([-4432632.745592528,
+                                             622.12215911292049,
+                                             -9.5671908046310304e-07,
+                                             1.9590603497035876e-11,
+                                             2.8814289643278323e-15,
+                                             -3.6156188539059761e-20,
+                                             -3.4830127197278667e-24,
+                                             3.1273389379062427e-29,
+                                             2.1616966413921596e-33,
+                                             -6.6126750943027999e-39,
+                                             -1.3236264823863004e-42,
+                                             1.7711617341806616e-47]),
+                     'B2016+28': Polynomial([0., 1.7922641135652]),
+                     'noise': Polynomial([0., 1.])}
+
+    dm = dm_dict[psr]
+    phasepol = phasepol_dict[psr]
+
+    igate = None
+
+    # fndir1 = '/mnt/b/algonquin/'
+    fndir1 = '/mnt/aro/hdd2_node7/algonquin/'
+    # file1 = fndir1 + 'stream0329.1.dat'
+    # file1 = fndir1 + 'stream.0329_VLBI_june30.1.dat'
+    # file1 = fndir1 + 'stream.2013-07-24T15:06:16.0.dat'
+    # file1 = fndir1 + 'stream.2013-07-27T16:55:17.0.dat'  # does not exist yet
+    nhead = 0
+    # had 414 * 32MB
+    size = 13891534848 * 16
+    # frequency channels to make
+    nchan = 16384 #2**14
+    ntbin = 18 // 3  # number of bins the time series is split into for folding
+    recsize = 2**25  # 32MB sets
+    ntint = recsize//nchan  # number of samples after FFT
+    nt = size//recsize    # number of sets to fold
+    nt = 2800
+    ngate = 64  # number of bins over the pulsar period
+    ntw = min(100000, nt*ntint)  # number of samples to combine for waterfall
+
+    samplerate = 200 * u.MHz
+
+    fedge = 200. * u.MHz
+    fedge_at_top = True
+
+    fref = 150. * u.MHz  # ref. freq. for dispersion measure
+
+    verbose = True
+    do_waterfall = True
+    do_foldspec = True
+    coherent_dedispersion = False
+
+    # with open(file1, 'rb') as fh1:
+    # with multifile('/mnt/aro/hdd2_node7/algonquin/sequence.2013-07-24T15:06:16.3.dat',
+    #                ['/mnt/aro/hdd2_node7/algonquin/raw_voltage.2013-07-24T15:06:16.0.dat',
+    #                 '/mnt/aro/hdd1_node7/algonquin/raw_voltage.2013-07-24T15:06:16.1.dat',
+    #                 '/mnt/aro/hdd3_node7/algonquin/raw_voltage.2013-07-24T15:06:16.2.dat']) as fh1:
+    #with multifile('/mnt/aro/hdd2_node7/algonquin/sequence.2013-07-27T16:55:17.3.dat',
+    #               ['/mnt/aro/hdd2_node7/algonquin/raw_voltage.2013-07-27T16:55:17.0.dat',
+    #                '/mnt/aro/hdd1_node7/algonquin/raw_voltage.2013-07-27T16:55:17.1.dat',
+    #                '/mnt/aro/hdd3_node7/algonquin/raw_voltage.2013-07-27T16:55:17.2.dat']) as fh1:
+
+    with multifile('/mnt/data-pen1/pen/njones/VLBI_july212013/hdd2_node9/sequence.2013-07-25T18:14:20.3.dat',
+                   ['/mnt/data-pen1/pen/njones/VLBI_july212013/hdd2_node9/raw_voltage.2013-07-25T18:14:20.0.dat',
+                    '/mnt/data-pen1/pen/njones/VLBI_july212013/hdd1_node9/raw_voltage.2013-07-25T18:14:20.1.dat',
+                    '/mnt/data-pen1/pen/njones/VLBI_july212013/hdd3_node9/raw_voltage.2013-07-25T18:14:20.2.dat']) as fh1:
+
+        foldspec2, waterfall = fold(fh1, '4bit', samplerate,
+                                    fedge, fedge_at_top, nchan,
+                                    nt, ntint, nhead,
+                                    ngate, ntbin, ntw, dm, fref, phasepol,
+                                    coherent=coherent_dedispersion,
+                                    do_waterfall=do_waterfall,
+                                    do_foldspec=do_foldspec,
+                                    verbose=verbose, progress_interval=1)
+
+    if do_waterfall:
+        np.save("aro{}waterfall.npy".format(psr), waterfall)
+
+    if do_foldspec:
+        np.save("aro{}foldspec2.npy".format(psr), foldspec2)
+
+        f2 = foldspec2.copy()
+        f2[0] = 0.
+        foldspec1 = f2.sum(axis=2)
+        fluxes = foldspec1.sum(axis=0)
+        foldspec3 = f2.sum(axis=0)
+        if igate is not None:
+            dynspect = foldspec2[:,igate[0]-1:igate[1],:].sum(axis=1)
+            dynspect2 = foldspec2[:,igate[2]-1:igate[3],:].sum(axis=1)
+            f = open('dynspect'+psr+'.bin', 'wb')
+            f.write(dynspect.T.tostring())
+            f.write(dynspect2.T.tostring())
+            f.close()
+        with open('flux.dat', 'w') as f:
+            for i, flux in enumerate(fluxes):
+                f.write('{0:12d} {1:12.9g}\n'.format(i+1, flux))
+
+    plots = True
+    if plots:
+        if do_waterfall:
+            w = waterfall.copy()
+            w[0] = 0.
+            pmap('waterfall.pgm', w, 1, verbose=True)
+        if do_foldspec:
+            pmap('folded'+psr+'.pgm', foldspec1, 0, verbose)
+            pmap('foldedbin'+psr+'.pgm',
+                 f2.transpose(0,2,1).reshape(nchan,-1), 1, verbose)
+            pmap('folded3'+psr+'.pgm', foldspec3, 0, verbose)
+            # open(10,file='dynspect'//psr//'.bin',form='unformatted')
+            # write(10) dynspect
+            # write(10) dynspect2
+            if igate is not None:
+                dall = dynspect+dynspect2
+                dall_sum0 = dall.sum(axis=0)
+                dall_sum0 = np.where(dall_sum0, dall_sum0, 1.)
+                dall = dall/(dall_sum0/nchan)
+                dall[0,:] = 0
+                pmap('dynspect'+psr+'.pgm', dall, 0, verbose)
+                t1 = dynspect/(dynspect.sum(axis=0)/nchan)
+                t2 = dynspect2/(dynspect2.sum(axis=0)/nchan)
+                dsub = t1-t2
+                dsub[0,:] = 0
+                pmap('dynspectdiff'+psr+'.pgm', dsub, 0, verbose)
